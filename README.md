@@ -248,6 +248,28 @@ python -m uvicorn dashboard.app:app --host 127.0.0.1 --port 8000
 
 ---
 
+### Option C: Running with Docker (Optional / If Evaluator Requires Containers)
+If your instructor or project evaluator specifically asks to see native Hadoop and Kafka running inside Docker containers:
+
+1. **Start the Kafka & Hadoop HDFS Containers:**
+   ```bash
+   docker compose up -d
+   ```
+   *Spins up Apache Zookeeper (`2181`), Apache Kafka Broker (`9092`), Hadoop NameNode (`9000`, `9870`), and Hadoop DataNode (`9864`).*
+
+2. **Launch the VaultPulse Application:**
+   ```bash
+   python run_project.py
+   ```
+   *The system automatically detects the live Kafka broker on `localhost:9092` and HDFS on `localhost:9000` and routes live traffic through them.*
+
+3. **Stop the Containers When Finished:**
+   ```bash
+   docker compose down
+   ```
+
+---
+
 ## 🎮 7. Dashboard Interactive Features & Button Controls
 
 The VaultPulse AI console provides interactive controls for real-time demonstration:
