@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500568,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,50,50,American Express,2026-10-16 00:13:01,19900.0,SUCCESS,
+TXN_STREAM_500569,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,40,40,American Express,2026-10-16 00:13:02,38730.0,SUCCESS,
+TXN_STREAM_500570,ATM_002,Grand City Mall,Shopping Center,High-Traffic,50,50,American Express,2026-10-16 00:13:04,35460.0,SUCCESS,
