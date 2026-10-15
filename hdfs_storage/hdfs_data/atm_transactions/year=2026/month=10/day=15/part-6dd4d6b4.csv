@@ -1,0 +1,5 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500522,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,20,20,RuPay,2026-10-15 23:49:42,61530.0,SUCCESS,
+TXN_STREAM_500523,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,50,50,MasterCard,2026-10-15 23:49:44,37470.0,SUCCESS,
+TXN_STREAM_500524,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,50,50,RuPay,2026-10-15 23:49:45,37420.0,SUCCESS,
+TXN_STREAM_500525,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,20,20,MasterCard,2026-10-15 23:49:47,61510.0,SUCCESS,

@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500186,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,200,200,Visa,2026-10-15 23:41:21,43320,SUCCESS,
+TXN_STREAM_500187,ATM_002,Grand City Mall,Shopping Center,High-Traffic,500,500,MasterCard,2026-10-15 23:41:22,3860,SUCCESS,
+TXN_STREAM_500188,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,20,20,MasterCard,2026-10-15 23:41:24,43300,SUCCESS,

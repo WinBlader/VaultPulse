@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500539,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,400,400,American Express,2026-10-15 23:50:08,60650.0,SUCCESS,
+TXN_STREAM_500540,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,500,500,American Express,2026-10-15 23:50:09,68210.0,SUCCESS,
+TXN_STREAM_500541,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,100,100,Visa,2026-10-15 23:50:11,68110.0,SUCCESS,

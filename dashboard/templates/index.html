@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaultPulse | Smart ATM Cash Demand & Replenishment Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css?v=1.3">
+  <!-- Chart.js for time-series forecasting visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon">🏧</div>
+      <div>
+        <h1 class="brand-title">VaultPulse <span class="brand-tag-ai">AI</span></h1>
+        <p class="brand-subtitle">Smart ATM Cash Demand & Replenishment Platform</p>
+      </div>
+    </div>
+    
+    <div class="nav-badges">
+      <div class="status-pill status-kafka" id="pill-kafka">
+        <span class="dot"></span> <span id="kafka-mode-label">Kafka: Active</span>
+      </div>
+      <div class="status-pill status-hdfs" id="pill-hdfs">
+        <span class="dot"></span> <span id="hdfs-status-label">HDFS: 90 Partitions</span>
+      </div>
+      <div class="status-pill status-model" id="pill-model">
+        <span class="dot"></span> <span id="model-status-label">Model: 83.6% Accuracy</span>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <button class="btn btn-primary" id="btn-toggle-stream" onclick="toggleStream()">
+        <span id="stream-btn-icon">⏸️</span> <span id="stream-btn-text">Pause Stream</span>
+      </button>
+      <button class="btn btn-secondary" onclick="ingestHdfsPartition()" title="Add a new daily partition into Hadoop HDFS storage">
+        📦 Ingest HDFS
+      </button>
+      <button class="btn btn-secondary" onclick="retrainModel()" title="Train fresh trees on latest HDFS data">
+        🔄 Retrain Model
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="dashboard-container">
+
+    <!-- Problem & Solution Overview Banner -->
+    <section class="banner-card">
+      <div class="banner-content">
+        <div class="banner-tag">🎯 PROBLEM & OBJECTIVE</div>
+        <h2>Solving Fixed-Schedule ATM Inefficiencies with Big Data</h2>
+        <p>
+          Traditional bank teams refill ATMs on fixed schedules. This creates two huge problems:
+          <strong>High-traffic ATMs run out of cash (Stockouts)</strong>, frustrating customers, while
+          <strong>low-traffic ATMs sit with idle excess money</strong>, locking up bank capital.
+          Our solution streams withdrawals through <strong>Kafka</strong>, stores them on <strong>HDFS</strong>,
+          and uses a <strong>Time-Series ML Model</strong> to predict next-day cash demand so cash vans only deliver what is needed.
+        </p>
+      </div>
+      <div class="tech-stack-chips">
+        <div class="chip"><span>⚡</span> Kafka Streaming</div>
+        <div class="chip"><span>🗄️</span> Hadoop HDFS</div>
+        <div class="chip"><span>📈</span> Time-Series ML</div>
+        <div class="chip"><span>🚚</span> Smart Replenishment</div>
+      </div>
+    </section>
+
+    <!-- Top KPI Metric Cards -->
+    <section class="kpi-grid">
+      <div class="kpi-card danger-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Stockout Risk (Cash Out)</span>
+          <span class="kpi-icon">🚨</span>
+        </div>
+        <div class="kpi-value" id="kpi-stockout">0</div>
+        <div class="kpi-footer">ATMs likely to run dry tomorrow</div>
+      </div>
+
+      <div class="kpi-card warning-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Excess Cash Risk</span>
+          <span class="kpi-icon">⚠️</span>
+        </div>
+        <div class="kpi-value" id="kpi-excess">0</div>
+        <div class="kpi-footer">ATMs with trapped idle capital</div>
+      </div>
+
+      <div class="kpi-card success-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Optimal Cash Level</span>
+          <span class="kpi-icon">🟢</span>
+        </div>
+        <div class="kpi-value" id="kpi-optimal">0</div>
+        <div class="kpi-footer">ATMs with balanced cash levels</div>
+      </div>
+
+      <div class="kpi-card info-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Next-Day Replenishment</span>
+          <span class="kpi-icon">💵</span>
+        </div>
+        <div class="kpi-value" id="kpi-total-needed">$0</div>
+        <div class="kpi-footer">Total cash to dispatch tomorrow</div>
+      </div>
+
+      <div class="kpi-card highlight-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Idle Money Saved</span>
+          <span class="kpi-icon">💡</span>
+        </div>
+        <div class="kpi-value" id="kpi-idle-saved">$0</div>
+        <div class="kpi-footer">Saved vs. naive fixed schedule</div>
+      </div>
+    </section>
+
+    <!-- Mid Section: Interactive Recommendations Table & Forecasting Chart -->
+    <div class="main-grid">
+
+      <!-- Smart Replenishment Plan Table -->
+      <section class="panel-card table-panel">
+        <div class="panel-header">
+          <div>
+            <h3 class="panel-title">🚚 Smart Cash Replenishment Plan</h3>
+            <p class="panel-desc">Recommended cash delivery for each ATM based on tomorrow's forecasted demand</p>
+          </div>
+          <div class="header-action-group">
+            <button class="btn btn-sm btn-secondary" id="btn-reset-balances" onclick="resetAtmBalances()" title="Reset ATMs to initial stockout/excess test scenario">
+              ⚡ Reset Balances
+            </button>
+            <button class="btn btn-sm btn-primary" id="btn-refresh-plan" onclick="loadRecommendations(true)" title="Fetch latest ATM balances and model predictions">
+              <span id="refresh-icon">🔄</span> Refresh Plan
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ATM Name & ID</th>
+                <th>Location & Type</th>
+                <th>Current Cash</th>
+                <th>Tomorrow's Forecast</th>
+                <th>Safety Buffer</th>
+                <th>Load Amount</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="recommendations-tbody">
+              <tr>
+                <td colspan="8" class="text-center py-4">Loading replenishment recommendations...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Time Series Chart Panel -->
+      <section class="panel-card chart-panel">
+        <div class="panel-header">
+          <div>
+            <h3 class="panel-title">📈 Daily Demand History & Forecast</h3>
+            <p class="panel-desc">Actual historical withdrawals vs. next-day predicted demand</p>
+          </div>
+          <select id="atm-select" class="form-select" onchange="updateChart()">
+            <option value="ATM_001">ATM_001 - Metro Central</option>
+            <option value="ATM_002">ATM_002 - Grand City Mall</option>
+            <option value="ATM_003">ATM_003 - Financial Tower</option>
+            <option value="ATM_004">ATM_004 - Suburban Green Park</option>
+            <option value="ATM_005">ATM_005 - Airport Terminal 2</option>
+          </select>
+        </div>
+
+        <div class="chart-wrapper">
+          <canvas id="forecastChart"></canvas>
+        </div>
+
+        <div class="chart-summary-footer" id="chart-summary">
+          Loading forecast summary...
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bottom Section: Live Kafka Stream Console & HDFS Big Data Architecture -->
+    <div class="bottom-grid">
+
+      <!-- Live Kafka Transaction Feed -->
+      <section class="panel-card stream-panel">
+        <div class="panel-header">
+          <div class="panel-title-with-pulse">
+            <span class="live-indicator"></span>
+            <div>
+              <h3 class="panel-title">⚡ Live Kafka Transaction Stream</h3>
+              <p class="panel-desc">Real-time withdrawal transactions streaming on topic <code>atm-withdrawal-transactions</code></p>
+            </div>
+          </div>
+          <div class="header-action-group">
+            <button class="btn btn-sm btn-secondary" onclick="emitTestTransaction()" title="Stream an immediate withdrawal event">
+              ⚡ Emit Txn Now
+            </button>
+            <span class="badge badge-kafka" id="stream-count-badge">0 Streamed</span>
+          </div>
+        </div>
+
+        <div class="terminal-container" id="stream-console">
+          <div class="terminal-placeholder">Connecting to Kafka stream... Waiting for live transactions.</div>
+        </div>
+      </section>
+
+      <!-- Big Data Architecture & Cluster Telemetry -->
+      <section class="panel-card telemetry-panel">
+        <div class="panel-header">
+          <div>
+            <h3 class="panel-title">🗄️ Big Data Architecture & Cluster Telemetry</h3>
+            <p class="panel-desc">Real-time telemetry from Kafka, Hadoop HDFS, and ML Model</p>
+          </div>
+        </div>
+
+        <div class="telemetry-grid">
+          
+          <!-- HDFS Card -->
+          <div class="telemetry-box">
+            <div class="box-header">
+              <span class="box-icon">🐘</span>
+              <div>
+                <h4>Hadoop HDFS Storage</h4>
+                <p>Distributed Data Lake</p>
+              </div>
+            </div>
+            <ul class="telemetry-list">
+              <li><span>NameNode URI:</span> <code id="hdfs-namenode">hdfs://localhost:9000</code></li>
+              <li><span>Active DataNodes:</span> <span id="hdfs-datanodes">3 Nodes</span></li>
+              <li><span>HDFS Partitions:</span> <span id="hdfs-partitions">90 Daily Partitions</span></li>
+              <li><span>Partition Layout:</span> <code>/year=YYYY/month=MM/day=DD/</code></li>
+              <li><span>Storage Size:</span> <span id="hdfs-size">12,286 KB</span></li>
+              <li><span>HDFS Status:</span> <span class="badge badge-success">Online & Synced</span></li>
+            </ul>
+          </div>
+
+          <!-- ML Model Card -->
+          <div class="telemetry-box">
+            <div class="box-header">
+              <span class="box-icon">🤖</span>
+              <div>
+                <h4>Forecasting Model</h4>
+                <p>Time-Series Regressor</p>
+              </div>
+            </div>
+            <ul class="telemetry-list">
+              <li><span>Algorithm:</span> <span id="model-algo">Random Forest Time-Series</span></li>
+              <li><span>Model Accuracy:</span> <span class="badge badge-success" id="model-acc">83.6%</span></li>
+              <li><span>Mean Absolute Error:</span> <span id="model-mae">$5,183</span></li>
+              <li><span>Mean Abs. Percentage Error:</span> <span id="model-mape">16.4%</span></li>
+              <li><span>Features Used:</span> <span>Lag-1, Lag-2, Lag-7, Rolling-7, Calendar</span></li>
+              <li><span>Decision Strategy:</span> <span>Buffer + Target Replenishment</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- 4-Step Pipeline Summary for Viva / Presentation -->
+        <div class="workflow-steps">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-info">
+              <h5>Kafka Streaming</h5>
+              <p>Captures continuous withdrawal transactions in real time.</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-info">
+              <h5>HDFS Persistence</h5>
+              <p>Organizes raw transactions into date-partitioned storage.</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-info">
+              <h5>Time-Series Model</h5>
+              <p>Predicts next-day demand with seasonal & lag features.</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <div class="step-info">
+              <h5>Replenishment</h5>
+              <p>Dispatches cash vans to eliminate stockouts & idle cash.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Cash Van Modal / Notification Toast -->
+  <div id="toast" class="toast">Cash van dispatched successfully!</div>
+
+  <!-- JavaScript -->
+  <script src="/static/js/app.js?v=1.3"></script>
+</body>
+</html>

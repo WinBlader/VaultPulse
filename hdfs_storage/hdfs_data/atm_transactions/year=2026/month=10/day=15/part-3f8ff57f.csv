@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500062,ATM_002,Grand City Mall,Shopping Center,High-Traffic,40,40,American Express,2026-10-15 23:25:28,8830,SUCCESS,
+TXN_STREAM_500063,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,50,50,MasterCard,2026-10-15 23:25:29,15230,SUCCESS,
+TXN_STREAM_500064,ATM_002,Grand City Mall,Shopping Center,High-Traffic,400,400,MasterCard,2026-10-15 23:25:31,8430,SUCCESS,

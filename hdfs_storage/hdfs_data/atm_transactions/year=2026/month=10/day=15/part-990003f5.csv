@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500339,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,400,400,American Express,2026-10-15 23:36:01,50580,SUCCESS,
+TXN_STREAM_500340,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,500,500,RuPay,2026-10-15 23:36:02,48140,SUCCESS,
+TXN_STREAM_500341,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,300,300,Visa,2026-10-15 23:36:04,50280,SUCCESS,

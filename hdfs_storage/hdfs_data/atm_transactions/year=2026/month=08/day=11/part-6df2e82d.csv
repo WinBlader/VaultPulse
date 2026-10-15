@@ -1,0 +1,964 @@
+transaction_id,atm_id,atm_name,location,timestamp,amount_withdrawn,card_type,day_of_week,is_weekend,is_holiday,remaining_cash,transaction_status
+TXN_129879,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 05:29:19,300,MasterCard,Tuesday,0,0,99700,Success
+TXN_129880,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:29:26,400,RuPay,Tuesday,0,0,99300,Success
+TXN_129881,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:00:57,40,RuPay,Tuesday,0,0,99260,Success
+TXN_129882,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 08:41:56,100,RuPay,Tuesday,0,0,99160,Success
+TXN_129883,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:56:36,50,American Express,Tuesday,0,0,99110,Success
+TXN_129884,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:49:21,50,MasterCard,Tuesday,0,0,99060,Success
+TXN_129885,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 21:22:32,50,RuPay,Tuesday,0,0,99010,Success
+TXN_129886,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:25:35,300,RuPay,Tuesday,0,0,98710,Success
+TXN_129887,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:42:14,300,Visa,Tuesday,0,0,98410,Success
+TXN_129888,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:55:54,300,Visa,Tuesday,0,0,98110,Success
+TXN_129889,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:57:07,20,MasterCard,Tuesday,0,0,98090,Success
+TXN_129890,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:32:23,400,MasterCard,Tuesday,0,0,97690,Success
+TXN_129891,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:10:13,500,American Express,Tuesday,0,0,97190,Success
+TXN_129892,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:40:57,50,American Express,Tuesday,0,0,97140,Success
+TXN_129893,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:14:35,40,American Express,Tuesday,0,0,97100,Success
+TXN_129894,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 08:17:00,40,RuPay,Tuesday,0,0,97060,Success
+TXN_129895,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:33:09,500,MasterCard,Tuesday,0,0,96560,Success
+TXN_129896,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:40:24,200,RuPay,Tuesday,0,0,96360,Success
+TXN_129897,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:59:13,500,MasterCard,Tuesday,0,0,95860,Success
+TXN_129898,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:18:02,20,Visa,Tuesday,0,0,95840,Success
+TXN_129899,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:49:18,500,MasterCard,Tuesday,0,0,95340,Success
+TXN_129900,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:38:41,50,MasterCard,Tuesday,0,0,95290,Success
+TXN_129901,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:12:40,40,Visa,Tuesday,0,0,95250,Success
+TXN_129902,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:02:36,300,RuPay,Tuesday,0,0,94950,Success
+TXN_129903,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:29:00,100,American Express,Tuesday,0,0,94850,Success
+TXN_129904,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:23:51,200,Visa,Tuesday,0,0,94650,Success
+TXN_129905,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 02:04:11,20,Visa,Tuesday,0,0,94630,Success
+TXN_129906,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:40:48,100,RuPay,Tuesday,0,0,94530,Success
+TXN_129907,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:42:53,20,American Express,Tuesday,0,0,94510,Success
+TXN_129908,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:10:32,200,Visa,Tuesday,0,0,94310,Success
+TXN_129909,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:45:32,300,RuPay,Tuesday,0,0,94010,Success
+TXN_129910,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:29:49,50,Visa,Tuesday,0,0,93960,Success
+TXN_129911,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:37:15,200,RuPay,Tuesday,0,0,93760,Success
+TXN_129912,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 01:40:04,200,RuPay,Tuesday,0,0,93560,Success
+TXN_129913,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:46:18,200,Visa,Tuesday,0,0,93360,Success
+TXN_129914,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 09:18:21,100,RuPay,Tuesday,0,0,93260,Success
+TXN_129915,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 06:32:05,100,American Express,Tuesday,0,0,93160,Success
+TXN_129916,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 00:31:42,200,American Express,Tuesday,0,0,92960,Success
+TXN_129917,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:32:32,400,Visa,Tuesday,0,0,92560,Success
+TXN_129918,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:50:01,500,RuPay,Tuesday,0,0,92060,Success
+TXN_129919,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:54:51,20,Visa,Tuesday,0,0,92040,Success
+TXN_129920,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:21:17,500,RuPay,Tuesday,0,0,91540,Success
+TXN_129921,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:11:13,50,American Express,Tuesday,0,0,91490,Success
+TXN_129922,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:44:57,100,Visa,Tuesday,0,0,91390,Success
+TXN_129923,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:55:29,300,Visa,Tuesday,0,0,91090,Success
+TXN_129924,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:59:41,20,MasterCard,Tuesday,0,0,91070,Success
+TXN_129925,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:07:58,300,MasterCard,Tuesday,0,0,90770,Success
+TXN_129926,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:55:36,50,Visa,Tuesday,0,0,90720,Success
+TXN_129927,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:59:07,300,American Express,Tuesday,0,0,90420,Success
+TXN_129928,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:32:30,40,American Express,Tuesday,0,0,90380,Success
+TXN_129929,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:04:37,40,Visa,Tuesday,0,0,90340,Success
+TXN_129930,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 03:57:02,200,MasterCard,Tuesday,0,0,90140,Success
+TXN_129931,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 07:54:05,200,MasterCard,Tuesday,0,0,89940,Success
+TXN_129932,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:55:26,40,American Express,Tuesday,0,0,89900,Success
+TXN_129933,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:37:38,100,RuPay,Tuesday,0,0,89800,Success
+TXN_129934,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:13:58,40,American Express,Tuesday,0,0,89760,Success
+TXN_129935,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:08:25,40,Visa,Tuesday,0,0,89720,Success
+TXN_129936,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:53:44,300,RuPay,Tuesday,0,0,89420,Success
+TXN_129937,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:35:44,20,RuPay,Tuesday,0,0,89400,Success
+TXN_129938,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:56:32,300,American Express,Tuesday,0,0,89100,Success
+TXN_129939,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:33:57,40,Visa,Tuesday,0,0,89060,Success
+TXN_129940,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:54:47,100,MasterCard,Tuesday,0,0,88960,Success
+TXN_129941,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 09:48:07,400,American Express,Tuesday,0,0,88560,Success
+TXN_129942,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:42:32,20,American Express,Tuesday,0,0,88540,Success
+TXN_129943,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:43:57,300,RuPay,Tuesday,0,0,88240,Success
+TXN_129944,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:45:17,300,American Express,Tuesday,0,0,87940,Success
+TXN_129945,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:13:44,50,Visa,Tuesday,0,0,87890,Success
+TXN_129946,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 08:57:43,100,Visa,Tuesday,0,0,87790,Success
+TXN_129947,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 00:09:17,200,Visa,Tuesday,0,0,87590,Success
+TXN_129948,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:05:00,400,American Express,Tuesday,0,0,87190,Success
+TXN_129949,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:07:43,20,RuPay,Tuesday,0,0,87170,Success
+TXN_129950,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:01:58,400,MasterCard,Tuesday,0,0,86770,Success
+TXN_129951,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:54:27,200,Visa,Tuesday,0,0,86570,Success
+TXN_129952,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:43:00,20,RuPay,Tuesday,0,0,86550,Success
+TXN_129953,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 02:04:23,400,Visa,Tuesday,0,0,86150,Success
+TXN_129954,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:22:33,40,American Express,Tuesday,0,0,86110,Success
+TXN_129955,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 06:23:20,500,RuPay,Tuesday,0,0,85610,Success
+TXN_129956,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 00:12:20,40,MasterCard,Tuesday,0,0,85570,Success
+TXN_129957,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:28:58,50,American Express,Tuesday,0,0,85520,Success
+TXN_129958,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:51:58,40,RuPay,Tuesday,0,0,85480,Success
+TXN_129959,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 04:27:08,50,Visa,Tuesday,0,0,85430,Success
+TXN_129960,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:13:19,200,RuPay,Tuesday,0,0,85230,Success
+TXN_129961,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 09:53:27,40,American Express,Tuesday,0,0,85190,Success
+TXN_129962,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:10:52,500,RuPay,Tuesday,0,0,84690,Success
+TXN_129963,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:08:29,200,RuPay,Tuesday,0,0,84490,Success
+TXN_129964,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 22:59:09,40,RuPay,Tuesday,0,0,84450,Success
+TXN_129965,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:02:22,400,MasterCard,Tuesday,0,0,84050,Success
+TXN_129966,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:47:47,20,RuPay,Tuesday,0,0,84030,Success
+TXN_129967,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:49:27,100,Visa,Tuesday,0,0,83930,Success
+TXN_129968,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 07:07:41,40,American Express,Tuesday,0,0,83890,Success
+TXN_129969,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:14:24,500,Visa,Tuesday,0,0,83390,Success
+TXN_129970,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:57:08,500,Visa,Tuesday,0,0,82890,Success
+TXN_129971,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 08:03:10,300,American Express,Tuesday,0,0,82590,Success
+TXN_129972,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:14:52,400,American Express,Tuesday,0,0,82190,Success
+TXN_129973,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:22:54,40,RuPay,Tuesday,0,0,82150,Success
+TXN_129974,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:03:10,200,RuPay,Tuesday,0,0,81950,Success
+TXN_129975,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:16:49,50,MasterCard,Tuesday,0,0,81900,Success
+TXN_129976,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 06:38:03,400,Visa,Tuesday,0,0,81500,Success
+TXN_129977,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:23:32,400,Visa,Tuesday,0,0,81100,Success
+TXN_129978,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:54:59,50,MasterCard,Tuesday,0,0,81050,Success
+TXN_129979,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:51:29,20,MasterCard,Tuesday,0,0,81030,Success
+TXN_129980,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 22:37:18,50,American Express,Tuesday,0,0,80980,Success
+TXN_129981,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:31:42,400,RuPay,Tuesday,0,0,80580,Success
+TXN_129982,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:10:32,20,American Express,Tuesday,0,0,80560,Success
+TXN_129983,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:41:03,50,American Express,Tuesday,0,0,80510,Success
+TXN_129984,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:41:42,50,MasterCard,Tuesday,0,0,80460,Success
+TXN_129985,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 09:00:33,300,Visa,Tuesday,0,0,80160,Success
+TXN_129986,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:04:08,400,American Express,Tuesday,0,0,79760,Success
+TXN_129987,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:14:40,40,RuPay,Tuesday,0,0,79720,Success
+TXN_129988,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 03:56:19,400,RuPay,Tuesday,0,0,79320,Success
+TXN_129989,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:12:11,20,American Express,Tuesday,0,0,79300,Success
+TXN_129990,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:33:29,400,Visa,Tuesday,0,0,78900,Success
+TXN_129991,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 04:46:09,20,RuPay,Tuesday,0,0,78880,Success
+TXN_129992,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:26:05,20,American Express,Tuesday,0,0,78860,Success
+TXN_129993,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:39:09,50,American Express,Tuesday,0,0,78810,Success
+TXN_129994,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:25:49,200,American Express,Tuesday,0,0,78610,Success
+TXN_129995,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:19:57,50,Visa,Tuesday,0,0,78560,Success
+TXN_129996,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:34:24,200,American Express,Tuesday,0,0,78360,Success
+TXN_129997,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:58:15,40,Visa,Tuesday,0,0,78320,Success
+TXN_129998,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:53:20,200,American Express,Tuesday,0,0,78120,Success
+TXN_129999,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:38:26,200,American Express,Tuesday,0,0,77920,Success
+TXN_130000,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 23:08:21,400,American Express,Tuesday,0,0,77520,Success
+TXN_130001,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:55:50,200,RuPay,Tuesday,0,0,77320,Success
+TXN_130002,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:05:18,20,MasterCard,Tuesday,0,0,77300,Success
+TXN_130003,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 04:04:45,400,Visa,Tuesday,0,0,76900,Success
+TXN_130004,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:40:01,20,RuPay,Tuesday,0,0,76880,Success
+TXN_130005,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 04:24:59,50,RuPay,Tuesday,0,0,76830,Success
+TXN_130006,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:38:48,40,RuPay,Tuesday,0,0,76790,Success
+TXN_130007,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:38:42,50,RuPay,Tuesday,0,0,76740,Success
+TXN_130008,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:17:04,200,RuPay,Tuesday,0,0,76540,Success
+TXN_130009,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:17:53,40,RuPay,Tuesday,0,0,76500,Success
+TXN_130010,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:46:22,100,RuPay,Tuesday,0,0,76400,Success
+TXN_130011,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:49:33,100,RuPay,Tuesday,0,0,76300,Success
+TXN_130012,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:36:22,20,American Express,Tuesday,0,0,76280,Success
+TXN_130013,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 03:12:08,400,American Express,Tuesday,0,0,75880,Success
+TXN_130014,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:26:34,200,RuPay,Tuesday,0,0,75680,Success
+TXN_130015,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:06:07,500,RuPay,Tuesday,0,0,75180,Success
+TXN_130016,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 00:32:45,200,MasterCard,Tuesday,0,0,74980,Success
+TXN_130017,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 09:15:31,500,MasterCard,Tuesday,0,0,74480,Success
+TXN_130018,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 07:20:47,500,MasterCard,Tuesday,0,0,73980,Success
+TXN_130019,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 09:34:56,100,American Express,Tuesday,0,0,73880,Success
+TXN_130020,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:39:30,40,American Express,Tuesday,0,0,73840,Success
+TXN_130021,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:53:01,500,MasterCard,Tuesday,0,0,73340,Success
+TXN_130022,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:53:37,20,Visa,Tuesday,0,0,73320,Success
+TXN_130023,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:11:33,300,MasterCard,Tuesday,0,0,73020,Success
+TXN_130024,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:43:26,300,American Express,Tuesday,0,0,72720,Success
+TXN_130025,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:19:46,20,American Express,Tuesday,0,0,72700,Success
+TXN_130026,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:37:15,500,Visa,Tuesday,0,0,72200,Success
+TXN_130027,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:06:09,400,RuPay,Tuesday,0,0,71800,Success
+TXN_130028,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:03:20,100,MasterCard,Tuesday,0,0,71700,Success
+TXN_130029,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:21:22,200,American Express,Tuesday,0,0,71500,Success
+TXN_130030,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 02:19:18,300,MasterCard,Tuesday,0,0,71200,Success
+TXN_130031,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:39:24,100,MasterCard,Tuesday,0,0,71100,Success
+TXN_130032,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:20:37,20,Visa,Tuesday,0,0,71080,Success
+TXN_130033,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:50:55,300,RuPay,Tuesday,0,0,70780,Success
+TXN_130034,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:47:08,40,MasterCard,Tuesday,0,0,70740,Success
+TXN_130035,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 02:31:17,100,American Express,Tuesday,0,0,70640,Success
+TXN_130036,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 00:32:56,200,Visa,Tuesday,0,0,70440,Success
+TXN_130037,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:23:19,500,American Express,Tuesday,0,0,69940,Success
+TXN_130038,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:23:25,200,MasterCard,Tuesday,0,0,69740,Success
+TXN_130039,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:27:52,400,American Express,Tuesday,0,0,69340,Success
+TXN_130040,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:10:40,100,American Express,Tuesday,0,0,69240,Success
+TXN_130041,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 23:55:46,200,MasterCard,Tuesday,0,0,69040,Success
+TXN_130042,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:52:06,100,MasterCard,Tuesday,0,0,68940,Success
+TXN_130043,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:09:56,40,American Express,Tuesday,0,0,68900,Success
+TXN_130044,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 21:54:22,100,American Express,Tuesday,0,0,68800,Success
+TXN_130045,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:38:18,100,RuPay,Tuesday,0,0,68700,Success
+TXN_130046,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:45:37,400,RuPay,Tuesday,0,0,68300,Success
+TXN_130047,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 04:02:47,20,Visa,Tuesday,0,0,68280,Success
+TXN_130048,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 06:38:47,40,Visa,Tuesday,0,0,68240,Success
+TXN_130049,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:36:40,300,Visa,Tuesday,0,0,67940,Success
+TXN_130050,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 05:53:08,300,Visa,Tuesday,0,0,67640,Success
+TXN_130051,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:45:19,500,MasterCard,Tuesday,0,0,67140,Success
+TXN_130052,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:57:34,400,Visa,Tuesday,0,0,66740,Success
+TXN_130053,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:38:54,40,Visa,Tuesday,0,0,66700,Success
+TXN_130054,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:54:08,50,RuPay,Tuesday,0,0,66650,Success
+TXN_130055,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:18:24,100,RuPay,Tuesday,0,0,66550,Success
+TXN_130056,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:59:01,100,American Express,Tuesday,0,0,66450,Success
+TXN_130057,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 04:04:50,50,Visa,Tuesday,0,0,66400,Success
+TXN_130058,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:03:44,200,Visa,Tuesday,0,0,66200,Success
+TXN_130059,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:10:57,50,Visa,Tuesday,0,0,66150,Success
+TXN_130060,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 06:16:17,200,RuPay,Tuesday,0,0,65950,Success
+TXN_130061,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:14:16,200,MasterCard,Tuesday,0,0,65750,Success
+TXN_130062,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:05:26,100,MasterCard,Tuesday,0,0,65650,Success
+TXN_130063,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:16:21,100,American Express,Tuesday,0,0,65550,Success
+TXN_130064,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:11:59,100,RuPay,Tuesday,0,0,65450,Success
+TXN_130065,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:48:01,20,Visa,Tuesday,0,0,65430,Success
+TXN_130066,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:09:10,500,American Express,Tuesday,0,0,64930,Success
+TXN_130067,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 02:56:27,500,MasterCard,Tuesday,0,0,64430,Success
+TXN_130068,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 22:34:35,50,MasterCard,Tuesday,0,0,64380,Success
+TXN_130069,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 01:27:11,300,Visa,Tuesday,0,0,64080,Success
+TXN_130070,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:28:27,400,RuPay,Tuesday,0,0,63680,Success
+TXN_130071,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:57:57,200,American Express,Tuesday,0,0,63480,Success
+TXN_130072,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 23:05:37,200,RuPay,Tuesday,0,0,63280,Success
+TXN_130073,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 02:06:45,500,MasterCard,Tuesday,0,0,62780,Success
+TXN_130074,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:20:49,40,American Express,Tuesday,0,0,62740,Success
+TXN_130075,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:05:42,50,Visa,Tuesday,0,0,62690,Success
+TXN_130076,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:55:19,500,RuPay,Tuesday,0,0,62190,Success
+TXN_130077,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:56:00,50,RuPay,Tuesday,0,0,62140,Success
+TXN_130078,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:31:42,200,American Express,Tuesday,0,0,61940,Success
+TXN_130079,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 07:43:55,300,RuPay,Tuesday,0,0,61640,Success
+TXN_130080,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 08:40:12,100,Visa,Tuesday,0,0,61540,Success
+TXN_130081,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:08:59,100,Visa,Tuesday,0,0,61440,Success
+TXN_130082,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:04:53,200,MasterCard,Tuesday,0,0,61240,Success
+TXN_130083,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 02:05:38,50,Visa,Tuesday,0,0,61190,Success
+TXN_130084,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:13:37,300,RuPay,Tuesday,0,0,60890,Success
+TXN_130085,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 05:39:12,50,Visa,Tuesday,0,0,60840,Success
+TXN_130086,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 21:16:13,100,Visa,Tuesday,0,0,60740,Success
+TXN_130087,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:24:54,400,American Express,Tuesday,0,0,60340,Success
+TXN_130088,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:49:56,100,RuPay,Tuesday,0,0,60240,Success
+TXN_130089,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:36:21,50,Visa,Tuesday,0,0,60190,Success
+TXN_130090,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 07:38:21,40,American Express,Tuesday,0,0,60150,Success
+TXN_130091,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 05:35:48,400,American Express,Tuesday,0,0,59750,Success
+TXN_130092,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:23:57,300,Visa,Tuesday,0,0,59450,Success
+TXN_130093,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:43:35,400,Visa,Tuesday,0,0,59050,Success
+TXN_130094,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:33:52,20,MasterCard,Tuesday,0,0,59030,Success
+TXN_130095,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:00:05,200,MasterCard,Tuesday,0,0,58830,Success
+TXN_130096,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 07:01:39,20,Visa,Tuesday,0,0,58810,Success
+TXN_130097,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 21:21:58,300,American Express,Tuesday,0,0,58510,Success
+TXN_130098,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:40:20,400,MasterCard,Tuesday,0,0,58110,Success
+TXN_130099,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 03:58:07,300,American Express,Tuesday,0,0,57810,Success
+TXN_130100,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:12:33,100,Visa,Tuesday,0,0,57710,Success
+TXN_130101,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:59:47,400,MasterCard,Tuesday,0,0,57310,Success
+TXN_130102,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:23:35,500,American Express,Tuesday,0,0,56810,Success
+TXN_130103,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:47:05,400,American Express,Tuesday,0,0,56410,Success
+TXN_130104,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:35:53,500,Visa,Tuesday,0,0,55910,Success
+TXN_130105,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:17:33,50,MasterCard,Tuesday,0,0,55860,Success
+TXN_130106,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:52:38,400,RuPay,Tuesday,0,0,55460,Success
+TXN_130107,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 15:24:23,100,RuPay,Tuesday,0,0,55360,Success
+TXN_130108,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:03:03,200,Visa,Tuesday,0,0,55160,Success
+TXN_130109,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 01:25:24,400,American Express,Tuesday,0,0,54760,Success
+TXN_130110,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:03:36,50,American Express,Tuesday,0,0,54710,Success
+TXN_130111,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:54:48,400,Visa,Tuesday,0,0,54310,Success
+TXN_130112,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:08:08,50,American Express,Tuesday,0,0,54260,Success
+TXN_130113,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:19:23,40,American Express,Tuesday,0,0,54220,Success
+TXN_130114,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:48:58,500,Visa,Tuesday,0,0,53720,Success
+TXN_130115,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:56:19,20,American Express,Tuesday,0,0,53700,Success
+TXN_130116,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:20:58,40,American Express,Tuesday,0,0,53660,Success
+TXN_130117,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 09:20:29,400,MasterCard,Tuesday,0,0,53260,Success
+TXN_130118,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:14:18,400,American Express,Tuesday,0,0,52860,Success
+TXN_130119,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 12:17:15,50,MasterCard,Tuesday,0,0,52810,Success
+TXN_130120,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:46:03,20,RuPay,Tuesday,0,0,52790,Success
+TXN_130121,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:31:18,300,MasterCard,Tuesday,0,0,52490,Success
+TXN_130122,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 21:55:04,100,American Express,Tuesday,0,0,52390,Success
+TXN_130123,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 00:09:01,400,American Express,Tuesday,0,0,51990,Success
+TXN_130124,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 17:23:52,400,Visa,Tuesday,0,0,51590,Success
+TXN_130125,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:18:56,200,RuPay,Tuesday,0,0,51390,Success
+TXN_130126,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:59:04,100,Visa,Tuesday,0,0,51290,Success
+TXN_130127,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:42:52,200,American Express,Tuesday,0,0,51090,Success
+TXN_130128,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:19:50,200,MasterCard,Tuesday,0,0,50890,Success
+TXN_130129,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:46:50,300,Visa,Tuesday,0,0,50590,Success
+TXN_130130,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:52:29,40,MasterCard,Tuesday,0,0,50550,Success
+TXN_130131,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:46:27,50,American Express,Tuesday,0,0,50500,Success
+TXN_130132,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:03:07,400,Visa,Tuesday,0,0,50100,Success
+TXN_130133,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:52:52,50,American Express,Tuesday,0,0,50050,Success
+TXN_130134,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 11:44:42,50,Visa,Tuesday,0,0,50000,Success
+TXN_130135,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:28:26,50,Visa,Tuesday,0,0,49950,Success
+TXN_130136,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 06:03:10,500,MasterCard,Tuesday,0,0,49450,Success
+TXN_130137,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:12:24,300,American Express,Tuesday,0,0,49150,Success
+TXN_130138,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 13:52:39,40,MasterCard,Tuesday,0,0,49110,Success
+TXN_130139,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 14:04:39,50,American Express,Tuesday,0,0,49060,Success
+TXN_130140,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:43:30,300,American Express,Tuesday,0,0,48760,Success
+TXN_130141,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:00:21,20,Visa,Tuesday,0,0,48740,Success
+TXN_130142,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 16:14:22,200,RuPay,Tuesday,0,0,48540,Success
+TXN_130143,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:50:38,400,RuPay,Tuesday,0,0,48140,Success
+TXN_130144,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 18:43:22,400,Visa,Tuesday,0,0,47740,Success
+TXN_130145,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 20:58:57,400,Visa,Tuesday,0,0,47340,Success
+TXN_130146,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 10:00:10,200,RuPay,Tuesday,0,0,47140,Success
+TXN_130147,ATM_001,Metro Central Station,Downtown Transit Hub,2026-08-11 19:31:12,500,MasterCard,Tuesday,0,0,46640,Success
+TXN_130148,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:38:34,100,MasterCard,Tuesday,0,0,89900,Success
+TXN_130149,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:00:36,300,MasterCard,Tuesday,0,0,89600,Success
+TXN_130150,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:19:25,100,RuPay,Tuesday,0,0,89500,Success
+TXN_130151,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:44:03,40,RuPay,Tuesday,0,0,89460,Success
+TXN_130152,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:21:15,20,RuPay,Tuesday,0,0,89440,Success
+TXN_130153,ATM_002,Grand City Mall,Shopping Center,2026-08-11 05:04:44,20,MasterCard,Tuesday,0,0,89420,Success
+TXN_130154,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:20:05,200,MasterCard,Tuesday,0,0,89220,Success
+TXN_130155,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:15:03,40,RuPay,Tuesday,0,0,89180,Success
+TXN_130156,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:19:40,500,MasterCard,Tuesday,0,0,88680,Success
+TXN_130157,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:29:09,500,American Express,Tuesday,0,0,88180,Success
+TXN_130158,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:36:19,500,Visa,Tuesday,0,0,87680,Success
+TXN_130159,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:57:14,20,Visa,Tuesday,0,0,87660,Success
+TXN_130160,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:47:33,20,MasterCard,Tuesday,0,0,87640,Success
+TXN_130161,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:43:06,500,RuPay,Tuesday,0,0,87140,Success
+TXN_130162,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:14:55,500,Visa,Tuesday,0,0,86640,Success
+TXN_130163,ATM_002,Grand City Mall,Shopping Center,2026-08-11 07:58:36,40,MasterCard,Tuesday,0,0,86600,Success
+TXN_130164,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:09:40,400,RuPay,Tuesday,0,0,86200,Success
+TXN_130165,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:15:27,500,Visa,Tuesday,0,0,85700,Success
+TXN_130166,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:54:00,20,American Express,Tuesday,0,0,85680,Success
+TXN_130167,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:09:34,100,RuPay,Tuesday,0,0,85580,Success
+TXN_130168,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:52:12,20,RuPay,Tuesday,0,0,85560,Success
+TXN_130169,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:34:38,100,RuPay,Tuesday,0,0,85460,Success
+TXN_130170,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:00:06,20,Visa,Tuesday,0,0,85440,Success
+TXN_130171,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:25:32,100,RuPay,Tuesday,0,0,85340,Success
+TXN_130172,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:12:49,200,Visa,Tuesday,0,0,85140,Success
+TXN_130173,ATM_002,Grand City Mall,Shopping Center,2026-08-11 22:48:37,400,RuPay,Tuesday,0,0,84740,Success
+TXN_130174,ATM_002,Grand City Mall,Shopping Center,2026-08-11 09:38:03,200,MasterCard,Tuesday,0,0,84540,Success
+TXN_130175,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:47:57,50,Visa,Tuesday,0,0,84490,Success
+TXN_130176,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:21:52,100,American Express,Tuesday,0,0,84390,Success
+TXN_130177,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:03:31,400,Visa,Tuesday,0,0,83990,Success
+TXN_130178,ATM_002,Grand City Mall,Shopping Center,2026-08-11 07:26:48,50,American Express,Tuesday,0,0,83940,Success
+TXN_130179,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:47:48,50,MasterCard,Tuesday,0,0,83890,Success
+TXN_130180,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:33:50,50,RuPay,Tuesday,0,0,83840,Success
+TXN_130181,ATM_002,Grand City Mall,Shopping Center,2026-08-11 00:09:43,300,MasterCard,Tuesday,0,0,83540,Success
+TXN_130182,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:20:37,300,RuPay,Tuesday,0,0,83240,Success
+TXN_130183,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:35:47,100,RuPay,Tuesday,0,0,83140,Success
+TXN_130184,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:18:12,400,MasterCard,Tuesday,0,0,82740,Success
+TXN_130185,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:03:37,200,MasterCard,Tuesday,0,0,82540,Success
+TXN_130186,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:21:34,40,Visa,Tuesday,0,0,82500,Success
+TXN_130187,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:14:13,400,MasterCard,Tuesday,0,0,82100,Success
+TXN_130188,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:09:37,400,MasterCard,Tuesday,0,0,81700,Success
+TXN_130189,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:29:11,400,Visa,Tuesday,0,0,81300,Success
+TXN_130190,ATM_002,Grand City Mall,Shopping Center,2026-08-11 07:13:04,200,American Express,Tuesday,0,0,81100,Success
+TXN_130191,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:46:39,300,RuPay,Tuesday,0,0,80800,Success
+TXN_130192,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:20:31,20,Visa,Tuesday,0,0,80780,Success
+TXN_130193,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:18:20,40,MasterCard,Tuesday,0,0,80740,Success
+TXN_130194,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:35:55,300,MasterCard,Tuesday,0,0,80440,Success
+TXN_130195,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:01:27,20,Visa,Tuesday,0,0,80420,Success
+TXN_130196,ATM_002,Grand City Mall,Shopping Center,2026-08-11 09:22:45,500,MasterCard,Tuesday,0,0,79920,Success
+TXN_130197,ATM_002,Grand City Mall,Shopping Center,2026-08-11 00:07:14,200,RuPay,Tuesday,0,0,79720,Success
+TXN_130198,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:39:09,100,RuPay,Tuesday,0,0,79620,Success
+TXN_130199,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:15:19,100,MasterCard,Tuesday,0,0,79520,Success
+TXN_130200,ATM_002,Grand City Mall,Shopping Center,2026-08-11 08:28:50,50,RuPay,Tuesday,0,0,79470,Success
+TXN_130201,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:31:21,50,Visa,Tuesday,0,0,79420,Success
+TXN_130202,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:41:36,40,MasterCard,Tuesday,0,0,79380,Success
+TXN_130203,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:50:47,300,RuPay,Tuesday,0,0,79080,Success
+TXN_130204,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:50:08,200,RuPay,Tuesday,0,0,78880,Success
+TXN_130205,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:33:38,20,American Express,Tuesday,0,0,78860,Success
+TXN_130206,ATM_002,Grand City Mall,Shopping Center,2026-08-11 05:33:12,200,American Express,Tuesday,0,0,78660,Success
+TXN_130207,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:23:40,200,American Express,Tuesday,0,0,78460,Success
+TXN_130208,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:48:49,40,American Express,Tuesday,0,0,78420,Success
+TXN_130209,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:24:52,40,RuPay,Tuesday,0,0,78380,Success
+TXN_130210,ATM_002,Grand City Mall,Shopping Center,2026-08-11 03:46:54,40,Visa,Tuesday,0,0,78340,Success
+TXN_130211,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:47:06,300,MasterCard,Tuesday,0,0,78040,Success
+TXN_130212,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:11:28,200,RuPay,Tuesday,0,0,77840,Success
+TXN_130213,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:55:42,100,RuPay,Tuesday,0,0,77740,Success
+TXN_130214,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:01:45,50,MasterCard,Tuesday,0,0,77690,Success
+TXN_130215,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:44:20,500,Visa,Tuesday,0,0,77190,Success
+TXN_130216,ATM_002,Grand City Mall,Shopping Center,2026-08-11 01:28:24,40,MasterCard,Tuesday,0,0,77150,Success
+TXN_130217,ATM_002,Grand City Mall,Shopping Center,2026-08-11 08:27:37,50,American Express,Tuesday,0,0,77100,Success
+TXN_130218,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:35:40,40,American Express,Tuesday,0,0,77060,Success
+TXN_130219,ATM_002,Grand City Mall,Shopping Center,2026-08-11 03:35:01,20,American Express,Tuesday,0,0,77040,Success
+TXN_130220,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:47:15,400,American Express,Tuesday,0,0,76640,Success
+TXN_130221,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:16:01,200,Visa,Tuesday,0,0,76440,Success
+TXN_130222,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:18:32,50,Visa,Tuesday,0,0,76390,Success
+TXN_130223,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:11:50,400,RuPay,Tuesday,0,0,75990,Success
+TXN_130224,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:59:29,200,Visa,Tuesday,0,0,75790,Success
+TXN_130225,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:49:10,50,RuPay,Tuesday,0,0,75740,Success
+TXN_130226,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:45:48,400,MasterCard,Tuesday,0,0,75340,Success
+TXN_130227,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:54:20,500,American Express,Tuesday,0,0,74840,Success
+TXN_130228,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:02:24,20,Visa,Tuesday,0,0,74820,Success
+TXN_130229,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:36:41,50,RuPay,Tuesday,0,0,74770,Success
+TXN_130230,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:10:22,20,Visa,Tuesday,0,0,74750,Success
+TXN_130231,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:05:37,100,MasterCard,Tuesday,0,0,74650,Success
+TXN_130232,ATM_002,Grand City Mall,Shopping Center,2026-08-11 05:42:51,200,American Express,Tuesday,0,0,74450,Success
+TXN_130233,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:34:52,300,RuPay,Tuesday,0,0,74150,Success
+TXN_130234,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:55:59,20,American Express,Tuesday,0,0,74130,Success
+TXN_130235,ATM_002,Grand City Mall,Shopping Center,2026-08-11 00:35:28,20,American Express,Tuesday,0,0,74110,Success
+TXN_130236,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:44:24,100,MasterCard,Tuesday,0,0,74010,Success
+TXN_130237,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:22:20,500,RuPay,Tuesday,0,0,73510,Success
+TXN_130238,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:51:51,200,RuPay,Tuesday,0,0,73310,Success
+TXN_130239,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:52:03,20,RuPay,Tuesday,0,0,73290,Success
+TXN_130240,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:57:05,40,American Express,Tuesday,0,0,73250,Success
+TXN_130241,ATM_002,Grand City Mall,Shopping Center,2026-08-11 00:38:37,200,MasterCard,Tuesday,0,0,73050,Success
+TXN_130242,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:08:53,500,American Express,Tuesday,0,0,72550,Success
+TXN_130243,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:30:23,100,MasterCard,Tuesday,0,0,72450,Success
+TXN_130244,ATM_002,Grand City Mall,Shopping Center,2026-08-11 05:29:14,300,RuPay,Tuesday,0,0,72150,Success
+TXN_130245,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:32:01,200,RuPay,Tuesday,0,0,71950,Success
+TXN_130246,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:02:42,50,MasterCard,Tuesday,0,0,71900,Success
+TXN_130247,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:59:58,40,MasterCard,Tuesday,0,0,71860,Success
+TXN_130248,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:21:02,50,American Express,Tuesday,0,0,71810,Success
+TXN_130249,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:12:23,300,RuPay,Tuesday,0,0,71510,Success
+TXN_130250,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:58:52,40,Visa,Tuesday,0,0,71470,Success
+TXN_130251,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:06:11,50,Visa,Tuesday,0,0,71420,Success
+TXN_130252,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:31:31,500,Visa,Tuesday,0,0,70920,Success
+TXN_130253,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:11:06,300,American Express,Tuesday,0,0,70620,Success
+TXN_130254,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:00:21,500,Visa,Tuesday,0,0,70120,Success
+TXN_130255,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:28:33,500,American Express,Tuesday,0,0,69620,Success
+TXN_130256,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:59:43,50,American Express,Tuesday,0,0,69570,Success
+TXN_130257,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:26:40,200,American Express,Tuesday,0,0,69370,Success
+TXN_130258,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:02:07,500,RuPay,Tuesday,0,0,68870,Success
+TXN_130259,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:42:27,20,American Express,Tuesday,0,0,68850,Success
+TXN_130260,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:44:20,500,Visa,Tuesday,0,0,68350,Success
+TXN_130261,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:02:41,40,RuPay,Tuesday,0,0,68310,Success
+TXN_130262,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:10:26,40,American Express,Tuesday,0,0,68270,Success
+TXN_130263,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:41:58,40,RuPay,Tuesday,0,0,68230,Success
+TXN_130264,ATM_002,Grand City Mall,Shopping Center,2026-08-11 06:36:59,300,RuPay,Tuesday,0,0,67930,Success
+TXN_130265,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:08:10,20,American Express,Tuesday,0,0,67910,Success
+TXN_130266,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:25:40,400,Visa,Tuesday,0,0,67510,Success
+TXN_130267,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:48:04,400,RuPay,Tuesday,0,0,67110,Success
+TXN_130268,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:46:57,400,MasterCard,Tuesday,0,0,66710,Success
+TXN_130269,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:57:45,200,RuPay,Tuesday,0,0,66510,Success
+TXN_130270,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:37:39,300,Visa,Tuesday,0,0,66210,Success
+TXN_130271,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:25:25,40,RuPay,Tuesday,0,0,66170,Success
+TXN_130272,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:52:13,500,American Express,Tuesday,0,0,65670,Success
+TXN_130273,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:03:20,40,Visa,Tuesday,0,0,65630,Success
+TXN_130274,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:53:17,40,RuPay,Tuesday,0,0,65590,Success
+TXN_130275,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:33:05,40,RuPay,Tuesday,0,0,65550,Success
+TXN_130276,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:13:18,400,Visa,Tuesday,0,0,65150,Success
+TXN_130277,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:13:19,300,MasterCard,Tuesday,0,0,64850,Success
+TXN_130278,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:48:59,40,American Express,Tuesday,0,0,64810,Success
+TXN_130279,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:17:23,200,MasterCard,Tuesday,0,0,64610,Success
+TXN_130280,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:00:34,500,RuPay,Tuesday,0,0,64110,Success
+TXN_130281,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:49:21,40,Visa,Tuesday,0,0,64070,Success
+TXN_130282,ATM_002,Grand City Mall,Shopping Center,2026-08-11 22:04:28,50,RuPay,Tuesday,0,0,64020,Success
+TXN_130283,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:09:58,300,MasterCard,Tuesday,0,0,63720,Success
+TXN_130284,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:26:50,40,Visa,Tuesday,0,0,63680,Success
+TXN_130285,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:03:37,100,American Express,Tuesday,0,0,63580,Success
+TXN_130286,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:46:48,200,MasterCard,Tuesday,0,0,63380,Success
+TXN_130287,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:11:25,400,Visa,Tuesday,0,0,62980,Success
+TXN_130288,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:39:57,50,Visa,Tuesday,0,0,62930,Success
+TXN_130289,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:19:53,300,American Express,Tuesday,0,0,62630,Success
+TXN_130290,ATM_002,Grand City Mall,Shopping Center,2026-08-11 04:53:35,20,RuPay,Tuesday,0,0,62610,Success
+TXN_130291,ATM_002,Grand City Mall,Shopping Center,2026-08-11 22:23:29,300,RuPay,Tuesday,0,0,62310,Success
+TXN_130292,ATM_002,Grand City Mall,Shopping Center,2026-08-11 07:07:11,100,MasterCard,Tuesday,0,0,62210,Success
+TXN_130293,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:51:27,100,American Express,Tuesday,0,0,62110,Success
+TXN_130294,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:48:41,20,RuPay,Tuesday,0,0,62090,Success
+TXN_130295,ATM_002,Grand City Mall,Shopping Center,2026-08-11 09:55:43,20,American Express,Tuesday,0,0,62070,Success
+TXN_130296,ATM_002,Grand City Mall,Shopping Center,2026-08-11 00:09:10,300,RuPay,Tuesday,0,0,61770,Success
+TXN_130297,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:06:39,40,American Express,Tuesday,0,0,61730,Success
+TXN_130298,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:53:31,100,Visa,Tuesday,0,0,61630,Success
+TXN_130299,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:54:07,400,RuPay,Tuesday,0,0,61230,Success
+TXN_130300,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:31:05,50,American Express,Tuesday,0,0,61180,Success
+TXN_130301,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:32:36,500,RuPay,Tuesday,0,0,60680,Success
+TXN_130302,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:11:48,300,American Express,Tuesday,0,0,60380,Success
+TXN_130303,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:44:17,50,MasterCard,Tuesday,0,0,60330,Success
+TXN_130304,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:22:33,500,Visa,Tuesday,0,0,59830,Success
+TXN_130305,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:59:31,300,RuPay,Tuesday,0,0,59530,Success
+TXN_130306,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:39:05,20,American Express,Tuesday,0,0,59510,Success
+TXN_130307,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:40:48,200,Visa,Tuesday,0,0,59310,Success
+TXN_130308,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:13:32,40,RuPay,Tuesday,0,0,59270,Success
+TXN_130309,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:14:14,50,RuPay,Tuesday,0,0,59220,Success
+TXN_130310,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:15:20,200,RuPay,Tuesday,0,0,59020,Success
+TXN_130311,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:41:08,20,American Express,Tuesday,0,0,59000,Success
+TXN_130312,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:45:34,50,MasterCard,Tuesday,0,0,58950,Success
+TXN_130313,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:33:11,50,Visa,Tuesday,0,0,58900,Success
+TXN_130314,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:25:54,300,MasterCard,Tuesday,0,0,58600,Success
+TXN_130315,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:35:30,300,Visa,Tuesday,0,0,58300,Success
+TXN_130316,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:51:50,500,RuPay,Tuesday,0,0,57800,Success
+TXN_130317,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:30:40,400,MasterCard,Tuesday,0,0,57400,Success
+TXN_130318,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:49:57,100,American Express,Tuesday,0,0,57300,Success
+TXN_130319,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:15:57,500,American Express,Tuesday,0,0,56800,Success
+TXN_130320,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:20:08,300,MasterCard,Tuesday,0,0,56500,Success
+TXN_130321,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:42:23,200,Visa,Tuesday,0,0,56300,Success
+TXN_130322,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:11:19,20,RuPay,Tuesday,0,0,56280,Success
+TXN_130323,ATM_002,Grand City Mall,Shopping Center,2026-08-11 01:53:28,200,MasterCard,Tuesday,0,0,56080,Success
+TXN_130324,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:38:54,400,MasterCard,Tuesday,0,0,55680,Success
+TXN_130325,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:19:27,400,MasterCard,Tuesday,0,0,55280,Success
+TXN_130326,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:50:56,100,American Express,Tuesday,0,0,55180,Success
+TXN_130327,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:58:05,200,RuPay,Tuesday,0,0,54980,Success
+TXN_130328,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:12:17,40,RuPay,Tuesday,0,0,54940,Success
+TXN_130329,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:53:07,200,RuPay,Tuesday,0,0,54740,Success
+TXN_130330,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:11:57,200,MasterCard,Tuesday,0,0,54540,Success
+TXN_130331,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:02:17,200,RuPay,Tuesday,0,0,54340,Success
+TXN_130332,ATM_002,Grand City Mall,Shopping Center,2026-08-11 23:48:04,300,RuPay,Tuesday,0,0,54040,Success
+TXN_130333,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:15:11,300,RuPay,Tuesday,0,0,53740,Success
+TXN_130334,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:21:22,300,RuPay,Tuesday,0,0,53440,Success
+TXN_130335,ATM_002,Grand City Mall,Shopping Center,2026-08-11 07:47:26,500,RuPay,Tuesday,0,0,52940,Success
+TXN_130336,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:48:20,400,Visa,Tuesday,0,0,52540,Success
+TXN_130337,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:48:30,40,Visa,Tuesday,0,0,52500,Success
+TXN_130338,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:49:11,50,American Express,Tuesday,0,0,52450,Success
+TXN_130339,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:53:52,200,American Express,Tuesday,0,0,52250,Success
+TXN_130340,ATM_002,Grand City Mall,Shopping Center,2026-08-11 04:47:56,100,RuPay,Tuesday,0,0,52150,Success
+TXN_130341,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:21:48,300,Visa,Tuesday,0,0,51850,Success
+TXN_130342,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:25:46,40,MasterCard,Tuesday,0,0,51810,Success
+TXN_130343,ATM_002,Grand City Mall,Shopping Center,2026-08-11 04:27:33,300,RuPay,Tuesday,0,0,51510,Success
+TXN_130344,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:36:40,400,RuPay,Tuesday,0,0,51110,Success
+TXN_130345,ATM_002,Grand City Mall,Shopping Center,2026-08-11 05:04:00,50,RuPay,Tuesday,0,0,51060,Success
+TXN_130346,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:40:59,500,Visa,Tuesday,0,0,50560,Success
+TXN_130347,ATM_002,Grand City Mall,Shopping Center,2026-08-11 12:16:15,200,RuPay,Tuesday,0,0,50360,Success
+TXN_130348,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:38:52,40,MasterCard,Tuesday,0,0,50320,Success
+TXN_130349,ATM_002,Grand City Mall,Shopping Center,2026-08-11 09:32:45,500,RuPay,Tuesday,0,0,49820,Success
+TXN_130350,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:36:35,400,MasterCard,Tuesday,0,0,49420,Success
+TXN_130351,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:57:32,50,MasterCard,Tuesday,0,0,49370,Success
+TXN_130352,ATM_002,Grand City Mall,Shopping Center,2026-08-11 15:09:20,20,MasterCard,Tuesday,0,0,49350,Success
+TXN_130353,ATM_002,Grand City Mall,Shopping Center,2026-08-11 16:51:02,100,Visa,Tuesday,0,0,49250,Success
+TXN_130354,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:22:11,500,RuPay,Tuesday,0,0,48750,Success
+TXN_130355,ATM_002,Grand City Mall,Shopping Center,2026-08-11 18:05:08,50,Visa,Tuesday,0,0,48700,Success
+TXN_130356,ATM_002,Grand City Mall,Shopping Center,2026-08-11 14:05:18,500,MasterCard,Tuesday,0,0,48200,Success
+TXN_130357,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:51:28,100,MasterCard,Tuesday,0,0,48100,Success
+TXN_130358,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:15:25,200,MasterCard,Tuesday,0,0,47900,Success
+TXN_130359,ATM_002,Grand City Mall,Shopping Center,2026-08-11 11:56:24,500,American Express,Tuesday,0,0,47400,Success
+TXN_130360,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:30:39,300,MasterCard,Tuesday,0,0,47100,Success
+TXN_130361,ATM_002,Grand City Mall,Shopping Center,2026-08-11 17:16:09,40,RuPay,Tuesday,0,0,47060,Success
+TXN_130362,ATM_002,Grand City Mall,Shopping Center,2026-08-11 10:44:26,400,MasterCard,Tuesday,0,0,46660,Success
+TXN_130363,ATM_002,Grand City Mall,Shopping Center,2026-08-11 09:35:19,300,RuPay,Tuesday,0,0,46360,Success
+TXN_130364,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:39:05,300,MasterCard,Tuesday,0,0,46060,Success
+TXN_130365,ATM_002,Grand City Mall,Shopping Center,2026-08-11 13:10:39,20,Visa,Tuesday,0,0,46040,Success
+TXN_130366,ATM_002,Grand City Mall,Shopping Center,2026-08-11 19:48:36,50,RuPay,Tuesday,0,0,45990,Success
+TXN_130367,ATM_002,Grand City Mall,Shopping Center,2026-08-11 20:08:52,500,RuPay,Tuesday,0,0,45490,Success
+TXN_130368,ATM_002,Grand City Mall,Shopping Center,2026-08-11 23:00:05,20,RuPay,Tuesday,0,0,45470,Success
+TXN_130369,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:15:33,50,American Express,Tuesday,0,0,69950,Success
+TXN_130370,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:18:38,300,MasterCard,Tuesday,0,0,69650,Success
+TXN_130371,ATM_003,Financial Tower Plaza,Business District,2026-08-11 06:14:07,500,RuPay,Tuesday,0,0,69150,Success
+TXN_130372,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:51:30,300,Visa,Tuesday,0,0,68850,Success
+TXN_130373,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:48:34,300,RuPay,Tuesday,0,0,68550,Success
+TXN_130374,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:36:02,40,Visa,Tuesday,0,0,68510,Success
+TXN_130375,ATM_003,Financial Tower Plaza,Business District,2026-08-11 23:45:30,50,MasterCard,Tuesday,0,0,68460,Success
+TXN_130376,ATM_003,Financial Tower Plaza,Business District,2026-08-11 03:07:16,200,American Express,Tuesday,0,0,68260,Success
+TXN_130377,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:36:19,50,MasterCard,Tuesday,0,0,68210,Success
+TXN_130378,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:36:06,20,Visa,Tuesday,0,0,68190,Success
+TXN_130379,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:35:49,100,American Express,Tuesday,0,0,68090,Success
+TXN_130380,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:26:48,50,American Express,Tuesday,0,0,68040,Success
+TXN_130381,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:24:49,500,Visa,Tuesday,0,0,67540,Success
+TXN_130382,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:29:46,200,Visa,Tuesday,0,0,67340,Success
+TXN_130383,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:27:20,50,RuPay,Tuesday,0,0,67290,Success
+TXN_130384,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:19:18,40,American Express,Tuesday,0,0,67250,Success
+TXN_130385,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:28:19,500,MasterCard,Tuesday,0,0,66750,Success
+TXN_130386,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:07:11,20,MasterCard,Tuesday,0,0,66730,Success
+TXN_130387,ATM_003,Financial Tower Plaza,Business District,2026-08-11 06:42:28,40,Visa,Tuesday,0,0,66690,Success
+TXN_130388,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:46:49,300,American Express,Tuesday,0,0,66390,Success
+TXN_130389,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:18:46,200,Visa,Tuesday,0,0,66190,Success
+TXN_130390,ATM_003,Financial Tower Plaza,Business District,2026-08-11 03:40:25,200,RuPay,Tuesday,0,0,65990,Success
+TXN_130391,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:41:08,20,RuPay,Tuesday,0,0,65970,Success
+TXN_130392,ATM_003,Financial Tower Plaza,Business District,2026-08-11 23:31:20,500,Visa,Tuesday,0,0,65470,Success
+TXN_130393,ATM_003,Financial Tower Plaza,Business District,2026-08-11 00:55:57,100,MasterCard,Tuesday,0,0,65370,Success
+TXN_130394,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:07:06,200,American Express,Tuesday,0,0,65170,Success
+TXN_130395,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:57:42,300,Visa,Tuesday,0,0,64870,Success
+TXN_130396,ATM_003,Financial Tower Plaza,Business District,2026-08-11 02:33:10,100,American Express,Tuesday,0,0,64770,Success
+TXN_130397,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:41:20,50,American Express,Tuesday,0,0,64720,Success
+TXN_130398,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:10:33,20,American Express,Tuesday,0,0,64700,Success
+TXN_130399,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:58:15,500,Visa,Tuesday,0,0,64200,Success
+TXN_130400,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:30:09,400,Visa,Tuesday,0,0,63800,Success
+TXN_130401,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:13:51,300,RuPay,Tuesday,0,0,63500,Success
+TXN_130402,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:25:00,20,Visa,Tuesday,0,0,63480,Success
+TXN_130403,ATM_003,Financial Tower Plaza,Business District,2026-08-11 22:10:47,200,American Express,Tuesday,0,0,63280,Success
+TXN_130404,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:39:00,400,Visa,Tuesday,0,0,62880,Success
+TXN_130405,ATM_003,Financial Tower Plaza,Business District,2026-08-11 09:53:44,200,MasterCard,Tuesday,0,0,62680,Success
+TXN_130406,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:30:50,20,Visa,Tuesday,0,0,62660,Success
+TXN_130407,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:56:56,20,RuPay,Tuesday,0,0,62640,Success
+TXN_130408,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:48:21,100,Visa,Tuesday,0,0,62540,Success
+TXN_130409,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:23:00,50,MasterCard,Tuesday,0,0,62490,Success
+TXN_130410,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:38:46,50,American Express,Tuesday,0,0,62440,Success
+TXN_130411,ATM_003,Financial Tower Plaza,Business District,2026-08-11 21:51:54,20,American Express,Tuesday,0,0,62420,Success
+TXN_130412,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:26:16,40,American Express,Tuesday,0,0,62380,Success
+TXN_130413,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:52:21,500,RuPay,Tuesday,0,0,61880,Success
+TXN_130414,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:15:38,20,Visa,Tuesday,0,0,61860,Success
+TXN_130415,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:48:25,300,RuPay,Tuesday,0,0,61560,Success
+TXN_130416,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:18:13,500,American Express,Tuesday,0,0,61060,Success
+TXN_130417,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:51:36,40,Visa,Tuesday,0,0,61020,Success
+TXN_130418,ATM_003,Financial Tower Plaza,Business District,2026-08-11 02:54:47,300,Visa,Tuesday,0,0,60720,Success
+TXN_130419,ATM_003,Financial Tower Plaza,Business District,2026-08-11 07:04:03,100,RuPay,Tuesday,0,0,60620,Success
+TXN_130420,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:22:00,50,MasterCard,Tuesday,0,0,60570,Success
+TXN_130421,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:27:18,20,Visa,Tuesday,0,0,60550,Success
+TXN_130422,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:16:09,20,American Express,Tuesday,0,0,60530,Success
+TXN_130423,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:13:55,200,Visa,Tuesday,0,0,60330,Success
+TXN_130424,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:17:36,40,American Express,Tuesday,0,0,60290,Success
+TXN_130425,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:13:45,100,MasterCard,Tuesday,0,0,60190,Success
+TXN_130426,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:15:50,20,RuPay,Tuesday,0,0,60170,Success
+TXN_130427,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:06:39,50,RuPay,Tuesday,0,0,60120,Success
+TXN_130428,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:28:35,200,American Express,Tuesday,0,0,59920,Success
+TXN_130429,ATM_003,Financial Tower Plaza,Business District,2026-08-11 23:51:20,500,RuPay,Tuesday,0,0,59420,Success
+TXN_130430,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:22:44,20,RuPay,Tuesday,0,0,59400,Success
+TXN_130431,ATM_003,Financial Tower Plaza,Business District,2026-08-11 21:28:24,100,MasterCard,Tuesday,0,0,59300,Success
+TXN_130432,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:22:31,100,Visa,Tuesday,0,0,59200,Success
+TXN_130433,ATM_003,Financial Tower Plaza,Business District,2026-08-11 22:16:31,300,Visa,Tuesday,0,0,58900,Success
+TXN_130434,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:31:02,100,Visa,Tuesday,0,0,58800,Success
+TXN_130435,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:03:41,400,American Express,Tuesday,0,0,58400,Success
+TXN_130436,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:08:22,100,RuPay,Tuesday,0,0,58300,Success
+TXN_130437,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:19:59,20,RuPay,Tuesday,0,0,58280,Success
+TXN_130438,ATM_003,Financial Tower Plaza,Business District,2026-08-11 09:58:14,20,American Express,Tuesday,0,0,58260,Success
+TXN_130439,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:46:25,500,Visa,Tuesday,0,0,57760,Success
+TXN_130440,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:13:03,200,RuPay,Tuesday,0,0,57560,Success
+TXN_130441,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:57:36,300,Visa,Tuesday,0,0,57260,Success
+TXN_130442,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:21:05,40,MasterCard,Tuesday,0,0,57220,Success
+TXN_130443,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:02:02,100,RuPay,Tuesday,0,0,57120,Success
+TXN_130444,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:09:17,20,American Express,Tuesday,0,0,57100,Success
+TXN_130445,ATM_003,Financial Tower Plaza,Business District,2026-08-11 04:35:25,40,RuPay,Tuesday,0,0,57060,Success
+TXN_130446,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:12:14,20,Visa,Tuesday,0,0,57040,Success
+TXN_130447,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:02:43,100,American Express,Tuesday,0,0,56940,Success
+TXN_130448,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:23:56,40,RuPay,Tuesday,0,0,56900,Success
+TXN_130449,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:08:23,40,Visa,Tuesday,0,0,56860,Success
+TXN_130450,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:24:59,200,Visa,Tuesday,0,0,56660,Success
+TXN_130451,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:17:23,20,MasterCard,Tuesday,0,0,56640,Success
+TXN_130452,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:08:18,50,RuPay,Tuesday,0,0,56590,Success
+TXN_130453,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:05:00,500,American Express,Tuesday,0,0,56090,Success
+TXN_130454,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:04:09,500,American Express,Tuesday,0,0,55590,Success
+TXN_130455,ATM_003,Financial Tower Plaza,Business District,2026-08-11 04:12:05,500,MasterCard,Tuesday,0,0,55090,Success
+TXN_130456,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:41:18,40,American Express,Tuesday,0,0,55050,Success
+TXN_130457,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:12:28,100,MasterCard,Tuesday,0,0,54950,Success
+TXN_130458,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:02:30,300,RuPay,Tuesday,0,0,54650,Success
+TXN_130459,ATM_003,Financial Tower Plaza,Business District,2026-08-11 01:00:31,100,MasterCard,Tuesday,0,0,54550,Success
+TXN_130460,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:09:38,300,MasterCard,Tuesday,0,0,54250,Success
+TXN_130461,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:13:42,300,RuPay,Tuesday,0,0,53950,Success
+TXN_130462,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:45:22,100,Visa,Tuesday,0,0,53850,Success
+TXN_130463,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:26:20,20,Visa,Tuesday,0,0,53830,Success
+TXN_130464,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:09:02,20,MasterCard,Tuesday,0,0,53810,Success
+TXN_130465,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:08:50,100,American Express,Tuesday,0,0,53710,Success
+TXN_130466,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:07:05,400,MasterCard,Tuesday,0,0,53310,Success
+TXN_130467,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:10:06,100,American Express,Tuesday,0,0,53210,Success
+TXN_130468,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:02:03,400,RuPay,Tuesday,0,0,52810,Success
+TXN_130469,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:36:16,200,RuPay,Tuesday,0,0,52610,Success
+TXN_130470,ATM_003,Financial Tower Plaza,Business District,2026-08-11 08:48:25,50,Visa,Tuesday,0,0,52560,Success
+TXN_130471,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:52:00,200,MasterCard,Tuesday,0,0,52360,Success
+TXN_130472,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:43:15,400,American Express,Tuesday,0,0,51960,Success
+TXN_130473,ATM_003,Financial Tower Plaza,Business District,2026-08-11 00:19:08,200,MasterCard,Tuesday,0,0,51760,Success
+TXN_130474,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:23:26,40,American Express,Tuesday,0,0,51720,Success
+TXN_130475,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:38:14,500,American Express,Tuesday,0,0,51220,Success
+TXN_130476,ATM_003,Financial Tower Plaza,Business District,2026-08-11 00:33:48,20,MasterCard,Tuesday,0,0,51200,Success
+TXN_130477,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:21:00,40,Visa,Tuesday,0,0,51160,Success
+TXN_130478,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:38:58,500,American Express,Tuesday,0,0,50660,Success
+TXN_130479,ATM_003,Financial Tower Plaza,Business District,2026-08-11 23:46:18,40,MasterCard,Tuesday,0,0,50620,Success
+TXN_130480,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:19:29,40,MasterCard,Tuesday,0,0,50580,Success
+TXN_130481,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:15:08,300,Visa,Tuesday,0,0,50280,Success
+TXN_130482,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:33:59,400,American Express,Tuesday,0,0,49880,Success
+TXN_130483,ATM_003,Financial Tower Plaza,Business District,2026-08-11 01:21:14,100,Visa,Tuesday,0,0,49780,Success
+TXN_130484,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:30:38,20,American Express,Tuesday,0,0,49760,Success
+TXN_130485,ATM_003,Financial Tower Plaza,Business District,2026-08-11 08:02:00,40,Visa,Tuesday,0,0,49720,Success
+TXN_130486,ATM_003,Financial Tower Plaza,Business District,2026-08-11 06:30:24,300,American Express,Tuesday,0,0,49420,Success
+TXN_130487,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:53:21,50,MasterCard,Tuesday,0,0,49370,Success
+TXN_130488,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:18:20,400,MasterCard,Tuesday,0,0,48970,Success
+TXN_130489,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:20:28,400,MasterCard,Tuesday,0,0,48570,Success
+TXN_130490,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:55:40,300,Visa,Tuesday,0,0,48270,Success
+TXN_130491,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:20:25,40,RuPay,Tuesday,0,0,48230,Success
+TXN_130492,ATM_003,Financial Tower Plaza,Business District,2026-08-11 08:54:39,50,MasterCard,Tuesday,0,0,48180,Success
+TXN_130493,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:32:06,200,MasterCard,Tuesday,0,0,47980,Success
+TXN_130494,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:59:48,50,MasterCard,Tuesday,0,0,47930,Success
+TXN_130495,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:42:40,400,American Express,Tuesday,0,0,47530,Success
+TXN_130496,ATM_003,Financial Tower Plaza,Business District,2026-08-11 00:21:33,500,American Express,Tuesday,0,0,47030,Success
+TXN_130497,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:26:21,40,Visa,Tuesday,0,0,46990,Success
+TXN_130498,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:41:50,200,MasterCard,Tuesday,0,0,46790,Success
+TXN_130499,ATM_003,Financial Tower Plaza,Business District,2026-08-11 07:02:24,20,Visa,Tuesday,0,0,46770,Success
+TXN_130500,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:58:34,20,MasterCard,Tuesday,0,0,46750,Success
+TXN_130501,ATM_003,Financial Tower Plaza,Business District,2026-08-11 23:00:53,40,Visa,Tuesday,0,0,46710,Success
+TXN_130502,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:28:40,400,American Express,Tuesday,0,0,46310,Success
+TXN_130503,ATM_003,Financial Tower Plaza,Business District,2026-08-11 18:24:54,200,Visa,Tuesday,0,0,46110,Success
+TXN_130504,ATM_003,Financial Tower Plaza,Business District,2026-08-11 21:30:15,100,RuPay,Tuesday,0,0,46010,Success
+TXN_130505,ATM_003,Financial Tower Plaza,Business District,2026-08-11 06:00:48,500,American Express,Tuesday,0,0,45510,Success
+TXN_130506,ATM_003,Financial Tower Plaza,Business District,2026-08-11 21:49:59,100,Visa,Tuesday,0,0,45410,Success
+TXN_130507,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:37:28,50,MasterCard,Tuesday,0,0,45360,Success
+TXN_130508,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:52:30,400,American Express,Tuesday,0,0,44960,Success
+TXN_130509,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:43:24,100,American Express,Tuesday,0,0,44860,Success
+TXN_130510,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:18:00,20,MasterCard,Tuesday,0,0,44840,Success
+TXN_130511,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:02:22,300,MasterCard,Tuesday,0,0,44540,Success
+TXN_130512,ATM_003,Financial Tower Plaza,Business District,2026-08-11 09:37:36,500,RuPay,Tuesday,0,0,44040,Success
+TXN_130513,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:00:01,100,MasterCard,Tuesday,0,0,43940,Success
+TXN_130514,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:18:40,200,RuPay,Tuesday,0,0,43740,Success
+TXN_130515,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:54:46,200,RuPay,Tuesday,0,0,43540,Success
+TXN_130516,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:47:57,50,RuPay,Tuesday,0,0,43490,Success
+TXN_130517,ATM_003,Financial Tower Plaza,Business District,2026-08-11 17:00:30,200,MasterCard,Tuesday,0,0,43290,Success
+TXN_130518,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:14:09,20,American Express,Tuesday,0,0,43270,Success
+TXN_130519,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:37:40,20,RuPay,Tuesday,0,0,43250,Success
+TXN_130520,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:18:53,200,American Express,Tuesday,0,0,43050,Success
+TXN_130521,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:37:04,200,MasterCard,Tuesday,0,0,42850,Success
+TXN_130522,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:58:55,400,RuPay,Tuesday,0,0,42450,Success
+TXN_130523,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:45:19,50,American Express,Tuesday,0,0,42400,Success
+TXN_130524,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:08:54,40,MasterCard,Tuesday,0,0,42360,Success
+TXN_130525,ATM_003,Financial Tower Plaza,Business District,2026-08-11 05:22:02,20,MasterCard,Tuesday,0,0,42340,Success
+TXN_130526,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:57:32,300,MasterCard,Tuesday,0,0,42040,Success
+TXN_130527,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:25:36,20,RuPay,Tuesday,0,0,42020,Success
+TXN_130528,ATM_003,Financial Tower Plaza,Business District,2026-08-11 20:53:23,20,American Express,Tuesday,0,0,42000,Success
+TXN_130529,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:43:17,400,MasterCard,Tuesday,0,0,41600,Success
+TXN_130530,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:46:48,40,Visa,Tuesday,0,0,41560,Success
+TXN_130531,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:08:17,200,RuPay,Tuesday,0,0,41360,Success
+TXN_130532,ATM_003,Financial Tower Plaza,Business District,2026-08-11 12:12:43,100,RuPay,Tuesday,0,0,41260,Success
+TXN_130533,ATM_003,Financial Tower Plaza,Business District,2026-08-11 05:39:43,40,MasterCard,Tuesday,0,0,41220,Success
+TXN_130534,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:15:41,40,Visa,Tuesday,0,0,41180,Success
+TXN_130535,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:34:59,200,MasterCard,Tuesday,0,0,40980,Success
+TXN_130536,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:30:13,40,American Express,Tuesday,0,0,40940,Success
+TXN_130537,ATM_003,Financial Tower Plaza,Business District,2026-08-11 05:11:21,100,MasterCard,Tuesday,0,0,40840,Success
+TXN_130538,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:59:51,40,RuPay,Tuesday,0,0,40800,Success
+TXN_130539,ATM_003,Financial Tower Plaza,Business District,2026-08-11 16:08:48,40,Visa,Tuesday,0,0,40760,Success
+TXN_130540,ATM_003,Financial Tower Plaza,Business District,2026-08-11 14:06:51,500,RuPay,Tuesday,0,0,40260,Success
+TXN_130541,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:10:43,400,American Express,Tuesday,0,0,39860,Success
+TXN_130542,ATM_003,Financial Tower Plaza,Business District,2026-08-11 19:09:36,300,American Express,Tuesday,0,0,39560,Success
+TXN_130543,ATM_003,Financial Tower Plaza,Business District,2026-08-11 05:57:34,500,American Express,Tuesday,0,0,39060,Success
+TXN_130544,ATM_003,Financial Tower Plaza,Business District,2026-08-11 21:05:28,20,Visa,Tuesday,0,0,39040,Success
+TXN_130545,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:52:31,300,MasterCard,Tuesday,0,0,38740,Success
+TXN_130546,ATM_003,Financial Tower Plaza,Business District,2026-08-11 15:10:00,20,RuPay,Tuesday,0,0,38720,Success
+TXN_130547,ATM_003,Financial Tower Plaza,Business District,2026-08-11 11:58:01,300,Visa,Tuesday,0,0,38420,Success
+TXN_130548,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:11:45,20,Visa,Tuesday,0,0,38400,Success
+TXN_130549,ATM_003,Financial Tower Plaza,Business District,2026-08-11 10:02:40,50,MasterCard,Tuesday,0,0,38350,Success
+TXN_130550,ATM_003,Financial Tower Plaza,Business District,2026-08-11 21:27:24,100,Visa,Tuesday,0,0,38250,Success
+TXN_130551,ATM_003,Financial Tower Plaza,Business District,2026-08-11 13:31:12,400,Visa,Tuesday,0,0,37850,Success
+TXN_130552,ATM_004,Suburban Green Park,Residential Community,2026-08-11 04:48:22,200,Visa,Tuesday,0,0,49800,Success
+TXN_130553,ATM_004,Suburban Green Park,Residential Community,2026-08-11 11:06:21,300,American Express,Tuesday,0,0,49500,Success
+TXN_130554,ATM_004,Suburban Green Park,Residential Community,2026-08-11 13:55:10,50,MasterCard,Tuesday,0,0,49450,Success
+TXN_130555,ATM_004,Suburban Green Park,Residential Community,2026-08-11 11:47:33,40,American Express,Tuesday,0,0,49410,Success
+TXN_130556,ATM_004,Suburban Green Park,Residential Community,2026-08-11 14:52:10,300,MasterCard,Tuesday,0,0,49110,Success
+TXN_130557,ATM_004,Suburban Green Park,Residential Community,2026-08-11 20:42:11,50,RuPay,Tuesday,0,0,49060,Success
+TXN_130558,ATM_004,Suburban Green Park,Residential Community,2026-08-11 16:17:50,40,RuPay,Tuesday,0,0,49020,Success
+TXN_130559,ATM_004,Suburban Green Park,Residential Community,2026-08-11 12:14:12,500,Visa,Tuesday,0,0,48520,Success
+TXN_130560,ATM_004,Suburban Green Park,Residential Community,2026-08-11 13:42:15,200,American Express,Tuesday,0,0,48320,Success
+TXN_130561,ATM_004,Suburban Green Park,Residential Community,2026-08-11 12:16:41,40,RuPay,Tuesday,0,0,48280,Success
+TXN_130562,ATM_004,Suburban Green Park,Residential Community,2026-08-11 10:29:07,100,RuPay,Tuesday,0,0,48180,Success
+TXN_130563,ATM_004,Suburban Green Park,Residential Community,2026-08-11 15:55:06,200,American Express,Tuesday,0,0,47980,Success
+TXN_130564,ATM_004,Suburban Green Park,Residential Community,2026-08-11 15:07:27,500,Visa,Tuesday,0,0,47480,Success
+TXN_130565,ATM_004,Suburban Green Park,Residential Community,2026-08-11 12:50:21,20,RuPay,Tuesday,0,0,47460,Success
+TXN_130566,ATM_004,Suburban Green Park,Residential Community,2026-08-11 20:01:14,500,American Express,Tuesday,0,0,46960,Success
+TXN_130567,ATM_004,Suburban Green Park,Residential Community,2026-08-11 14:06:08,20,American Express,Tuesday,0,0,46940,Success
+TXN_130568,ATM_004,Suburban Green Park,Residential Community,2026-08-11 11:25:45,40,American Express,Tuesday,0,0,46900,Success
+TXN_130569,ATM_004,Suburban Green Park,Residential Community,2026-08-11 13:38:17,100,RuPay,Tuesday,0,0,46800,Success
+TXN_130570,ATM_004,Suburban Green Park,Residential Community,2026-08-11 16:16:04,300,American Express,Tuesday,0,0,46500,Success
+TXN_130571,ATM_004,Suburban Green Park,Residential Community,2026-08-11 20:48:29,400,MasterCard,Tuesday,0,0,46100,Success
+TXN_130572,ATM_004,Suburban Green Park,Residential Community,2026-08-11 14:01:52,50,RuPay,Tuesday,0,0,46050,Success
+TXN_130573,ATM_004,Suburban Green Park,Residential Community,2026-08-11 17:49:18,50,American Express,Tuesday,0,0,46000,Success
+TXN_130574,ATM_004,Suburban Green Park,Residential Community,2026-08-11 18:53:04,40,Visa,Tuesday,0,0,45960,Success
+TXN_130575,ATM_004,Suburban Green Park,Residential Community,2026-08-11 17:50:35,400,American Express,Tuesday,0,0,45560,Success
+TXN_130576,ATM_004,Suburban Green Park,Residential Community,2026-08-11 14:40:16,20,American Express,Tuesday,0,0,45540,Success
+TXN_130577,ATM_004,Suburban Green Park,Residential Community,2026-08-11 15:06:58,300,RuPay,Tuesday,0,0,45240,Success
+TXN_130578,ATM_004,Suburban Green Park,Residential Community,2026-08-11 14:54:50,20,American Express,Tuesday,0,0,45220,Success
+TXN_130579,ATM_004,Suburban Green Park,Residential Community,2026-08-11 11:07:37,20,American Express,Tuesday,0,0,45200,Success
+TXN_130580,ATM_004,Suburban Green Park,Residential Community,2026-08-11 01:07:58,300,RuPay,Tuesday,0,0,44900,Success
+TXN_130581,ATM_004,Suburban Green Park,Residential Community,2026-08-11 18:17:16,50,American Express,Tuesday,0,0,44850,Success
+TXN_130582,ATM_004,Suburban Green Park,Residential Community,2026-08-11 15:03:40,50,MasterCard,Tuesday,0,0,44800,Success
+TXN_130583,ATM_004,Suburban Green Park,Residential Community,2026-08-11 12:11:01,100,MasterCard,Tuesday,0,0,44700,Success
+TXN_130584,ATM_004,Suburban Green Park,Residential Community,2026-08-11 07:39:15,40,RuPay,Tuesday,0,0,44660,Success
+TXN_130585,ATM_004,Suburban Green Park,Residential Community,2026-08-11 16:40:14,300,MasterCard,Tuesday,0,0,44360,Success
+TXN_130586,ATM_004,Suburban Green Park,Residential Community,2026-08-11 14:51:39,400,American Express,Tuesday,0,0,43960,Success
+TXN_130587,ATM_004,Suburban Green Park,Residential Community,2026-08-11 14:27:33,20,American Express,Tuesday,0,0,43940,Success
+TXN_130588,ATM_004,Suburban Green Park,Residential Community,2026-08-11 11:03:49,50,American Express,Tuesday,0,0,43890,Success
+TXN_130589,ATM_004,Suburban Green Park,Residential Community,2026-08-11 18:28:48,400,RuPay,Tuesday,0,0,43490,Success
+TXN_130590,ATM_004,Suburban Green Park,Residential Community,2026-08-11 17:25:51,500,RuPay,Tuesday,0,0,42990,Success
+TXN_130591,ATM_004,Suburban Green Park,Residential Community,2026-08-11 15:37:03,200,American Express,Tuesday,0,0,42790,Success
+TXN_130592,ATM_004,Suburban Green Park,Residential Community,2026-08-11 14:49:59,40,Visa,Tuesday,0,0,42750,Success
+TXN_130593,ATM_004,Suburban Green Park,Residential Community,2026-08-11 01:59:45,500,MasterCard,Tuesday,0,0,42250,Success
+TXN_130594,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:31:51,100,MasterCard,Tuesday,0,0,119900,Success
+TXN_130595,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:51:40,300,MasterCard,Tuesday,0,0,119600,Success
+TXN_130596,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:40:22,400,MasterCard,Tuesday,0,0,119200,Success
+TXN_130597,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:59:55,200,RuPay,Tuesday,0,0,119000,Success
+TXN_130598,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:18:05,50,MasterCard,Tuesday,0,0,118950,Success
+TXN_130599,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 03:43:57,50,MasterCard,Tuesday,0,0,118900,Success
+TXN_130600,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:57:39,40,MasterCard,Tuesday,0,0,118860,Success
+TXN_130601,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:50:17,100,MasterCard,Tuesday,0,0,118760,Success
+TXN_130602,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 05:51:11,40,American Express,Tuesday,0,0,118720,Success
+TXN_130603,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 02:18:18,100,Visa,Tuesday,0,0,118620,Success
+TXN_130604,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 01:41:08,300,RuPay,Tuesday,0,0,118320,Success
+TXN_130605,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:22:15,200,MasterCard,Tuesday,0,0,118120,Success
+TXN_130606,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:38:47,20,Visa,Tuesday,0,0,118100,Success
+TXN_130607,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 02:30:34,500,RuPay,Tuesday,0,0,117600,Success
+TXN_130608,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:05:43,50,American Express,Tuesday,0,0,117550,Success
+TXN_130609,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:07:16,500,MasterCard,Tuesday,0,0,117050,Success
+TXN_130610,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:02:44,40,MasterCard,Tuesday,0,0,117010,Success
+TXN_130611,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 09:17:03,40,MasterCard,Tuesday,0,0,116970,Success
+TXN_130612,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 05:17:21,500,RuPay,Tuesday,0,0,116470,Success
+TXN_130613,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:36:42,100,Visa,Tuesday,0,0,116370,Success
+TXN_130614,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:16:21,200,MasterCard,Tuesday,0,0,116170,Success
+TXN_130615,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:20:49,400,Visa,Tuesday,0,0,115770,Success
+TXN_130616,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:17:27,300,RuPay,Tuesday,0,0,115470,Success
+TXN_130617,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 02:20:19,50,RuPay,Tuesday,0,0,115420,Success
+TXN_130618,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:49:00,200,Visa,Tuesday,0,0,115220,Success
+TXN_130619,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 05:27:23,100,American Express,Tuesday,0,0,115120,Success
+TXN_130620,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:20:49,40,Visa,Tuesday,0,0,115080,Success
+TXN_130621,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:41:25,40,American Express,Tuesday,0,0,115040,Success
+TXN_130622,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:23:24,200,Visa,Tuesday,0,0,114840,Success
+TXN_130623,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:16:09,200,Visa,Tuesday,0,0,114640,Success
+TXN_130624,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 21:44:08,40,RuPay,Tuesday,0,0,114600,Success
+TXN_130625,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:27:05,300,American Express,Tuesday,0,0,114300,Success
+TXN_130626,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:36:10,50,American Express,Tuesday,0,0,114250,Success
+TXN_130627,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:25:30,500,RuPay,Tuesday,0,0,113750,Success
+TXN_130628,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 01:34:55,400,MasterCard,Tuesday,0,0,113350,Success
+TXN_130629,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:03:20,50,American Express,Tuesday,0,0,113300,Success
+TXN_130630,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 08:07:53,20,MasterCard,Tuesday,0,0,113280,Success
+TXN_130631,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:44:17,20,MasterCard,Tuesday,0,0,113260,Success
+TXN_130632,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 00:17:13,20,American Express,Tuesday,0,0,113240,Success
+TXN_130633,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:58:53,100,American Express,Tuesday,0,0,113140,Success
+TXN_130634,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:33:55,500,Visa,Tuesday,0,0,112640,Success
+TXN_130635,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:02:35,40,American Express,Tuesday,0,0,112600,Success
+TXN_130636,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:29:46,200,RuPay,Tuesday,0,0,112400,Success
+TXN_130637,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:41:25,20,MasterCard,Tuesday,0,0,112380,Success
+TXN_130638,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:17:07,400,MasterCard,Tuesday,0,0,111980,Success
+TXN_130639,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:53:18,300,RuPay,Tuesday,0,0,111680,Success
+TXN_130640,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 03:05:20,40,Visa,Tuesday,0,0,111640,Success
+TXN_130641,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:52:25,20,Visa,Tuesday,0,0,111620,Success
+TXN_130642,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:43:11,50,American Express,Tuesday,0,0,111570,Success
+TXN_130643,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:10:37,300,American Express,Tuesday,0,0,111270,Success
+TXN_130644,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:07:27,20,American Express,Tuesday,0,0,111250,Success
+TXN_130645,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:23:29,400,Visa,Tuesday,0,0,110850,Success
+TXN_130646,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:45:26,200,MasterCard,Tuesday,0,0,110650,Success
+TXN_130647,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:58:26,20,RuPay,Tuesday,0,0,110630,Success
+TXN_130648,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:28:02,400,American Express,Tuesday,0,0,110230,Success
+TXN_130649,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:48:31,100,MasterCard,Tuesday,0,0,110130,Success
+TXN_130650,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:25:48,200,Visa,Tuesday,0,0,109930,Success
+TXN_130651,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:11:53,100,RuPay,Tuesday,0,0,109830,Success
+TXN_130652,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:59:41,200,MasterCard,Tuesday,0,0,109630,Success
+TXN_130653,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:50:49,100,RuPay,Tuesday,0,0,109530,Success
+TXN_130654,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:20:56,40,American Express,Tuesday,0,0,109490,Success
+TXN_130655,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:19:43,500,American Express,Tuesday,0,0,108990,Success
+TXN_130656,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:53:00,50,MasterCard,Tuesday,0,0,108940,Success
+TXN_130657,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:16:24,20,MasterCard,Tuesday,0,0,108920,Success
+TXN_130658,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:14:26,50,Visa,Tuesday,0,0,108870,Success
+TXN_130659,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:50:18,100,RuPay,Tuesday,0,0,108770,Success
+TXN_130660,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 00:53:26,300,Visa,Tuesday,0,0,108470,Success
+TXN_130661,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:10:27,500,American Express,Tuesday,0,0,107970,Success
+TXN_130662,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:18:45,200,RuPay,Tuesday,0,0,107770,Success
+TXN_130663,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:17:37,400,Visa,Tuesday,0,0,107370,Success
+TXN_130664,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:17:35,500,Visa,Tuesday,0,0,106870,Success
+TXN_130665,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:29:46,500,RuPay,Tuesday,0,0,106370,Success
+TXN_130666,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:55:48,100,RuPay,Tuesday,0,0,106270,Success
+TXN_130667,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:02:47,500,American Express,Tuesday,0,0,105770,Success
+TXN_130668,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 03:24:54,40,RuPay,Tuesday,0,0,105730,Success
+TXN_130669,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:24:22,500,RuPay,Tuesday,0,0,105230,Success
+TXN_130670,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 04:11:47,100,MasterCard,Tuesday,0,0,105130,Success
+TXN_130671,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:33:24,200,American Express,Tuesday,0,0,104930,Success
+TXN_130672,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:34:32,100,Visa,Tuesday,0,0,104830,Success
+TXN_130673,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:15:25,100,American Express,Tuesday,0,0,104730,Success
+TXN_130674,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:00:15,400,Visa,Tuesday,0,0,104330,Success
+TXN_130675,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 06:30:03,500,RuPay,Tuesday,0,0,103830,Success
+TXN_130676,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:56:33,400,RuPay,Tuesday,0,0,103430,Success
+TXN_130677,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:18:01,300,RuPay,Tuesday,0,0,103130,Success
+TXN_130678,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:31:35,50,American Express,Tuesday,0,0,103080,Success
+TXN_130679,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:38:48,50,MasterCard,Tuesday,0,0,103030,Success
+TXN_130680,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:35:34,40,RuPay,Tuesday,0,0,102990,Success
+TXN_130681,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:15:40,100,RuPay,Tuesday,0,0,102890,Success
+TXN_130682,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 08:26:57,500,American Express,Tuesday,0,0,102390,Success
+TXN_130683,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:05:10,300,Visa,Tuesday,0,0,102090,Success
+TXN_130684,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:04:49,20,Visa,Tuesday,0,0,102070,Success
+TXN_130685,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:03:20,500,American Express,Tuesday,0,0,101570,Success
+TXN_130686,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:29:57,50,Visa,Tuesday,0,0,101520,Success
+TXN_130687,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:36:14,300,MasterCard,Tuesday,0,0,101220,Success
+TXN_130688,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:15:42,20,RuPay,Tuesday,0,0,101200,Success
+TXN_130689,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 00:19:58,300,RuPay,Tuesday,0,0,100900,Success
+TXN_130690,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:54:31,100,American Express,Tuesday,0,0,100800,Success
+TXN_130691,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:22:25,500,Visa,Tuesday,0,0,100300,Success
+TXN_130692,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:04:46,40,Visa,Tuesday,0,0,100260,Success
+TXN_130693,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:21:13,40,Visa,Tuesday,0,0,100220,Success
+TXN_130694,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:15:20,50,MasterCard,Tuesday,0,0,100170,Success
+TXN_130695,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:41:41,50,American Express,Tuesday,0,0,100120,Success
+TXN_130696,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 04:30:23,500,Visa,Tuesday,0,0,99620,Success
+TXN_130697,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:06:25,50,Visa,Tuesday,0,0,99570,Success
+TXN_130698,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:24:13,100,American Express,Tuesday,0,0,99470,Success
+TXN_130699,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:44:50,400,American Express,Tuesday,0,0,99070,Success
+TXN_130700,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:58:43,500,American Express,Tuesday,0,0,98570,Success
+TXN_130701,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 23:50:58,400,MasterCard,Tuesday,0,0,98170,Success
+TXN_130702,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:08:20,100,MasterCard,Tuesday,0,0,98070,Success
+TXN_130703,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:21:51,200,RuPay,Tuesday,0,0,97870,Success
+TXN_130704,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:27:52,100,MasterCard,Tuesday,0,0,97770,Success
+TXN_130705,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:20:25,100,American Express,Tuesday,0,0,97670,Success
+TXN_130706,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:42:07,200,American Express,Tuesday,0,0,97470,Success
+TXN_130707,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:26:28,50,MasterCard,Tuesday,0,0,97420,Success
+TXN_130708,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 01:25:25,40,Visa,Tuesday,0,0,97380,Success
+TXN_130709,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:36:56,20,Visa,Tuesday,0,0,97360,Success
+TXN_130710,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 07:56:40,200,MasterCard,Tuesday,0,0,97160,Success
+TXN_130711,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:53:27,300,RuPay,Tuesday,0,0,96860,Success
+TXN_130712,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:11:06,100,MasterCard,Tuesday,0,0,96760,Success
+TXN_130713,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:52:40,500,MasterCard,Tuesday,0,0,96260,Success
+TXN_130714,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 22:22:00,400,MasterCard,Tuesday,0,0,95860,Success
+TXN_130715,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:02:59,40,RuPay,Tuesday,0,0,95820,Success
+TXN_130716,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:49:13,500,MasterCard,Tuesday,0,0,95320,Success
+TXN_130717,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:36:02,200,Visa,Tuesday,0,0,95120,Success
+TXN_130718,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:59:03,500,RuPay,Tuesday,0,0,94620,Success
+TXN_130719,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 21:07:02,20,American Express,Tuesday,0,0,94600,Success
+TXN_130720,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:55:34,200,MasterCard,Tuesday,0,0,94400,Success
+TXN_130721,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:41:53,300,MasterCard,Tuesday,0,0,94100,Success
+TXN_130722,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:16:10,100,Visa,Tuesday,0,0,94000,Success
+TXN_130723,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:47:53,500,American Express,Tuesday,0,0,93500,Success
+TXN_130724,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:56:43,40,RuPay,Tuesday,0,0,93460,Success
+TXN_130725,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:21:22,20,RuPay,Tuesday,0,0,93440,Success
+TXN_130726,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:07:54,100,RuPay,Tuesday,0,0,93340,Success
+TXN_130727,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:00:40,50,RuPay,Tuesday,0,0,93290,Success
+TXN_130728,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:30:47,500,Visa,Tuesday,0,0,92790,Success
+TXN_130729,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:51:19,200,MasterCard,Tuesday,0,0,92590,Success
+TXN_130730,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:00:21,40,Visa,Tuesday,0,0,92550,Success
+TXN_130731,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:18:18,500,MasterCard,Tuesday,0,0,92050,Success
+TXN_130732,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:51:43,200,Visa,Tuesday,0,0,91850,Success
+TXN_130733,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:58:27,40,RuPay,Tuesday,0,0,91810,Success
+TXN_130734,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:33:04,40,MasterCard,Tuesday,0,0,91770,Success
+TXN_130735,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 02:58:49,20,RuPay,Tuesday,0,0,91750,Success
+TXN_130736,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:00:09,400,Visa,Tuesday,0,0,91350,Success
+TXN_130737,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 23:41:43,300,Visa,Tuesday,0,0,91050,Success
+TXN_130738,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 04:52:10,500,American Express,Tuesday,0,0,90550,Success
+TXN_130739,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 04:48:12,50,RuPay,Tuesday,0,0,90500,Success
+TXN_130740,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:40:05,40,RuPay,Tuesday,0,0,90460,Success
+TXN_130741,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 23:54:49,100,Visa,Tuesday,0,0,90360,Success
+TXN_130742,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:04:33,100,Visa,Tuesday,0,0,90260,Success
+TXN_130743,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:09:58,40,MasterCard,Tuesday,0,0,90220,Success
+TXN_130744,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 05:16:00,20,American Express,Tuesday,0,0,90200,Success
+TXN_130745,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:18:51,100,Visa,Tuesday,0,0,90100,Success
+TXN_130746,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:14:56,100,MasterCard,Tuesday,0,0,90000,Success
+TXN_130747,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:50:19,40,MasterCard,Tuesday,0,0,89960,Success
+TXN_130748,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:32:36,40,American Express,Tuesday,0,0,89920,Success
+TXN_130749,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:43:53,50,Visa,Tuesday,0,0,89870,Success
+TXN_130750,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:47:10,20,Visa,Tuesday,0,0,89850,Success
+TXN_130751,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:21:20,400,American Express,Tuesday,0,0,89450,Success
+TXN_130752,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 02:32:41,100,MasterCard,Tuesday,0,0,89350,Success
+TXN_130753,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 07:14:15,40,American Express,Tuesday,0,0,89310,Success
+TXN_130754,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:10:32,40,MasterCard,Tuesday,0,0,89270,Success
+TXN_130755,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 06:21:18,20,American Express,Tuesday,0,0,89250,Success
+TXN_130756,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 02:01:25,50,MasterCard,Tuesday,0,0,89200,Success
+TXN_130757,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 01:34:43,500,RuPay,Tuesday,0,0,88700,Success
+TXN_130758,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 08:51:21,500,American Express,Tuesday,0,0,88200,Success
+TXN_130759,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 09:19:19,20,RuPay,Tuesday,0,0,88180,Success
+TXN_130760,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:34:13,100,MasterCard,Tuesday,0,0,88080,Success
+TXN_130761,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:50:23,50,MasterCard,Tuesday,0,0,88030,Success
+TXN_130762,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:03:02,400,American Express,Tuesday,0,0,87630,Success
+TXN_130763,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:08:25,400,Visa,Tuesday,0,0,87230,Success
+TXN_130764,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:29:47,300,Visa,Tuesday,0,0,86930,Success
+TXN_130765,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 03:00:01,100,RuPay,Tuesday,0,0,86830,Success
+TXN_130766,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:50:36,200,RuPay,Tuesday,0,0,86630,Success
+TXN_130767,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:28:44,200,MasterCard,Tuesday,0,0,86430,Success
+TXN_130768,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:04:45,20,Visa,Tuesday,0,0,86410,Success
+TXN_130769,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:33:57,300,MasterCard,Tuesday,0,0,86110,Success
+TXN_130770,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 08:37:03,40,American Express,Tuesday,0,0,86070,Success
+TXN_130771,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:38:53,50,RuPay,Tuesday,0,0,86020,Success
+TXN_130772,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:19:07,100,RuPay,Tuesday,0,0,85920,Success
+TXN_130773,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:20:24,20,Visa,Tuesday,0,0,85900,Success
+TXN_130774,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:20:23,400,American Express,Tuesday,0,0,85500,Success
+TXN_130775,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:36:47,500,Visa,Tuesday,0,0,85000,Success
+TXN_130776,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:08:21,500,MasterCard,Tuesday,0,0,84500,Success
+TXN_130777,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:02:10,400,MasterCard,Tuesday,0,0,84100,Success
+TXN_130778,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:39:59,50,American Express,Tuesday,0,0,84050,Success
+TXN_130779,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:25:51,50,Visa,Tuesday,0,0,84000,Success
+TXN_130780,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 23:05:54,40,MasterCard,Tuesday,0,0,83960,Success
+TXN_130781,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:50:34,300,Visa,Tuesday,0,0,83660,Success
+TXN_130782,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:58:23,100,Visa,Tuesday,0,0,83560,Success
+TXN_130783,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:51:17,20,MasterCard,Tuesday,0,0,83540,Success
+TXN_130784,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:08:01,400,MasterCard,Tuesday,0,0,83140,Success
+TXN_130785,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 03:03:44,400,MasterCard,Tuesday,0,0,82740,Success
+TXN_130786,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:23:56,200,American Express,Tuesday,0,0,82540,Success
+TXN_130787,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:52:21,400,RuPay,Tuesday,0,0,82140,Success
+TXN_130788,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:46:53,50,Visa,Tuesday,0,0,82090,Success
+TXN_130789,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:20:19,100,MasterCard,Tuesday,0,0,81990,Success
+TXN_130790,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:22:55,200,RuPay,Tuesday,0,0,81790,Success
+TXN_130791,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:12:50,40,RuPay,Tuesday,0,0,81750,Success
+TXN_130792,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 01:18:26,300,MasterCard,Tuesday,0,0,81450,Success
+TXN_130793,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 05:11:55,200,MasterCard,Tuesday,0,0,81250,Success
+TXN_130794,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:28:15,200,Visa,Tuesday,0,0,81050,Success
+TXN_130795,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:42:40,50,American Express,Tuesday,0,0,81000,Success
+TXN_130796,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:19:14,200,Visa,Tuesday,0,0,80800,Success
+TXN_130797,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:27:39,50,MasterCard,Tuesday,0,0,80750,Success
+TXN_130798,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:23:06,20,RuPay,Tuesday,0,0,80730,Success
+TXN_130799,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:45:05,500,American Express,Tuesday,0,0,80230,Success
+TXN_130800,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 06:31:44,50,RuPay,Tuesday,0,0,80180,Success
+TXN_130801,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:02:03,40,MasterCard,Tuesday,0,0,80140,Success
+TXN_130802,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:42:34,50,MasterCard,Tuesday,0,0,80090,Success
+TXN_130803,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:58:29,50,Visa,Tuesday,0,0,80040,Success
+TXN_130804,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:45:44,300,RuPay,Tuesday,0,0,79740,Success
+TXN_130805,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:38:00,50,American Express,Tuesday,0,0,79690,Success
+TXN_130806,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:20:10,500,MasterCard,Tuesday,0,0,79190,Success
+TXN_130807,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:14:34,500,American Express,Tuesday,0,0,78690,Success
+TXN_130808,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:18:04,50,Visa,Tuesday,0,0,78640,Success
+TXN_130809,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 01:20:58,400,RuPay,Tuesday,0,0,78240,Success
+TXN_130810,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:41:06,20,Visa,Tuesday,0,0,78220,Success
+TXN_130811,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:11:57,40,American Express,Tuesday,0,0,78180,Success
+TXN_130812,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:49:43,400,MasterCard,Tuesday,0,0,77780,Success
+TXN_130813,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:06:43,200,American Express,Tuesday,0,0,77580,Success
+TXN_130814,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:29:08,100,American Express,Tuesday,0,0,77480,Success
+TXN_130815,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 18:05:54,50,American Express,Tuesday,0,0,77430,Success
+TXN_130816,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:59:18,500,American Express,Tuesday,0,0,76930,Success
+TXN_130817,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:06:44,40,American Express,Tuesday,0,0,76890,Success
+TXN_130818,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 12:11:17,500,American Express,Tuesday,0,0,76390,Success
+TXN_130819,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:16:08,300,RuPay,Tuesday,0,0,76090,Success
+TXN_130820,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 00:35:23,50,American Express,Tuesday,0,0,76040,Success
+TXN_130821,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:23:35,200,RuPay,Tuesday,0,0,75840,Success
+TXN_130822,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 13:46:23,200,RuPay,Tuesday,0,0,75640,Success
+TXN_130823,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 00:27:20,400,RuPay,Tuesday,0,0,75240,Success
+TXN_130824,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:29:50,200,American Express,Tuesday,0,0,75040,Success
+TXN_130825,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 07:38:09,300,Visa,Tuesday,0,0,74740,Success
+TXN_130826,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 01:31:59,400,RuPay,Tuesday,0,0,74340,Success
+TXN_130827,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 20:49:07,100,RuPay,Tuesday,0,0,74240,Success
+TXN_130828,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:08:20,100,MasterCard,Tuesday,0,0,74140,Success
+TXN_130829,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 03:02:09,400,MasterCard,Tuesday,0,0,73740,Success
+TXN_130830,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 14:00:05,20,Visa,Tuesday,0,0,73720,Success
+TXN_130831,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:54:31,200,RuPay,Tuesday,0,0,73520,Success
+TXN_130832,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 16:51:57,400,American Express,Tuesday,0,0,73120,Success
+TXN_130833,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 06:13:35,300,MasterCard,Tuesday,0,0,72820,Success
+TXN_130834,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:10:20,50,American Express,Tuesday,0,0,72770,Success
+TXN_130835,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 17:52:30,500,MasterCard,Tuesday,0,0,72270,Success
+TXN_130836,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 19:09:40,40,Visa,Tuesday,0,0,72230,Success
+TXN_130837,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 21:31:30,20,RuPay,Tuesday,0,0,72210,Success
+TXN_130838,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 10:16:15,40,Visa,Tuesday,0,0,72170,Success
+TXN_130839,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 15:35:38,50,American Express,Tuesday,0,0,72120,Success
+TXN_130840,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 06:03:39,100,American Express,Tuesday,0,0,72020,Success
+TXN_130841,ATM_005,International Airport T2,Airport Arrivals Gate,2026-08-11 11:32:28,300,RuPay,Tuesday,0,0,71720,Success

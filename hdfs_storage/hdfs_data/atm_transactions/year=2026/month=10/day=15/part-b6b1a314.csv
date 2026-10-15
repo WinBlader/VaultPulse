@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500103,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,20,20,MasterCard,2026-10-15 23:39:16,44340.0,SUCCESS,
+TXN_STREAM_500104,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,20,20,Visa,2026-10-15 23:39:18,44320.0,SUCCESS,
+TXN_STREAM_500105,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,40,40,RuPay,2026-10-15 23:39:19,59750.0,SUCCESS,

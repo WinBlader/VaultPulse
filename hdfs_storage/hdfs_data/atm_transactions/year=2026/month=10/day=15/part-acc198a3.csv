@@ -1,0 +1,11 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500001,ATM_002,Grand City Mall,Shopping Center,High-Traffic,300,300,American Express,2026-10-15 23:17:53,11700,SUCCESS,
+TXN_STREAM_500002,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,500,500,American Express,2026-10-15 23:17:53,34500,SUCCESS,
+TXN_STREAM_500003,ATM_002,Grand City Mall,Shopping Center,High-Traffic,300,300,American Express,2026-10-15 23:17:54,11400,SUCCESS,
+TXN_STREAM_500004,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,20,20,American Express,2026-10-15 23:17:54,69980,SUCCESS,
+TXN_STREAM_500005,ATM_002,Grand City Mall,Shopping Center,High-Traffic,500,500,Visa,2026-10-15 23:17:54,10900,SUCCESS,
+TXN_STREAM_500006,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,100,100,Visa,2026-10-15 23:17:54,34400,SUCCESS,
+TXN_STREAM_500007,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,40,40,MasterCard,2026-10-15 23:17:54,34360,SUCCESS,
+TXN_STREAM_500008,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,200,200,American Express,2026-10-15 23:17:54,69780,SUCCESS,
+TXN_STREAM_500009,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,100,100,MasterCard,2026-10-15 23:17:54,44900,SUCCESS,
+TXN_STREAM_500010,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,500,500,MasterCard,2026-10-15 23:17:54,33860,SUCCESS,
