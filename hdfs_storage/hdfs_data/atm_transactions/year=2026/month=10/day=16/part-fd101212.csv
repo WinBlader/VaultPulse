@@ -1,0 +1,5 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_502029,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,50,50,RuPay,2026-10-16 00:49:34,3540,SUCCESS,
+TXN_STREAM_502030,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,50,50,American Express,2026-10-16 00:49:35,29650,SUCCESS,
+TXN_STREAM_502031,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,200,MasterCard,2026-10-16 00:49:37,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
+TXN_STREAM_502032,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,0,400,MasterCard,2026-10-16 00:49:38,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!

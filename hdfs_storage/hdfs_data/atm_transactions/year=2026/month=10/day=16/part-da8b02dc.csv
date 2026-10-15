@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500983,ATM_002,Grand City Mall,Shopping Center,High-Traffic,200,200,RuPay,2026-10-16 00:23:24,2570,SUCCESS,
+TXN_STREAM_500984,ATM_002,Grand City Mall,Shopping Center,High-Traffic,40,40,American Express,2026-10-16 00:23:26,2530,SUCCESS,
+TXN_STREAM_500985,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,100,100,RuPay,2026-10-16 00:23:27,40990,SUCCESS,

@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_501174,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,50,50,Visa,2026-10-16 00:28:11,38590,SUCCESS,
+TXN_STREAM_501175,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,400,400,MasterCard,2026-10-16 00:28:12,47520,SUCCESS,
+TXN_STREAM_501176,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,0,400,RuPay,2026-10-16 00:28:14,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!

@@ -2,13 +2,13 @@
   "model_type": "Random Forest Time-Series Regressor",
   "training_samples": 335,
   "test_samples": 85,
-  "mae": 5610.49,
-  "rmse": 7550.15,
-  "r2_score": 0.9401,
-  "mape_percent": 16.3,
-  "accuracy_percent": 83.7,
-  "n_estimators": 97,
-  "max_depth": 12,
+  "mae": 5751.53,
+  "rmse": 7691.53,
+  "r2_score": 0.9378,
+  "mape_percent": 16.6,
+  "accuracy_percent": 83.4,
+  "n_estimators": 114,
+  "max_depth": 13,
   "feature_names": [
     "lag_1",
     "lag_2",
@@ -32,5 +32,5 @@
     "atm_ATM_004",
     "atm_ATM_005"
   ],
-  "last_trained_timestamp": "2026-10-16T00:02:10.268774"
+  "last_trained_timestamp": "2026-10-16T00:19:00.443179"
 }

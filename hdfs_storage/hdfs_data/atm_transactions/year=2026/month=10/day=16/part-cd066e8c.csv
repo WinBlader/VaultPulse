@@ -1,0 +1,5 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_501804,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,300,300,Visa,2026-10-16 00:43:56,1220,SUCCESS,
+TXN_STREAM_501805,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,50,50,MasterCard,2026-10-16 00:43:58,1170,SUCCESS,
+TXN_STREAM_501806,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,100,100,MasterCard,2026-10-16 00:43:59,1070,SUCCESS,
+TXN_STREAM_501807,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,50,50,RuPay,2026-10-16 00:44:01,1020,SUCCESS,

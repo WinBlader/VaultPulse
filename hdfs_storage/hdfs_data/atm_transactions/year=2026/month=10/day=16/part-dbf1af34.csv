@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_501697,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,0,40,Visa,2026-10-16 00:41:16,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
+TXN_STREAM_501698,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,0,100,MasterCard,2026-10-16 00:41:17,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
+TXN_STREAM_501699,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,0,50,Visa,2026-10-16 00:41:19,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!

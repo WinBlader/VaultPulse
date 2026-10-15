@@ -1,0 +1,5 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_501455,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,200,200,American Express,2026-10-16 00:35:12,14580,SUCCESS,
+TXN_STREAM_501456,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,200,200,Visa,2026-10-16 00:35:14,30080,SUCCESS,
+TXN_STREAM_501457,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,500,MasterCard,2026-10-16 00:35:15,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
+TXN_STREAM_501458,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,200,200,MasterCard,2026-10-16 00:35:17,29880,SUCCESS,

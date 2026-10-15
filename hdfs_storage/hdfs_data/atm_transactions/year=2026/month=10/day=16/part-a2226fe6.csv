@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_501892,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,20,American Express,2026-10-16 00:46:08,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
+TXN_STREAM_501893,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,0,200,MasterCard,2026-10-16 00:46:10,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
+TXN_STREAM_501894,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,40,RuPay,2026-10-16 00:46:11,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!

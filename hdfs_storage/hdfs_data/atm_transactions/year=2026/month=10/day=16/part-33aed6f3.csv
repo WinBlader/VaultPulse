@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500799,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,100,100,Visa,2026-10-16 00:18:48,17530,SUCCESS,
+TXN_STREAM_500800,ATM_002,Grand City Mall,Shopping Center,High-Traffic,40,40,Visa,2026-10-16 00:18:49,11940,SUCCESS,
+TXN_STREAM_500801,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,300,300,RuPay,2026-10-16 00:18:51,44700,SUCCESS,

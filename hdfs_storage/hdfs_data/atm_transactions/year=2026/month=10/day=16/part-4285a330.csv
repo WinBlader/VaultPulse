@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_501402,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,50,50,MasterCard,2026-10-16 00:33:53,17670,SUCCESS,
+TXN_STREAM_501403,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,0,50,Visa,2026-10-16 00:33:54,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
+TXN_STREAM_501404,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,0,50,American Express,2026-10-16 00:33:56,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!

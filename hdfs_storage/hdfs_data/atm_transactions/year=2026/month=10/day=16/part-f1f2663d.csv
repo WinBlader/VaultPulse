@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_502053,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,500,Visa,2026-10-16 00:50:10,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
+TXN_STREAM_502054,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,100,100,MasterCard,2026-10-16 00:50:11,29510,SUCCESS,
+TXN_STREAM_502055,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,500,American Express,2026-10-16 00:50:13,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!

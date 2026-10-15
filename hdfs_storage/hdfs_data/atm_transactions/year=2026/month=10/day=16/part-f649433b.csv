@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_501177,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,50,50,Visa,2026-10-16 00:28:15,47470,SUCCESS,
+TXN_STREAM_501178,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,20,20,MasterCard,2026-10-16 00:28:17,22100,SUCCESS,
+TXN_STREAM_501179,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,100,100,American Express,2026-10-16 00:28:18,38490,SUCCESS,

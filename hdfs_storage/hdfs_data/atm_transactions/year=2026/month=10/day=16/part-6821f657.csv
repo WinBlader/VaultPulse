@@ -1,0 +1,4 @@
+transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
+TXN_STREAM_500926,ATM_002,Grand City Mall,Shopping Center,High-Traffic,50,50,RuPay,2026-10-16 00:21:59,4570,SUCCESS,
+TXN_STREAM_500927,ATM_002,Grand City Mall,Shopping Center,High-Traffic,100,100,MasterCard,2026-10-16 00:22:00,4470,SUCCESS,
+TXN_STREAM_500928,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,100,100,MasterCard,2026-10-16 00:22:02,10330,SUCCESS,
