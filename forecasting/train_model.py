@@ -16,6 +16,8 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
 import random
+import threading
+from typing import Optional
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -29,38 +31,60 @@ MODEL_FILE = os.path.join(SAVED_MODELS_DIR, "atm_forecast_model.pkl")
 METRICS_FILE = os.path.join(SAVED_MODELS_DIR, "model_metrics.json")
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 
+_DAILY_DATASET_CACHE: Optional[pd.DataFrame] = None
+_DAILY_DATASET_LOCK = threading.Lock()
+
+
+def invalidate_dataset_cache():
+    """Invalidate dataset cache when new partitions are ingested or model retrained."""
+    global _DAILY_DATASET_CACHE
+    with _DAILY_DATASET_LOCK:
+        _DAILY_DATASET_CACHE = None
+    hdfs_client.invalidate_cache()
+
 
 def load_dataset() -> pd.DataFrame:
-    """Load daily summary dataset from HDFS or fallback data file."""
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    """Load daily summary dataset with zero-latency in-memory caching."""
+    global _DAILY_DATASET_CACHE
+    with _DAILY_DATASET_LOCK:
+        if _DAILY_DATASET_CACHE is not None:
+            return _DAILY_DATASET_CACHE.copy()
 
-    # Try reading from HDFS first
-    hdfs_df = hdfs_client.load_all_transactions()
-    if not hdfs_df.empty:
-        # Aggregate raw transactions into daily summaries
-        hdfs_df["date"] = pd.to_datetime(hdfs_df["timestamp"]).dt.strftime("%Y-%m-%d")
-        daily = hdfs_df.groupby(["date", "atm_id", "atm_name", "location"]).agg(
-            total_demand=("amount_withdrawn", "sum"),
-            transaction_count=("transaction_id", "count"),
-            day_of_week=("day_of_week", "first"),
-            is_weekend=("is_weekend", "first"),
-            is_holiday=("is_holiday", "first")
-        ).reset_index()
-        # Only use completed days
-        daily = daily[daily["date"] < today_str].copy()
-        if not daily.empty:
-            return daily
+        today_str = datetime.now().strftime("%Y-%m-%d")
+        csv_path = os.path.join(DATA_DIR, "daily_atm_summary.csv")
 
-    # Fallback to daily_atm_summary.csv
-    csv_path = os.path.join(DATA_DIR, "daily_atm_summary.csv")
-    if os.path.exists(csv_path):
-        df_csv = pd.read_csv(csv_path)
-        return df_csv[df_csv["date"] < today_str].copy()
+        # Primary fast source: pre-aggregated daily_atm_summary.csv
+        if os.path.exists(csv_path):
+            try:
+                df_csv = pd.read_csv(csv_path)
+                result = df_csv[df_csv["date"] < today_str].copy()
+                if not result.empty:
+                    _DAILY_DATASET_CACHE = result
+                    return result.copy()
+            except Exception:
+                pass
 
-    # Generate if not exists
-    from data.generate_dataset import generate_synthetic_data
-    _, df_daily = generate_synthetic_data(num_days=90)
-    return df_daily
+        # HDFS fallback
+        hdfs_df = hdfs_client.load_all_transactions()
+        if not hdfs_df.empty:
+            hdfs_df["date"] = pd.to_datetime(hdfs_df["timestamp"]).dt.strftime("%Y-%m-%d")
+            daily = hdfs_df.groupby(["date", "atm_id", "atm_name", "location"]).agg(
+                total_demand=("amount_withdrawn", "sum"),
+                transaction_count=("transaction_id", "count"),
+                day_of_week=("day_of_week", "first"),
+                is_weekend=("is_weekend", "first"),
+                is_holiday=("is_holiday", "first")
+            ).reset_index()
+            daily = daily[daily["date"] < today_str].copy()
+            if not daily.empty:
+                _DAILY_DATASET_CACHE = daily
+                return daily.copy()
+
+        from data.generate_dataset import generate_synthetic_data
+        _, df_daily = generate_synthetic_data(num_days=90)
+        _DAILY_DATASET_CACHE = df_daily
+        return df_daily.copy()
+
 
 
 def create_time_series_features(df: pd.DataFrame) -> pd.DataFrame:

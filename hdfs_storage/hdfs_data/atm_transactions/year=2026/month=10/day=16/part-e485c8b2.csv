@@ -1,4 +1,0 @@
-transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
-TXN_STREAM_502201,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,0,500,Visa,2026-10-16 00:53:52,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
-TXN_STREAM_502202,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,0,100,RuPay,2026-10-16 00:53:53,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
-TXN_STREAM_502203,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,500,500,MasterCard,2026-10-16 00:53:55,26990,SUCCESS,

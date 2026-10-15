@@ -8,9 +8,9 @@
     "datanode-2.bank.internal",
     "datanode-3.bank.internal"
   ],
-  "files_count": 1148,
-  "blocks_count": 1148,
-  "total_bytes_stored": 13933004,
+  "files_count": 1666,
+  "blocks_count": 1666,
+  "total_bytes_stored": 14283199,
   "partitions": {
     "year=2026/month=07/day=17": {
       "records_count": 1041,
@@ -5994,7 +5994,7 @@
       ]
     },
     "year=2026/month=10/day=16": {
-      "records_count": 2158,
+      "records_count": 3901,
       "file_parts": [
         {
           "filename": "part-cf0be47d.csv",
@@ -13090,6 +13090,5704 @@
             "datanode-3.bank.internal"
           ],
           "timestamp": "2026-10-16T00:53:56.235900"
+        },
+        {
+          "filename": "part-28049afc.csv",
+          "size_bytes": 624,
+          "block_id": "blk_96766a082138",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:01.278530"
+        },
+        {
+          "filename": "part-eb86ca92.csv",
+          "size_bytes": 762,
+          "block_id": "blk_32a374b2282c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:06.310998"
+        },
+        {
+          "filename": "part-0c0d87c3.csv",
+          "size_bytes": 610,
+          "block_id": "blk_a152db173855",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:11.356392"
+        },
+        {
+          "filename": "part-ea036b29.csv",
+          "size_bytes": 639,
+          "block_id": "blk_45831a2f205e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:16.399638"
+        },
+        {
+          "filename": "part-85d6781d.csv",
+          "size_bytes": 780,
+          "block_id": "blk_41c580b9fbd5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:21.438260"
+        },
+        {
+          "filename": "part-ee70da99.csv",
+          "size_bytes": 617,
+          "block_id": "blk_ff8a7db4929a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:26.494659"
+        },
+        {
+          "filename": "part-1df4f3ec.csv",
+          "size_bytes": 774,
+          "block_id": "blk_7dc2b3558c4e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:31.533180"
+        },
+        {
+          "filename": "part-cd74a4df.csv",
+          "size_bytes": 622,
+          "block_id": "blk_3a48f218d1f2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:36.573012"
+        },
+        {
+          "filename": "part-bf508403.csv",
+          "size_bytes": 590,
+          "block_id": "blk_9fdb55c68b84",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:41.609329"
+        },
+        {
+          "filename": "part-ac9045a4.csv",
+          "size_bytes": 791,
+          "block_id": "blk_0455d505bffd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:46.648435"
+        },
+        {
+          "filename": "part-5651707a.csv",
+          "size_bytes": 616,
+          "block_id": "blk_7c1d594b1569",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:51.689007"
+        },
+        {
+          "filename": "part-9c37d642.csv",
+          "size_bytes": 630,
+          "block_id": "blk_1ce74c94a223",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:54:56.728345"
+        },
+        {
+          "filename": "part-3762b02d.csv",
+          "size_bytes": 784,
+          "block_id": "blk_06861bd272f0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:01.764928"
+        },
+        {
+          "filename": "part-5a4dd094.csv",
+          "size_bytes": 590,
+          "block_id": "blk_0115a74784c7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:06.806435"
+        },
+        {
+          "filename": "part-567ac161.csv",
+          "size_bytes": 613,
+          "block_id": "blk_25834c3bd92e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:11.843428"
+        },
+        {
+          "filename": "part-c31a3cd9.csv",
+          "size_bytes": 791,
+          "block_id": "blk_ad4026369322",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:16.866988"
+        },
+        {
+          "filename": "part-1aec68f4.csv",
+          "size_bytes": 574,
+          "block_id": "blk_56ee9bb4c663",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:21.916746"
+        },
+        {
+          "filename": "part-8ddd6fd4.csv",
+          "size_bytes": 598,
+          "block_id": "blk_5ff18c294f11",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:26.949763"
+        },
+        {
+          "filename": "part-8663516c.csv",
+          "size_bytes": 774,
+          "block_id": "blk_50b546b015b0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:32.003802"
+        },
+        {
+          "filename": "part-8c42fb1c.csv",
+          "size_bytes": 622,
+          "block_id": "blk_0c0b9b9b44f3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:37.942089"
+        },
+        {
+          "filename": "part-3b8f6778.csv",
+          "size_bytes": 762,
+          "block_id": "blk_b63d66d3164c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:42.990220"
+        },
+        {
+          "filename": "part-6fa9625d.csv",
+          "size_bytes": 620,
+          "block_id": "blk_ab6d7b255446",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:48.027258"
+        },
+        {
+          "filename": "part-c4629df3.csv",
+          "size_bytes": 767,
+          "block_id": "blk_9c07a9c11fc9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:53.067960"
+        },
+        {
+          "filename": "part-67a5367b.csv",
+          "size_bytes": 640,
+          "block_id": "blk_db201f28a65b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:55:58.111467"
+        },
+        {
+          "filename": "part-3f2c31cc.csv",
+          "size_bytes": 627,
+          "block_id": "blk_28bd6b73ed09",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:03.159625"
+        },
+        {
+          "filename": "part-dd0725cc.csv",
+          "size_bytes": 765,
+          "block_id": "blk_baf0eb688a97",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:08.197417"
+        },
+        {
+          "filename": "part-b18d3ee7.csv",
+          "size_bytes": 627,
+          "block_id": "blk_87882e317900",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:13.253446"
+        },
+        {
+          "filename": "part-2623c668.csv",
+          "size_bytes": 606,
+          "block_id": "blk_83ff441ed6ee",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:18.303770"
+        },
+        {
+          "filename": "part-44bd63bf.csv",
+          "size_bytes": 791,
+          "block_id": "blk_54794f37199c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:23.349171"
+        },
+        {
+          "filename": "part-a64663eb.csv",
+          "size_bytes": 580,
+          "block_id": "blk_80c3e0b27c70",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:28.401987"
+        },
+        {
+          "filename": "part-b25fac72.csv",
+          "size_bytes": 623,
+          "block_id": "blk_046c0e43e610",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:33.455519"
+        },
+        {
+          "filename": "part-d67de523.csv",
+          "size_bytes": 748,
+          "block_id": "blk_f97f5162b22c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:38.500170"
+        },
+        {
+          "filename": "part-df9f3855.csv",
+          "size_bytes": 617,
+          "block_id": "blk_6db1133c30c3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:43.541614"
+        },
+        {
+          "filename": "part-f6b5f357.csv",
+          "size_bytes": 750,
+          "block_id": "blk_f23918a229ea",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:48.583637"
+        },
+        {
+          "filename": "part-7a2d9d1e.csv",
+          "size_bytes": 630,
+          "block_id": "blk_2bd9a2c716e9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:53.622574"
+        },
+        {
+          "filename": "part-d4f74503.csv",
+          "size_bytes": 614,
+          "block_id": "blk_f6d8862fb309",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:56:58.662180"
+        },
+        {
+          "filename": "part-18198250.csv",
+          "size_bytes": 768,
+          "block_id": "blk_ef40b661f168",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:03.706015"
+        },
+        {
+          "filename": "part-dc966032.csv",
+          "size_bytes": 594,
+          "block_id": "blk_88818819ade1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:08.756352"
+        },
+        {
+          "filename": "part-8f8949f0.csv",
+          "size_bytes": 599,
+          "block_id": "blk_00f769bd2e10",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:13.798269"
+        },
+        {
+          "filename": "part-e79600d8.csv",
+          "size_bytes": 774,
+          "block_id": "blk_1df0cc0839d7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:18.839066"
+        },
+        {
+          "filename": "part-7292d5f0.csv",
+          "size_bytes": 602,
+          "block_id": "blk_7df9461cf9fd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:23.881173"
+        },
+        {
+          "filename": "part-7c4fc1c9.csv",
+          "size_bytes": 622,
+          "block_id": "blk_95888c24291e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:28.925280"
+        },
+        {
+          "filename": "part-95d469ad.csv",
+          "size_bytes": 755,
+          "block_id": "blk_d1e7470d985d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:33.967794"
+        },
+        {
+          "filename": "part-71200fd6.csv",
+          "size_bytes": 650,
+          "block_id": "blk_2fae5d1452bd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:39.007205"
+        },
+        {
+          "filename": "part-5d9761b5.csv",
+          "size_bytes": 798,
+          "block_id": "blk_dfce5962b56f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:44.062572"
+        },
+        {
+          "filename": "part-acec470a.csv",
+          "size_bytes": 640,
+          "block_id": "blk_8268925968fe",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:49.109037"
+        },
+        {
+          "filename": "part-16adcaf5.csv",
+          "size_bytes": 603,
+          "block_id": "blk_cb147930e8ce",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:54.166283"
+        },
+        {
+          "filename": "part-42840a92.csv",
+          "size_bytes": 797,
+          "block_id": "blk_f38ee449fa34",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:57:59.207394"
+        },
+        {
+          "filename": "part-43268165.csv",
+          "size_bytes": 646,
+          "block_id": "blk_b5c39df5d5ea",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:04.248340"
+        },
+        {
+          "filename": "part-c596b8f7.csv",
+          "size_bytes": 609,
+          "block_id": "blk_2e8c826d3678",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:09.295010"
+        },
+        {
+          "filename": "part-fc05226f.csv",
+          "size_bytes": 777,
+          "block_id": "blk_a58b8c82fbb6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:14.338034"
+        },
+        {
+          "filename": "part-8a5daef0.csv",
+          "size_bytes": 597,
+          "block_id": "blk_b54ac8790be6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:19.390896"
+        },
+        {
+          "filename": "part-81e9d466.csv",
+          "size_bytes": 612,
+          "block_id": "blk_77616d9e361c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:24.434501"
+        },
+        {
+          "filename": "part-60d4afd5.csv",
+          "size_bytes": 792,
+          "block_id": "blk_31e895534479",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:29.480257"
+        },
+        {
+          "filename": "part-56aebdfc.csv",
+          "size_bytes": 633,
+          "block_id": "blk_327a3ef31bef",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:34.528756"
+        },
+        {
+          "filename": "part-d679ce75.csv",
+          "size_bytes": 788,
+          "block_id": "blk_8ea26b393b87",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:39.583575"
+        },
+        {
+          "filename": "part-e46f4541.csv",
+          "size_bytes": 628,
+          "block_id": "blk_a6a5481c05da",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:44.632526"
+        },
+        {
+          "filename": "part-74362180.csv",
+          "size_bytes": 622,
+          "block_id": "blk_f2a4c3e045a9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:49.687362"
+        },
+        {
+          "filename": "part-e4c63b09.csv",
+          "size_bytes": 781,
+          "block_id": "blk_cf9bac314cd0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:54.731960"
+        },
+        {
+          "filename": "part-c7981b21.csv",
+          "size_bytes": 573,
+          "block_id": "blk_4ffc79b8b2f3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:58:59.777455"
+        },
+        {
+          "filename": "part-1fd44fce.csv",
+          "size_bytes": 623,
+          "block_id": "blk_e548d09d1c2d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:04.817994"
+        },
+        {
+          "filename": "part-60bf4184.csv",
+          "size_bytes": 759,
+          "block_id": "blk_e6fd2a7c96cc",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:09.864424"
+        },
+        {
+          "filename": "part-de875939.csv",
+          "size_bytes": 613,
+          "block_id": "blk_66e0aca95322",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:14.907105"
+        },
+        {
+          "filename": "part-26246074.csv",
+          "size_bytes": 619,
+          "block_id": "blk_13893d17bbbb",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:19.960852"
+        },
+        {
+          "filename": "part-dff117e2.csv",
+          "size_bytes": 779,
+          "block_id": "blk_78d93487c428",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:25.012030"
+        },
+        {
+          "filename": "part-af77aaa4.csv",
+          "size_bytes": 625,
+          "block_id": "blk_db354c571f1c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:30.061078"
+        },
+        {
+          "filename": "part-28ec56d4.csv",
+          "size_bytes": 802,
+          "block_id": "blk_2a140b30c9b7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:35.104107"
+        },
+        {
+          "filename": "part-4f08a8d7.csv",
+          "size_bytes": 619,
+          "block_id": "blk_909f03fbf3a2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:40.159368"
+        },
+        {
+          "filename": "part-09985f97.csv",
+          "size_bytes": 600,
+          "block_id": "blk_a000c939541f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:45.199250"
+        },
+        {
+          "filename": "part-eb914006.csv",
+          "size_bytes": 768,
+          "block_id": "blk_a6c257bd836a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:50.246536"
+        },
+        {
+          "filename": "part-a0a208ca.csv",
+          "size_bytes": 634,
+          "block_id": "blk_ac0ea177d058",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T00:59:55.301328"
+        },
+        {
+          "filename": "part-d6d9ed1e.csv",
+          "size_bytes": 635,
+          "block_id": "blk_e778f814a1e0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:00.356735"
+        },
+        {
+          "filename": "part-efe6791d.csv",
+          "size_bytes": 784,
+          "block_id": "blk_e0b9ae5a7020",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:05.407141"
+        },
+        {
+          "filename": "part-d883b6e6.csv",
+          "size_bytes": 643,
+          "block_id": "blk_6771424efb58",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:10.439893"
+        },
+        {
+          "filename": "part-08de226d.csv",
+          "size_bytes": 627,
+          "block_id": "blk_50f16c220e83",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:15.477719"
+        },
+        {
+          "filename": "part-52513780.csv",
+          "size_bytes": 768,
+          "block_id": "blk_9d73744fe1b8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:20.536754"
+        },
+        {
+          "filename": "part-90179015.csv",
+          "size_bytes": 593,
+          "block_id": "blk_cb2c16b7d1d2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:25.560160"
+        },
+        {
+          "filename": "part-372a4e2c.csv",
+          "size_bytes": 793,
+          "block_id": "blk_71657d626612",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:30.604720"
+        },
+        {
+          "filename": "part-7d08bdb1.csv",
+          "size_bytes": 611,
+          "block_id": "blk_98f29451e032",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:35.650668"
+        },
+        {
+          "filename": "part-53bfa6c4.csv",
+          "size_bytes": 612,
+          "block_id": "blk_53ba3058ff8c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:40.690715"
+        },
+        {
+          "filename": "part-8097483f.csv",
+          "size_bytes": 795,
+          "block_id": "blk_53cb1840153c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:45.727730"
+        },
+        {
+          "filename": "part-0a88c291.csv",
+          "size_bytes": 621,
+          "block_id": "blk_bff782222b25",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:50.758051"
+        },
+        {
+          "filename": "part-1f83dc06.csv",
+          "size_bytes": 627,
+          "block_id": "blk_4387ba15401d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:00:55.802624"
+        },
+        {
+          "filename": "part-1264594d.csv",
+          "size_bytes": 763,
+          "block_id": "blk_7c21031c1188",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:00.838268"
+        },
+        {
+          "filename": "part-bbebe328.csv",
+          "size_bytes": 618,
+          "block_id": "blk_c117fe77326f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:05.877046"
+        },
+        {
+          "filename": "part-21d3aa86.csv",
+          "size_bytes": 616,
+          "block_id": "blk_a320b1bcba97",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:10.913660"
+        },
+        {
+          "filename": "part-eaf7262a.csv",
+          "size_bytes": 757,
+          "block_id": "blk_f7616bf24479",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:15.948822"
+        },
+        {
+          "filename": "part-76863711.csv",
+          "size_bytes": 630,
+          "block_id": "blk_cba4cfe972e6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:20.987625"
+        },
+        {
+          "filename": "part-ec7d799e.csv",
+          "size_bytes": 656,
+          "block_id": "blk_e74c3dad3278",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:26.016684"
+        },
+        {
+          "filename": "part-3685a646.csv",
+          "size_bytes": 740,
+          "block_id": "blk_a089e4d15931",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:31.063659"
+        },
+        {
+          "filename": "part-636bc5b9.csv",
+          "size_bytes": 622,
+          "block_id": "blk_9741327d1092",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:36.099734"
+        },
+        {
+          "filename": "part-9f4ddf8f.csv",
+          "size_bytes": 767,
+          "block_id": "blk_184159e54320",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:41.142201"
+        },
+        {
+          "filename": "part-25b08d06.csv",
+          "size_bytes": 613,
+          "block_id": "blk_5b392971bfa3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:46.178617"
+        },
+        {
+          "filename": "part-58cb9047.csv",
+          "size_bytes": 639,
+          "block_id": "blk_d4cf2691e6c8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:51.218863"
+        },
+        {
+          "filename": "part-2a64984f.csv",
+          "size_bytes": 776,
+          "block_id": "blk_376e3b0556d9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:01:56.247373"
+        },
+        {
+          "filename": "part-6a6993cc.csv",
+          "size_bytes": 644,
+          "block_id": "blk_534197b93f46",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:01.304089"
+        },
+        {
+          "filename": "part-3f2f00f9.csv",
+          "size_bytes": 614,
+          "block_id": "blk_9c81da9f64d2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:06.342258"
+        },
+        {
+          "filename": "part-f093733f.csv",
+          "size_bytes": 800,
+          "block_id": "blk_dd07df293234",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:11.378360"
+        },
+        {
+          "filename": "part-4223c347.csv",
+          "size_bytes": 620,
+          "block_id": "blk_9857582f45ec",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:16.408613"
+        },
+        {
+          "filename": "part-6ff89c52.csv",
+          "size_bytes": 630,
+          "block_id": "blk_06891a949ca2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:21.453311"
+        },
+        {
+          "filename": "part-42525d54.csv",
+          "size_bytes": 785,
+          "block_id": "blk_cf0f6c7c71b1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:26.483668"
+        },
+        {
+          "filename": "part-eedf19ce.csv",
+          "size_bytes": 622,
+          "block_id": "blk_bdf1c5dcf252",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:31.529961"
+        },
+        {
+          "filename": "part-3900a640.csv",
+          "size_bytes": 628,
+          "block_id": "blk_66286b7bce5f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:36.574776"
+        },
+        {
+          "filename": "part-e7b77d88.csv",
+          "size_bytes": 798,
+          "block_id": "blk_5f5b93904786",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:41.620613"
+        },
+        {
+          "filename": "part-7379a8e8.csv",
+          "size_bytes": 599,
+          "block_id": "blk_0dae46e2f71d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:46.659798"
+        },
+        {
+          "filename": "part-b69c25b9.csv",
+          "size_bytes": 754,
+          "block_id": "blk_fdf4fe952c7b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:51.699671"
+        },
+        {
+          "filename": "part-fec798fe.csv",
+          "size_bytes": 644,
+          "block_id": "blk_6b976015bdae",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:02:56.746803"
+        },
+        {
+          "filename": "part-bcf3c459.csv",
+          "size_bytes": 621,
+          "block_id": "blk_c37f52491ce1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:01.788447"
+        },
+        {
+          "filename": "part-83fcf6f2.csv",
+          "size_bytes": 809,
+          "block_id": "blk_6ea3df8223e0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:06.836307"
+        },
+        {
+          "filename": "part-4de9dec9.csv",
+          "size_bytes": 638,
+          "block_id": "blk_ecd879dd5099",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:11.891589"
+        },
+        {
+          "filename": "part-05634ecd.csv",
+          "size_bytes": 607,
+          "block_id": "blk_718aa522d83a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:16.960028"
+        },
+        {
+          "filename": "part-ed66f158.csv",
+          "size_bytes": 764,
+          "block_id": "blk_c265d843246b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:22.020067"
+        },
+        {
+          "filename": "part-f36cc054.csv",
+          "size_bytes": 635,
+          "block_id": "blk_6b51feb7a387",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:27.070569"
+        },
+        {
+          "filename": "part-731e78e7.csv",
+          "size_bytes": 623,
+          "block_id": "blk_c9ac61516fc4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:32.120203"
+        },
+        {
+          "filename": "part-a38d319b.csv",
+          "size_bytes": 775,
+          "block_id": "blk_778dfeb03015",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:37.178409"
+        },
+        {
+          "filename": "part-88b4e10a.csv",
+          "size_bytes": 643,
+          "block_id": "blk_c6cd2a6ddbc1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:42.223044"
+        },
+        {
+          "filename": "part-bb2b466b.csv",
+          "size_bytes": 806,
+          "block_id": "blk_ea83502c1983",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:47.270920"
+        },
+        {
+          "filename": "part-ee6d0ce6.csv",
+          "size_bytes": 613,
+          "block_id": "blk_e0c4aaa5333c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:52.316367"
+        },
+        {
+          "filename": "part-5980b9d9.csv",
+          "size_bytes": 624,
+          "block_id": "blk_f9853db4c961",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:03:57.357314"
+        },
+        {
+          "filename": "part-4d940ab7.csv",
+          "size_bytes": 796,
+          "block_id": "blk_81af6acf66e1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:02.412546"
+        },
+        {
+          "filename": "part-6bd1eacb.csv",
+          "size_bytes": 612,
+          "block_id": "blk_679d4586db32",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:07.460140"
+        },
+        {
+          "filename": "part-422ca782.csv",
+          "size_bytes": 607,
+          "block_id": "blk_040f3f39b379",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:12.501253"
+        },
+        {
+          "filename": "part-5cf8475d.csv",
+          "size_bytes": 772,
+          "block_id": "blk_12608daea30f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:17.560276"
+        },
+        {
+          "filename": "part-f6f34768.csv",
+          "size_bytes": 624,
+          "block_id": "blk_47a28c0206df",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:22.611054"
+        },
+        {
+          "filename": "part-2971dadb.csv",
+          "size_bytes": 623,
+          "block_id": "blk_e569ca76e838",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:27.658557"
+        },
+        {
+          "filename": "part-ce94ff94.csv",
+          "size_bytes": 775,
+          "block_id": "blk_ee7731a3538f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:32.706321"
+        },
+        {
+          "filename": "part-7b46db16.csv",
+          "size_bytes": 636,
+          "block_id": "blk_790344efdb77",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:37.747328"
+        },
+        {
+          "filename": "part-3463d14e.csv",
+          "size_bytes": 821,
+          "block_id": "blk_9abee5cd88b9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:42.788341"
+        },
+        {
+          "filename": "part-78217437.csv",
+          "size_bytes": 621,
+          "block_id": "blk_83790b44c1a7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:47.843303"
+        },
+        {
+          "filename": "part-4893a02f.csv",
+          "size_bytes": 599,
+          "block_id": "blk_b206e3468d85",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:52.891890"
+        },
+        {
+          "filename": "part-20076c7f.csv",
+          "size_bytes": 747,
+          "block_id": "blk_b263fa777bfb",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:04:57.932604"
+        },
+        {
+          "filename": "part-e0fd7779.csv",
+          "size_bytes": 620,
+          "block_id": "blk_fe5273302727",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:02.976202"
+        },
+        {
+          "filename": "part-834f77a7.csv",
+          "size_bytes": 623,
+          "block_id": "blk_0555af864901",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:08.023235"
+        },
+        {
+          "filename": "part-f34af17c.csv",
+          "size_bytes": 739,
+          "block_id": "blk_03df31cdeeca",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:13.079811"
+        },
+        {
+          "filename": "part-5aa37b2d.csv",
+          "size_bytes": 618,
+          "block_id": "blk_16749fcbbdf5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:18.131850"
+        },
+        {
+          "filename": "part-25f053a5.csv",
+          "size_bytes": 620,
+          "block_id": "blk_54d333e628e2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:23.182875"
+        },
+        {
+          "filename": "part-ae7c2870.csv",
+          "size_bytes": 813,
+          "block_id": "blk_b61c8ef59975",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:28.220608"
+        },
+        {
+          "filename": "part-48ea5c3c.csv",
+          "size_bytes": 605,
+          "block_id": "blk_493b0127679e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:33.281484"
+        },
+        {
+          "filename": "part-dc2dac02.csv",
+          "size_bytes": 779,
+          "block_id": "blk_c6dcccdaac0b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:38.357424"
+        },
+        {
+          "filename": "part-d738d01c.csv",
+          "size_bytes": 633,
+          "block_id": "blk_828656a8ba53",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:43.428206"
+        },
+        {
+          "filename": "part-8c4dda71.csv",
+          "size_bytes": 611,
+          "block_id": "blk_4d690c0ec9d6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:48.473140"
+        },
+        {
+          "filename": "part-6c87e90c.csv",
+          "size_bytes": 786,
+          "block_id": "blk_469c96dda13f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:53.506755"
+        },
+        {
+          "filename": "part-f2ac7bc1.csv",
+          "size_bytes": 621,
+          "block_id": "blk_de91a2c2202d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:05:58.559233"
+        },
+        {
+          "filename": "part-da570001.csv",
+          "size_bytes": 607,
+          "block_id": "blk_6f317c43cab1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:03.597593"
+        },
+        {
+          "filename": "part-b5199047.csv",
+          "size_bytes": 768,
+          "block_id": "blk_7e31e1d6be8c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:08.645329"
+        },
+        {
+          "filename": "part-24e4e2dd.csv",
+          "size_bytes": 604,
+          "block_id": "blk_e8a769067da7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:13.684510"
+        },
+        {
+          "filename": "part-721854d5.csv",
+          "size_bytes": 607,
+          "block_id": "blk_e191146bcbbe",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:18.739238"
+        },
+        {
+          "filename": "part-ed4f94ef.csv",
+          "size_bytes": 778,
+          "block_id": "blk_bdcc5248cb8b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:23.778955"
+        },
+        {
+          "filename": "part-94b3dbf8.csv",
+          "size_bytes": 639,
+          "block_id": "blk_ca005a49ba1b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:28.827444"
+        },
+        {
+          "filename": "part-778defab.csv",
+          "size_bytes": 764,
+          "block_id": "blk_e74d1141586f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:33.873511"
+        },
+        {
+          "filename": "part-2910b2de.csv",
+          "size_bytes": 646,
+          "block_id": "blk_7a0e5c540237",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:38.914555"
+        },
+        {
+          "filename": "part-0d617b7a.csv",
+          "size_bytes": 615,
+          "block_id": "blk_d42ec6f21b9f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:43.951952"
+        },
+        {
+          "filename": "part-29c2f2dd.csv",
+          "size_bytes": 780,
+          "block_id": "blk_08dac8eed1bb",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:48.994148"
+        },
+        {
+          "filename": "part-c4b18430.csv",
+          "size_bytes": 590,
+          "block_id": "blk_83b684509085",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:54.043837"
+        },
+        {
+          "filename": "part-c3a149e0.csv",
+          "size_bytes": 599,
+          "block_id": "blk_c4ff7b99e845",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:06:59.086762"
+        },
+        {
+          "filename": "part-dc7a6a1c.csv",
+          "size_bytes": 751,
+          "block_id": "blk_58abe8ccddc7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:04.127841"
+        },
+        {
+          "filename": "part-1e5a2654.csv",
+          "size_bytes": 630,
+          "block_id": "blk_1bee997e722d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:09.165239"
+        },
+        {
+          "filename": "part-1cc17082.csv",
+          "size_bytes": 632,
+          "block_id": "blk_d7d1af56fc81",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:14.209392"
+        },
+        {
+          "filename": "part-a85a3da9.csv",
+          "size_bytes": 782,
+          "block_id": "blk_ed8b5ad12028",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:19.257987"
+        },
+        {
+          "filename": "part-9487cb0a.csv",
+          "size_bytes": 611,
+          "block_id": "blk_bffa01befda6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:24.289148"
+        },
+        {
+          "filename": "part-e248f073.csv",
+          "size_bytes": 769,
+          "block_id": "blk_d6887ba0c13b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:29.339668"
+        },
+        {
+          "filename": "part-5e65b494.csv",
+          "size_bytes": 636,
+          "block_id": "blk_bfb9e50f74e7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:34.383209"
+        },
+        {
+          "filename": "part-37b3c129.csv",
+          "size_bytes": 646,
+          "block_id": "blk_857efabc77ba",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:39.425986"
+        },
+        {
+          "filename": "part-5c093378.csv",
+          "size_bytes": 787,
+          "block_id": "blk_f7b39911fc2f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:44.474982"
+        },
+        {
+          "filename": "part-356e2568.csv",
+          "size_bytes": 592,
+          "block_id": "blk_9733eedbc78b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:49.515687"
+        },
+        {
+          "filename": "part-9fab348e.csv",
+          "size_bytes": 625,
+          "block_id": "blk_a05a4422ac34",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:54.561795"
+        },
+        {
+          "filename": "part-1e32316b.csv",
+          "size_bytes": 770,
+          "block_id": "blk_c3ea4a6e9b46",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:07:59.613901"
+        },
+        {
+          "filename": "part-d4c57f83.csv",
+          "size_bytes": 602,
+          "block_id": "blk_587864c87f8a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:04.653532"
+        },
+        {
+          "filename": "part-afcc7f97.csv",
+          "size_bytes": 594,
+          "block_id": "blk_a9ad66c29185",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:09.698851"
+        },
+        {
+          "filename": "part-59722e97.csv",
+          "size_bytes": 790,
+          "block_id": "blk_090507aae0bb",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:14.738871"
+        },
+        {
+          "filename": "part-dae6537f.csv",
+          "size_bytes": 633,
+          "block_id": "blk_f8a964342efd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:19.788576"
+        },
+        {
+          "filename": "part-22e4cce2.csv",
+          "size_bytes": 734,
+          "block_id": "blk_bff71e0c91fe",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:24.828415"
+        },
+        {
+          "filename": "part-a546abd0.csv",
+          "size_bytes": 623,
+          "block_id": "blk_4aa1a2194567",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:29.871709"
+        },
+        {
+          "filename": "part-d7486d79.csv",
+          "size_bytes": 633,
+          "block_id": "blk_ea6d1a786561",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:34.913137"
+        },
+        {
+          "filename": "part-d1f65694.csv",
+          "size_bytes": 794,
+          "block_id": "blk_a6ae4d0b644f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:39.958310"
+        },
+        {
+          "filename": "part-319f0a44.csv",
+          "size_bytes": 632,
+          "block_id": "blk_ade0b5682657",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:44.999690"
+        },
+        {
+          "filename": "part-cd64a4b2.csv",
+          "size_bytes": 619,
+          "block_id": "blk_ddf5363df650",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:50.041157"
+        },
+        {
+          "filename": "part-44ce8ee0.csv",
+          "size_bytes": 774,
+          "block_id": "blk_f5bd4a4b8eb3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:08:55.086917"
+        },
+        {
+          "filename": "part-f61007c6.csv",
+          "size_bytes": 639,
+          "block_id": "blk_0c83a4967672",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:00.122716"
+        },
+        {
+          "filename": "part-a5db4c83.csv",
+          "size_bytes": 628,
+          "block_id": "blk_29db85377855",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:05.173065"
+        },
+        {
+          "filename": "part-17dfb14e.csv",
+          "size_bytes": 771,
+          "block_id": "blk_47ffc55ccc86",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:10.221436"
+        },
+        {
+          "filename": "part-a8679b35.csv",
+          "size_bytes": 627,
+          "block_id": "blk_948f2f29d4b3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:15.260343"
+        },
+        {
+          "filename": "part-22c28cf7.csv",
+          "size_bytes": 643,
+          "block_id": "blk_5db4100ae502",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:20.308323"
+        },
+        {
+          "filename": "part-e09c1f1f.csv",
+          "size_bytes": 771,
+          "block_id": "blk_d099c5bdfbc0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:25.348461"
+        },
+        {
+          "filename": "part-c9dd947d.csv",
+          "size_bytes": 605,
+          "block_id": "blk_4da4840b6cb6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:30.396840"
+        },
+        {
+          "filename": "part-b47b029f.csv",
+          "size_bytes": 761,
+          "block_id": "blk_61f63e043db3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:35.444877"
+        },
+        {
+          "filename": "part-395302bc.csv",
+          "size_bytes": 623,
+          "block_id": "blk_71052d3a2299",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:40.499666"
+        },
+        {
+          "filename": "part-8200d2df.csv",
+          "size_bytes": 636,
+          "block_id": "blk_1938810f8e0d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:45.540849"
+        },
+        {
+          "filename": "part-aec7dd29.csv",
+          "size_bytes": 774,
+          "block_id": "blk_dd3da513af4a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:50.589133"
+        },
+        {
+          "filename": "part-b6ea2330.csv",
+          "size_bytes": 628,
+          "block_id": "blk_3211d1c1cfe5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:09:55.629681"
+        },
+        {
+          "filename": "part-a2689758.csv",
+          "size_bytes": 649,
+          "block_id": "blk_6b453e536406",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:00.677558"
+        },
+        {
+          "filename": "part-1a9c09ec.csv",
+          "size_bytes": 801,
+          "block_id": "blk_f348800c3d2c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:05.718231"
+        },
+        {
+          "filename": "part-1ca30e49.csv",
+          "size_bytes": 616,
+          "block_id": "blk_7c2ad47b017e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:10.767779"
+        },
+        {
+          "filename": "part-465a2e08.csv",
+          "size_bytes": 612,
+          "block_id": "blk_7923f961841b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:15.807241"
+        },
+        {
+          "filename": "part-79b2a456.csv",
+          "size_bytes": 753,
+          "block_id": "blk_850a69a668d5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:20.855452"
+        },
+        {
+          "filename": "part-71d2005a.csv",
+          "size_bytes": 628,
+          "block_id": "blk_1093ee172f15",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:25.903912"
+        },
+        {
+          "filename": "part-7747611d.csv",
+          "size_bytes": 741,
+          "block_id": "blk_ab38a34a4f19",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:30.956418"
+        },
+        {
+          "filename": "part-a8664e57.csv",
+          "size_bytes": 642,
+          "block_id": "blk_5a460c598c89",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:36.006273"
+        },
+        {
+          "filename": "part-2ddba146.csv",
+          "size_bytes": 618,
+          "block_id": "blk_3dda8df9b0dd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:41.054164"
+        },
+        {
+          "filename": "part-4b71228c.csv",
+          "size_bytes": 798,
+          "block_id": "blk_65050113e45b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:46.094629"
+        },
+        {
+          "filename": "part-464b8678.csv",
+          "size_bytes": 645,
+          "block_id": "blk_1fcdbca07b34",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:51.916112"
+        },
+        {
+          "filename": "part-98bb627e.csv",
+          "size_bytes": 773,
+          "block_id": "blk_0936dbb9cba6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:10:56.962349"
+        },
+        {
+          "filename": "part-264800d3.csv",
+          "size_bytes": 641,
+          "block_id": "blk_5cafaa68633e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:02.000972"
+        },
+        {
+          "filename": "part-6fdd2487.csv",
+          "size_bytes": 749,
+          "block_id": "blk_481b4133599e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:07.041237"
+        },
+        {
+          "filename": "part-8a84f1af.csv",
+          "size_bytes": 629,
+          "block_id": "blk_453723a4508d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:12.087308"
+        },
+        {
+          "filename": "part-bd7476b3.csv",
+          "size_bytes": 626,
+          "block_id": "blk_b3733dc92c13",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:17.115910"
+        },
+        {
+          "filename": "part-0d0a4586.csv",
+          "size_bytes": 780,
+          "block_id": "blk_25febfd6fc56",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:22.165100"
+        },
+        {
+          "filename": "part-7fcd0861.csv",
+          "size_bytes": 628,
+          "block_id": "blk_6f36b5193893",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:27.204176"
+        },
+        {
+          "filename": "part-9792c243.csv",
+          "size_bytes": 630,
+          "block_id": "blk_baa2e5279703",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:32.243633"
+        },
+        {
+          "filename": "part-f49568a2.csv",
+          "size_bytes": 757,
+          "block_id": "blk_e6607c42354b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:37.291036"
+        },
+        {
+          "filename": "part-f43642d9.csv",
+          "size_bytes": 618,
+          "block_id": "blk_dfcd2401ed2b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:42.338439"
+        },
+        {
+          "filename": "part-a267a8fe.csv",
+          "size_bytes": 637,
+          "block_id": "blk_d7b7c374dfe2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:47.381331"
+        },
+        {
+          "filename": "part-2766124c.csv",
+          "size_bytes": 718,
+          "block_id": "blk_4f088925aeeb",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:52.424447"
+        },
+        {
+          "filename": "part-9f13c35e.csv",
+          "size_bytes": 639,
+          "block_id": "blk_4786882fd8fd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:11:57.466579"
+        },
+        {
+          "filename": "part-0a9957ac.csv",
+          "size_bytes": 776,
+          "block_id": "blk_7deffadc47f4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:02.504118"
+        },
+        {
+          "filename": "part-eb9f5a8e.csv",
+          "size_bytes": 615,
+          "block_id": "blk_18a3a7cae084",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:07.551944"
+        },
+        {
+          "filename": "part-b3348e61.csv",
+          "size_bytes": 611,
+          "block_id": "blk_7d5e92378d5d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:12.609092"
+        },
+        {
+          "filename": "part-3c20b241.csv",
+          "size_bytes": 735,
+          "block_id": "blk_4047ac1f2480",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:17.653533"
+        },
+        {
+          "filename": "part-a048bd4b.csv",
+          "size_bytes": 604,
+          "block_id": "blk_3e47f01f1365",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:22.689198"
+        },
+        {
+          "filename": "part-8e39a682.csv",
+          "size_bytes": 606,
+          "block_id": "blk_2a8c584cfad3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:27.739230"
+        },
+        {
+          "filename": "part-865c0d6f.csv",
+          "size_bytes": 782,
+          "block_id": "blk_cb271a03b8c8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:32.785402"
+        },
+        {
+          "filename": "part-6e91e2e6.csv",
+          "size_bytes": 638,
+          "block_id": "blk_8b69df8186e6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:37.826059"
+        },
+        {
+          "filename": "part-15ad98b9.csv",
+          "size_bytes": 630,
+          "block_id": "blk_6353cace2fdc",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:42.863485"
+        },
+        {
+          "filename": "part-71a2568e.csv",
+          "size_bytes": 804,
+          "block_id": "blk_24e2e3d5500c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:47.903782"
+        },
+        {
+          "filename": "part-b681ec40.csv",
+          "size_bytes": 640,
+          "block_id": "blk_352442fddeb8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:52.941838"
+        },
+        {
+          "filename": "part-8e595279.csv",
+          "size_bytes": 634,
+          "block_id": "blk_4d79a691b5b3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:12:57.984810"
+        },
+        {
+          "filename": "part-1c2c2b8a.csv",
+          "size_bytes": 809,
+          "block_id": "blk_a5abad529863",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:03.023903"
+        },
+        {
+          "filename": "part-d8512400.csv",
+          "size_bytes": 632,
+          "block_id": "blk_6050665c4591",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:08.063581"
+        },
+        {
+          "filename": "part-398e8b08.csv",
+          "size_bytes": 771,
+          "block_id": "blk_e9a748e3eb4d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:13.101689"
+        },
+        {
+          "filename": "part-4aa204b0.csv",
+          "size_bytes": 601,
+          "block_id": "blk_3f148d8cc0ab",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:18.149984"
+        },
+        {
+          "filename": "part-bde38d68.csv",
+          "size_bytes": 636,
+          "block_id": "blk_efbecf7f9c94",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:23.190158"
+        },
+        {
+          "filename": "part-9c5971ea.csv",
+          "size_bytes": 787,
+          "block_id": "blk_c6f012c4bcc3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:28.234858"
+        },
+        {
+          "filename": "part-40db087e.csv",
+          "size_bytes": 612,
+          "block_id": "blk_6525b0799439",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:33.283883"
+        },
+        {
+          "filename": "part-3b0a706a.csv",
+          "size_bytes": 606,
+          "block_id": "blk_4b4a0b79c062",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:38.326893"
+        },
+        {
+          "filename": "part-f002fefb.csv",
+          "size_bytes": 764,
+          "block_id": "blk_708bfd6cee8d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:43.371252"
+        },
+        {
+          "filename": "part-53ed4696.csv",
+          "size_bytes": 630,
+          "block_id": "blk_388201dc64d9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:48.404084"
+        },
+        {
+          "filename": "part-23c7ddc2.csv",
+          "size_bytes": 634,
+          "block_id": "blk_7c4468b52388",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:53.452281"
+        },
+        {
+          "filename": "part-8621b2aa.csv",
+          "size_bytes": 763,
+          "block_id": "blk_75d37f3b3fb5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:13:58.520554"
+        },
+        {
+          "filename": "part-439196f5.csv",
+          "size_bytes": 617,
+          "block_id": "blk_6cb1190bda0d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:03.554729"
+        },
+        {
+          "filename": "part-1edc24cf.csv",
+          "size_bytes": 784,
+          "block_id": "blk_cca67a6d6a4a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:08.602704"
+        },
+        {
+          "filename": "part-37d0fd43.csv",
+          "size_bytes": 640,
+          "block_id": "blk_17a3f239b4cb",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:13.653800"
+        },
+        {
+          "filename": "part-62ec9c9a.csv",
+          "size_bytes": 597,
+          "block_id": "blk_b41622bab106",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:18.697063"
+        },
+        {
+          "filename": "part-9abc3c49.csv",
+          "size_bytes": 786,
+          "block_id": "blk_8c9ff746e682",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:23.740953"
+        },
+        {
+          "filename": "part-b3e32fdb.csv",
+          "size_bytes": 620,
+          "block_id": "blk_a83d14d76712",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:28.778974"
+        },
+        {
+          "filename": "part-22107a87.csv",
+          "size_bytes": 650,
+          "block_id": "blk_e1163fbd9a2e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:33.822001"
+        },
+        {
+          "filename": "part-56ad1b6f.csv",
+          "size_bytes": 805,
+          "block_id": "blk_6a5d8c2ed866",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:38.864621"
+        },
+        {
+          "filename": "part-cfd5b347.csv",
+          "size_bytes": 610,
+          "block_id": "blk_adf7a86db4e3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:43.910348"
+        },
+        {
+          "filename": "part-452b0ab9.csv",
+          "size_bytes": 612,
+          "block_id": "blk_bd06b5f5b039",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:48.955485"
+        },
+        {
+          "filename": "part-c99706a8.csv",
+          "size_bytes": 778,
+          "block_id": "blk_769dd107d8e5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:53.999253"
+        },
+        {
+          "filename": "part-de776857.csv",
+          "size_bytes": 601,
+          "block_id": "blk_2b982c24589e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:14:59.041372"
+        },
+        {
+          "filename": "part-def1f427.csv",
+          "size_bytes": 760,
+          "block_id": "blk_f335458249bf",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:04.090846"
+        },
+        {
+          "filename": "part-997d4b6f.csv",
+          "size_bytes": 641,
+          "block_id": "blk_5edd1d3d2700",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:09.143214"
+        },
+        {
+          "filename": "part-c06b3d9b.csv",
+          "size_bytes": 584,
+          "block_id": "blk_a7bd267196e8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:14.190840"
+        },
+        {
+          "filename": "part-34e9b6f0.csv",
+          "size_bytes": 779,
+          "block_id": "blk_ff378c7f50df",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:19.235475"
+        },
+        {
+          "filename": "part-ca20a5c3.csv",
+          "size_bytes": 615,
+          "block_id": "blk_6830bebbdddc",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:24.277429"
+        },
+        {
+          "filename": "part-3561beb0.csv",
+          "size_bytes": 624,
+          "block_id": "blk_8b4624e2cf92",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:29.327858"
+        },
+        {
+          "filename": "part-3c8e74b9.csv",
+          "size_bytes": 781,
+          "block_id": "blk_82314a49def2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:34.368711"
+        },
+        {
+          "filename": "part-2f07cc2d.csv",
+          "size_bytes": 640,
+          "block_id": "blk_0c5dbcbc42b8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:39.410379"
+        },
+        {
+          "filename": "part-cea844c4.csv",
+          "size_bytes": 603,
+          "block_id": "blk_1595a289ec8d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:44.451565"
+        },
+        {
+          "filename": "part-2843f6d4.csv",
+          "size_bytes": 817,
+          "block_id": "blk_7cdf78d28825",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:49.489007"
+        },
+        {
+          "filename": "part-9b77aebd.csv",
+          "size_bytes": 618,
+          "block_id": "blk_b2d319d97ac8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:54.529674"
+        },
+        {
+          "filename": "part-385216b3.csv",
+          "size_bytes": 611,
+          "block_id": "blk_63d50e6879bc",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:15:59.567989"
+        },
+        {
+          "filename": "part-66e8c74a.csv",
+          "size_bytes": 797,
+          "block_id": "blk_3fa6090ad478",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:04.613687"
+        },
+        {
+          "filename": "part-c116830b.csv",
+          "size_bytes": 597,
+          "block_id": "blk_33f8f50b1b85",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:09.657565"
+        },
+        {
+          "filename": "part-4fb6b213.csv",
+          "size_bytes": 779,
+          "block_id": "blk_9c611a223ed3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:14.708743"
+        },
+        {
+          "filename": "part-f8d50f6f.csv",
+          "size_bytes": 622,
+          "block_id": "blk_b2c25b9638b4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:19.750457"
+        },
+        {
+          "filename": "part-7cad4659.csv",
+          "size_bytes": 587,
+          "block_id": "blk_a784e0d206d4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:24.792824"
+        },
+        {
+          "filename": "part-4ade6e40.csv",
+          "size_bytes": 803,
+          "block_id": "blk_3cbf3fd648de",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:29.835638"
+        },
+        {
+          "filename": "part-2bf35eab.csv",
+          "size_bytes": 600,
+          "block_id": "blk_6e03880cf505",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:34.887149"
+        },
+        {
+          "filename": "part-60c71d1d.csv",
+          "size_bytes": 604,
+          "block_id": "blk_010e27b74042",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:39.932342"
+        },
+        {
+          "filename": "part-95dbe6db.csv",
+          "size_bytes": 780,
+          "block_id": "blk_5314a0d4af54",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:44.975876"
+        },
+        {
+          "filename": "part-bad357d0.csv",
+          "size_bytes": 607,
+          "block_id": "blk_6e34afbd9e20",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:50.016703"
+        },
+        {
+          "filename": "part-b7963011.csv",
+          "size_bytes": 642,
+          "block_id": "blk_e00649aa1213",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:16:55.056951"
+        },
+        {
+          "filename": "part-abb7996d.csv",
+          "size_bytes": 789,
+          "block_id": "blk_98905f85fad5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:00.102427"
+        },
+        {
+          "filename": "part-12bacc43.csv",
+          "size_bytes": 612,
+          "block_id": "blk_6528ee1189ae",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:05.143013"
+        },
+        {
+          "filename": "part-b39a877f.csv",
+          "size_bytes": 781,
+          "block_id": "blk_06804056d346",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:10.189848"
+        },
+        {
+          "filename": "part-ca721fba.csv",
+          "size_bytes": 632,
+          "block_id": "blk_d53d46e8376b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:15.228386"
+        },
+        {
+          "filename": "part-88736c5d.csv",
+          "size_bytes": 632,
+          "block_id": "blk_140ef3be19b2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:20.278003"
+        },
+        {
+          "filename": "part-afee948e.csv",
+          "size_bytes": 761,
+          "block_id": "blk_a955f1e5c293",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:25.325621"
+        },
+        {
+          "filename": "part-8998e384.csv",
+          "size_bytes": 618,
+          "block_id": "blk_339a81a93e12",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:30.357160"
+        },
+        {
+          "filename": "part-d36c5311.csv",
+          "size_bytes": 622,
+          "block_id": "blk_fe264deb04fa",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:35.411712"
+        },
+        {
+          "filename": "part-ef8d1bca.csv",
+          "size_bytes": 802,
+          "block_id": "blk_e9038d86e49f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:40.450031"
+        },
+        {
+          "filename": "part-0d4c7bca.csv",
+          "size_bytes": 638,
+          "block_id": "blk_a1d68cbb33bb",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:45.492020"
+        },
+        {
+          "filename": "part-9728d09d.csv",
+          "size_bytes": 597,
+          "block_id": "blk_f640e94dea0b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:50.534913"
+        },
+        {
+          "filename": "part-07df74f9.csv",
+          "size_bytes": 807,
+          "block_id": "blk_3c4df9be385a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:17:55.574615"
+        },
+        {
+          "filename": "part-a903ab6e.csv",
+          "size_bytes": 615,
+          "block_id": "blk_9f0459d3c517",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:00.612185"
+        },
+        {
+          "filename": "part-5d8d34bc.csv",
+          "size_bytes": 795,
+          "block_id": "blk_57dd01f5597d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:05.662954"
+        },
+        {
+          "filename": "part-a6b87dfa.csv",
+          "size_bytes": 629,
+          "block_id": "blk_e7fd16fccb0d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:10.706809"
+        },
+        {
+          "filename": "part-ea0135a8.csv",
+          "size_bytes": 606,
+          "block_id": "blk_897c3d113e42",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:15.751984"
+        },
+        {
+          "filename": "part-e604c393.csv",
+          "size_bytes": 734,
+          "block_id": "blk_6531fc6d7ff7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:20.793918"
+        },
+        {
+          "filename": "part-eb231273.csv",
+          "size_bytes": 618,
+          "block_id": "blk_e7da5cf48c5f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:25.837126"
+        },
+        {
+          "filename": "part-8f36b339.csv",
+          "size_bytes": 604,
+          "block_id": "blk_b5e5f9a58ac4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:30.878061"
+        },
+        {
+          "filename": "part-483a6568.csv",
+          "size_bytes": 798,
+          "block_id": "blk_cfce40a2762d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:35.919931"
+        },
+        {
+          "filename": "part-a3f2b0b1.csv",
+          "size_bytes": 621,
+          "block_id": "blk_51b22cce942f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:40.950356"
+        },
+        {
+          "filename": "part-70066dfb.csv",
+          "size_bytes": 630,
+          "block_id": "blk_6e2c9f1afd70",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:46.007644"
+        },
+        {
+          "filename": "part-c1effb34.csv",
+          "size_bytes": 820,
+          "block_id": "blk_34ba543c2b8a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:51.044466"
+        },
+        {
+          "filename": "part-1fe2023e.csv",
+          "size_bytes": 644,
+          "block_id": "blk_ec59347ceb26",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:18:56.090164"
+        },
+        {
+          "filename": "part-612b73af.csv",
+          "size_bytes": 612,
+          "block_id": "blk_da69b1d9a32b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:01.130343"
+        },
+        {
+          "filename": "part-0f14bf8e.csv",
+          "size_bytes": 780,
+          "block_id": "blk_a3b74d8cc6ce",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:06.170985"
+        },
+        {
+          "filename": "part-5d527edc.csv",
+          "size_bytes": 606,
+          "block_id": "blk_8e2682252696",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:11.215049"
+        },
+        {
+          "filename": "part-d5163d68.csv",
+          "size_bytes": 784,
+          "block_id": "blk_f3deebd9a21f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:16.249606"
+        },
+        {
+          "filename": "part-82007572.csv",
+          "size_bytes": 625,
+          "block_id": "blk_5229bec7217b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:21.291850"
+        },
+        {
+          "filename": "part-dc4ce063.csv",
+          "size_bytes": 656,
+          "block_id": "blk_4efe2387b51a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:26.343078"
+        },
+        {
+          "filename": "part-d15dfed5.csv",
+          "size_bytes": 752,
+          "block_id": "blk_ac57f5ceacda",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:31.381651"
+        },
+        {
+          "filename": "part-06bdddb0.csv",
+          "size_bytes": 586,
+          "block_id": "blk_40103f03a0d9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:36.422400"
+        },
+        {
+          "filename": "part-2e8598d4.csv",
+          "size_bytes": 635,
+          "block_id": "blk_75954974ef63",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:41.465655"
+        },
+        {
+          "filename": "part-73cdc6fe.csv",
+          "size_bytes": 764,
+          "block_id": "blk_417a540f056a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:46.502015"
+        },
+        {
+          "filename": "part-480619cb.csv",
+          "size_bytes": 628,
+          "block_id": "blk_563fb7f523bc",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:51.548802"
+        },
+        {
+          "filename": "part-09d394d6.csv",
+          "size_bytes": 629,
+          "block_id": "blk_ce948282fbbf",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:19:56.590311"
+        },
+        {
+          "filename": "part-c0ebaff9.csv",
+          "size_bytes": 778,
+          "block_id": "blk_68cd9b25d392",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:01.631933"
+        },
+        {
+          "filename": "part-6780e0c5.csv",
+          "size_bytes": 600,
+          "block_id": "blk_8639729bbb93",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:06.664473"
+        },
+        {
+          "filename": "part-ca5f3e3e.csv",
+          "size_bytes": 741,
+          "block_id": "blk_13686daf9777",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:11.727560"
+        },
+        {
+          "filename": "part-b9f38fe1.csv",
+          "size_bytes": 611,
+          "block_id": "blk_8be5e00b8ed3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:16.765998"
+        },
+        {
+          "filename": "part-00b6ca96.csv",
+          "size_bytes": 604,
+          "block_id": "blk_0bc830669bfe",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:21.809553"
+        },
+        {
+          "filename": "part-24952b0b.csv",
+          "size_bytes": 785,
+          "block_id": "blk_bca7e33b6448",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:26.847950"
+        },
+        {
+          "filename": "part-6911d6b4.csv",
+          "size_bytes": 606,
+          "block_id": "blk_f0418588347e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:31.892199"
+        },
+        {
+          "filename": "part-08c45cd2.csv",
+          "size_bytes": 619,
+          "block_id": "blk_f6ba651b26f5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:36.939278"
+        },
+        {
+          "filename": "part-69ec181c.csv",
+          "size_bytes": 780,
+          "block_id": "blk_359432ffd530",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:41.996331"
+        },
+        {
+          "filename": "part-eed88b71.csv",
+          "size_bytes": 590,
+          "block_id": "blk_9bae7fb17a01",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:47.032040"
+        },
+        {
+          "filename": "part-2928af2d.csv",
+          "size_bytes": 601,
+          "block_id": "blk_642e1cd067ff",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:52.076527"
+        },
+        {
+          "filename": "part-0793a1a0.csv",
+          "size_bytes": 790,
+          "block_id": "blk_cf0ff5cd1e05",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:20:57.132946"
+        },
+        {
+          "filename": "part-d7ec6a1e.csv",
+          "size_bytes": 628,
+          "block_id": "blk_6b3ec3b32431",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:02.177654"
+        },
+        {
+          "filename": "part-ed3a110c.csv",
+          "size_bytes": 622,
+          "block_id": "blk_e0c8cf750b46",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:07.207398"
+        },
+        {
+          "filename": "part-7281bef0.csv",
+          "size_bytes": 764,
+          "block_id": "blk_531922303e09",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:12.265947"
+        },
+        {
+          "filename": "part-e7d7b568.csv",
+          "size_bytes": 595,
+          "block_id": "blk_f56249d177c2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:17.310717"
+        },
+        {
+          "filename": "part-41906875.csv",
+          "size_bytes": 778,
+          "block_id": "blk_6106ac26a55d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:22.337647"
+        },
+        {
+          "filename": "part-0a8a5bdb.csv",
+          "size_bytes": 638,
+          "block_id": "blk_f6419738c4d0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:27.385591"
+        },
+        {
+          "filename": "part-101dc670.csv",
+          "size_bytes": 634,
+          "block_id": "blk_f5c1fb675d1e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:32.429354"
+        },
+        {
+          "filename": "part-a8e40957.csv",
+          "size_bytes": 796,
+          "block_id": "blk_d8c4e58c94f5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:37.477348"
+        },
+        {
+          "filename": "part-151c38c3.csv",
+          "size_bytes": 567,
+          "block_id": "blk_9721580a2d93",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:42.511787"
+        },
+        {
+          "filename": "part-cfcc16e5.csv",
+          "size_bytes": 643,
+          "block_id": "blk_9faba2b4968d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:47.565170"
+        },
+        {
+          "filename": "part-ab5a847a.csv",
+          "size_bytes": 782,
+          "block_id": "blk_eef40c566f40",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:52.609524"
+        },
+        {
+          "filename": "part-79f9a1ff.csv",
+          "size_bytes": 627,
+          "block_id": "blk_96155d507d09",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:21:57.653617"
+        },
+        {
+          "filename": "part-cff7493a.csv",
+          "size_bytes": 575,
+          "block_id": "blk_e581ff4bcada",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:02.698757"
+        },
+        {
+          "filename": "part-731be9d3.csv",
+          "size_bytes": 762,
+          "block_id": "blk_0c8427bdc1ed",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:07.729569"
+        },
+        {
+          "filename": "part-f15c1a14.csv",
+          "size_bytes": 591,
+          "block_id": "blk_b56987c514a6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:12.777700"
+        },
+        {
+          "filename": "part-8db585d0.csv",
+          "size_bytes": 732,
+          "block_id": "blk_5c1878f37a9d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:17.834629"
+        },
+        {
+          "filename": "part-b94ad55d.csv",
+          "size_bytes": 628,
+          "block_id": "blk_d1730de0811f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:22.867939"
+        },
+        {
+          "filename": "part-eaa0a516.csv",
+          "size_bytes": 612,
+          "block_id": "blk_1a2ec8706773",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:27.927107"
+        },
+        {
+          "filename": "part-684676e0.csv",
+          "size_bytes": 804,
+          "block_id": "blk_41c05fccba30",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:32.973236"
+        },
+        {
+          "filename": "part-2e66af5e.csv",
+          "size_bytes": 576,
+          "block_id": "blk_911f489abbbc",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:38.012663"
+        },
+        {
+          "filename": "part-10fb168f.csv",
+          "size_bytes": 626,
+          "block_id": "blk_e577583a67ce",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:43.066156"
+        },
+        {
+          "filename": "part-a68de8fa.csv",
+          "size_bytes": 762,
+          "block_id": "blk_bd3580e39e8f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:48.111755"
+        },
+        {
+          "filename": "part-c5bc4841.csv",
+          "size_bytes": 621,
+          "block_id": "blk_bb6f6388904b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:53.159117"
+        },
+        {
+          "filename": "part-a8b4aa7f.csv",
+          "size_bytes": 611,
+          "block_id": "blk_b985dea39824",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:22:58.203614"
+        },
+        {
+          "filename": "part-b16208ad.csv",
+          "size_bytes": 724,
+          "block_id": "blk_9796e6f7475d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:03.235993"
+        },
+        {
+          "filename": "part-c6791f65.csv",
+          "size_bytes": 644,
+          "block_id": "blk_e1372199ddfa",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:08.284424"
+        },
+        {
+          "filename": "part-069ed1d1.csv",
+          "size_bytes": 788,
+          "block_id": "blk_123fc985105e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:13.351351"
+        },
+        {
+          "filename": "part-038de76b.csv",
+          "size_bytes": 645,
+          "block_id": "blk_233e557ff276",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:18.392192"
+        },
+        {
+          "filename": "part-75790c8d.csv",
+          "size_bytes": 612,
+          "block_id": "blk_b8e1299d61ae",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:23.451712"
+        },
+        {
+          "filename": "part-bfbb493a.csv",
+          "size_bytes": 801,
+          "block_id": "blk_a69121a47340",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:28.497501"
+        },
+        {
+          "filename": "part-c36e732c.csv",
+          "size_bytes": 595,
+          "block_id": "blk_054193283929",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:33.536416"
+        },
+        {
+          "filename": "part-51be8110.csv",
+          "size_bytes": 601,
+          "block_id": "blk_11c803f8898b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:38.580345"
+        },
+        {
+          "filename": "part-0562af6d.csv",
+          "size_bytes": 784,
+          "block_id": "blk_6434221bb0d5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:43.644458"
+        },
+        {
+          "filename": "part-4ce5a60b.csv",
+          "size_bytes": 611,
+          "block_id": "blk_16fd2b477409",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:48.692789"
+        },
+        {
+          "filename": "part-d6bf58f1.csv",
+          "size_bytes": 622,
+          "block_id": "blk_1e7fdd801947",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:53.730542"
+        },
+        {
+          "filename": "part-ef53d724.csv",
+          "size_bytes": 750,
+          "block_id": "blk_3f2a2075d0d0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:23:58.774753"
+        },
+        {
+          "filename": "part-0d358941.csv",
+          "size_bytes": 617,
+          "block_id": "blk_246479b8448f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:03.902006"
+        },
+        {
+          "filename": "part-39d6aacf.csv",
+          "size_bytes": 774,
+          "block_id": "blk_da71fed72876",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:08.969700"
+        },
+        {
+          "filename": "part-fddb4ba1.csv",
+          "size_bytes": 631,
+          "block_id": "blk_ad667e2af765",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:14.046969"
+        },
+        {
+          "filename": "part-a4c91a8e.csv",
+          "size_bytes": 605,
+          "block_id": "blk_607bf852f74a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:19.090470"
+        },
+        {
+          "filename": "part-b9bf2f0d.csv",
+          "size_bytes": 803,
+          "block_id": "blk_710413b5ff11",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:24.138956"
+        },
+        {
+          "filename": "part-1e4197e9.csv",
+          "size_bytes": 624,
+          "block_id": "blk_266f7aa0dbbd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:29.182862"
+        },
+        {
+          "filename": "part-caea15f4.csv",
+          "size_bytes": 617,
+          "block_id": "blk_6f0b7a61398c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:34.228247"
+        },
+        {
+          "filename": "part-d545ab18.csv",
+          "size_bytes": 818,
+          "block_id": "blk_fe485c72de09",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:39.275692"
+        },
+        {
+          "filename": "part-669dd0c8.csv",
+          "size_bytes": 630,
+          "block_id": "blk_97823a804cbd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:44.318448"
+        },
+        {
+          "filename": "part-cf1ac08d.csv",
+          "size_bytes": 774,
+          "block_id": "blk_9ac522604a10",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:49.363447"
+        },
+        {
+          "filename": "part-cc0409f8.csv",
+          "size_bytes": 617,
+          "block_id": "blk_bcc468ac7b8b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:54.403568"
+        },
+        {
+          "filename": "part-5523abbd.csv",
+          "size_bytes": 617,
+          "block_id": "blk_4f029e67e7b9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:24:59.444465"
+        },
+        {
+          "filename": "part-4dfe81fb.csv",
+          "size_bytes": 742,
+          "block_id": "blk_ab63d74fab5d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:04.488948"
+        },
+        {
+          "filename": "part-b6578daa.csv",
+          "size_bytes": 631,
+          "block_id": "blk_76bb8145752f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:09.540767"
+        },
+        {
+          "filename": "part-b6f5820e.csv",
+          "size_bytes": 623,
+          "block_id": "blk_9af14ec9827c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:14.590727"
+        },
+        {
+          "filename": "part-407f36c3.csv",
+          "size_bytes": 742,
+          "block_id": "blk_4797e0756b22",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:19.633543"
+        },
+        {
+          "filename": "part-111837f7.csv",
+          "size_bytes": 641,
+          "block_id": "blk_4dc4ec6de0cb",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:24.668423"
+        },
+        {
+          "filename": "part-6511b648.csv",
+          "size_bytes": 607,
+          "block_id": "blk_311d7f7f9baf",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:29.717205"
+        },
+        {
+          "filename": "part-af2dbd6f.csv",
+          "size_bytes": 788,
+          "block_id": "blk_b39a93aee856",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:34.762485"
+        },
+        {
+          "filename": "part-b7e541b3.csv",
+          "size_bytes": 611,
+          "block_id": "blk_ea87d370a7f4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:39.804492"
+        },
+        {
+          "filename": "part-b9b0da0f.csv",
+          "size_bytes": 622,
+          "block_id": "blk_6b6819a62a60",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:44.851603"
+        },
+        {
+          "filename": "part-578c351a.csv",
+          "size_bytes": 769,
+          "block_id": "blk_a64be53a92ed",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:49.893217"
+        },
+        {
+          "filename": "part-59fad1ee.csv",
+          "size_bytes": 648,
+          "block_id": "blk_809243d92225",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:54.939367"
+        },
+        {
+          "filename": "part-9233c0db.csv",
+          "size_bytes": 778,
+          "block_id": "blk_68bd13a2da48",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:25:59.978781"
+        },
+        {
+          "filename": "part-1bfb4389.csv",
+          "size_bytes": 605,
+          "block_id": "blk_4139b573797c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:05.016554"
+        },
+        {
+          "filename": "part-545b9964.csv",
+          "size_bytes": 638,
+          "block_id": "blk_8d769400fbf8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:10.064006"
+        },
+        {
+          "filename": "part-5b89051a.csv",
+          "size_bytes": 767,
+          "block_id": "blk_00c81e9f805a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:15.117142"
+        },
+        {
+          "filename": "part-ebcbfc58.csv",
+          "size_bytes": 637,
+          "block_id": "blk_6752c05b9203",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:20.159125"
+        },
+        {
+          "filename": "part-84da6814.csv",
+          "size_bytes": 622,
+          "block_id": "blk_0d52d0209012",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:25.199127"
+        },
+        {
+          "filename": "part-12d00bb8.csv",
+          "size_bytes": 770,
+          "block_id": "blk_a3639a577e16",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:30.249368"
+        },
+        {
+          "filename": "part-d45f531b.csv",
+          "size_bytes": 618,
+          "block_id": "blk_a9ae105078dc",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:35.297859"
+        },
+        {
+          "filename": "part-7a5b0f00.csv",
+          "size_bytes": 638,
+          "block_id": "blk_c675171e6197",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:40.343931"
+        },
+        {
+          "filename": "part-ecc3f164.csv",
+          "size_bytes": 796,
+          "block_id": "blk_1e20e36717aa",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:45.391620"
+        },
+        {
+          "filename": "part-31f48a46.csv",
+          "size_bytes": 606,
+          "block_id": "blk_163e2a59f8e4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:50.438771"
+        },
+        {
+          "filename": "part-23c52c1a.csv",
+          "size_bytes": 792,
+          "block_id": "blk_5a3fe695e1a7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:26:55.493732"
+        },
+        {
+          "filename": "part-e53ef51e.csv",
+          "size_bytes": 624,
+          "block_id": "blk_45ff5aed7118",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:00.558868"
+        },
+        {
+          "filename": "part-0fe6bbed.csv",
+          "size_bytes": 633,
+          "block_id": "blk_57bf156be8a3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:05.603615"
+        },
+        {
+          "filename": "part-81bc04be.csv",
+          "size_bytes": 745,
+          "block_id": "blk_edd3c88dd798",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:10.658877"
+        },
+        {
+          "filename": "part-42517f0c.csv",
+          "size_bytes": 641,
+          "block_id": "blk_a357ea0eabd7",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:15.714630"
+        },
+        {
+          "filename": "part-fabc2da5.csv",
+          "size_bytes": 606,
+          "block_id": "blk_42ceec631a26",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:20.775946"
+        },
+        {
+          "filename": "part-8db80890.csv",
+          "size_bytes": 781,
+          "block_id": "blk_475dcd520b25",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:25.830591"
+        },
+        {
+          "filename": "part-812b42d5.csv",
+          "size_bytes": 635,
+          "block_id": "blk_1869f6511939",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:30.899633"
+        },
+        {
+          "filename": "part-21eacafa.csv",
+          "size_bytes": 778,
+          "block_id": "blk_4143a8d616f6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:35.971861"
+        },
+        {
+          "filename": "part-fce0bffb.csv",
+          "size_bytes": 625,
+          "block_id": "blk_ae18a23e82be",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:41.022899"
+        },
+        {
+          "filename": "part-70a70b79.csv",
+          "size_bytes": 650,
+          "block_id": "blk_0fe32b4d5d46",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:46.091977"
+        },
+        {
+          "filename": "part-12ab6918.csv",
+          "size_bytes": 757,
+          "block_id": "blk_f8854b4f8ac6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:51.153891"
+        },
+        {
+          "filename": "part-753099ff.csv",
+          "size_bytes": 599,
+          "block_id": "blk_de4d1f8a623a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:27:56.215886"
+        },
+        {
+          "filename": "part-e38d08bf.csv",
+          "size_bytes": 635,
+          "block_id": "blk_3cb02eb1ae14",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:01.269630"
+        },
+        {
+          "filename": "part-02e8511e.csv",
+          "size_bytes": 773,
+          "block_id": "blk_27d7754c964c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:06.338543"
+        },
+        {
+          "filename": "part-ed3cd982.csv",
+          "size_bytes": 644,
+          "block_id": "blk_69ef8ea198c1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:11.403793"
+        },
+        {
+          "filename": "part-2fb4e23c.csv",
+          "size_bytes": 773,
+          "block_id": "blk_739dcb7972ae",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:16.469987"
+        },
+        {
+          "filename": "part-6ad7dae5.csv",
+          "size_bytes": 639,
+          "block_id": "blk_e13781c074c2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:21.524002"
+        },
+        {
+          "filename": "part-a7607c67.csv",
+          "size_bytes": 619,
+          "block_id": "blk_54a63e752432",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:26.572664"
+        },
+        {
+          "filename": "part-a7aaf0ca.csv",
+          "size_bytes": 782,
+          "block_id": "blk_cfb4981a2758",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:31.628801"
+        },
+        {
+          "filename": "part-f9bd3bf1.csv",
+          "size_bytes": 640,
+          "block_id": "blk_48a6d154ced8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:36.679533"
+        },
+        {
+          "filename": "part-2005fe0a.csv",
+          "size_bytes": 646,
+          "block_id": "blk_3ca1de5268f9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:41.731411"
+        },
+        {
+          "filename": "part-1d7b2c56.csv",
+          "size_bytes": 757,
+          "block_id": "blk_9744345bcb30",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:46.791352"
+        },
+        {
+          "filename": "part-ebc735dd.csv",
+          "size_bytes": 622,
+          "block_id": "blk_a06eec9e9165",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:51.860185"
+        },
+        {
+          "filename": "part-8835901a.csv",
+          "size_bytes": 583,
+          "block_id": "blk_2d0d5dec5194",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:28:56.933115"
+        },
+        {
+          "filename": "part-80e11cc5.csv",
+          "size_bytes": 755,
+          "block_id": "blk_a131c5811783",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:01.993721"
+        },
+        {
+          "filename": "part-02c025bf.csv",
+          "size_bytes": 605,
+          "block_id": "blk_141c14a79a81",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:07.046203"
+        },
+        {
+          "filename": "part-013f09fd.csv",
+          "size_bytes": 754,
+          "block_id": "blk_2020c23e7c1b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:12.103103"
+        },
+        {
+          "filename": "part-e7385341.csv",
+          "size_bytes": 599,
+          "block_id": "blk_7dd423d7c898",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:17.163741"
+        },
+        {
+          "filename": "part-74fd1b3f.csv",
+          "size_bytes": 630,
+          "block_id": "blk_dc2a3c6c9cfe",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:22.233940"
+        },
+        {
+          "filename": "part-79de6694.csv",
+          "size_bytes": 808,
+          "block_id": "blk_181379f0ab63",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:27.292189"
+        },
+        {
+          "filename": "part-0fff1128.csv",
+          "size_bytes": 612,
+          "block_id": "blk_237a9fd492f1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:32.345475"
+        },
+        {
+          "filename": "part-ac81844a.csv",
+          "size_bytes": 626,
+          "block_id": "blk_54d31c7114ac",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:37.413629"
+        },
+        {
+          "filename": "part-7cd3dade.csv",
+          "size_bytes": 758,
+          "block_id": "blk_47b36a660bb1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:42.472472"
+        },
+        {
+          "filename": "part-f534dc3c.csv",
+          "size_bytes": 644,
+          "block_id": "blk_d9fe86d51293",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:47.549137"
+        },
+        {
+          "filename": "part-884759d1.csv",
+          "size_bytes": 786,
+          "block_id": "blk_685a8b72bc42",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:52.602030"
+        },
+        {
+          "filename": "part-4b41f5ff.csv",
+          "size_bytes": 627,
+          "block_id": "blk_0a7e56c5958b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:29:57.643379"
+        },
+        {
+          "filename": "part-e112ba99.csv",
+          "size_bytes": 626,
+          "block_id": "blk_887674029328",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:02.691473"
+        },
+        {
+          "filename": "part-119ac6cb.csv",
+          "size_bytes": 784,
+          "block_id": "blk_ef4270a90b75",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:07.739470"
+        },
+        {
+          "filename": "part-53ed5f9b.csv",
+          "size_bytes": 595,
+          "block_id": "blk_5a6081fd94ed",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:12.797018"
+        },
+        {
+          "filename": "part-b064d72b.csv",
+          "size_bytes": 622,
+          "block_id": "blk_b70ba42610d1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:17.850325"
+        },
+        {
+          "filename": "part-ffe87dd3.csv",
+          "size_bytes": 778,
+          "block_id": "blk_1f9ef07176fd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:22.901500"
+        },
+        {
+          "filename": "part-f65638a5.csv",
+          "size_bytes": 657,
+          "block_id": "blk_e793c98830bd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:27.958778"
+        },
+        {
+          "filename": "part-67d5ae51.csv",
+          "size_bytes": 638,
+          "block_id": "blk_16a5c5a8dd7b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:33.008842"
+        },
+        {
+          "filename": "part-41147f4d.csv",
+          "size_bytes": 774,
+          "block_id": "blk_73369228a8bd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:38.096399"
+        },
+        {
+          "filename": "part-0a04c9e7.csv",
+          "size_bytes": 619,
+          "block_id": "blk_dff1e8509271",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:43.144510"
+        },
+        {
+          "filename": "part-6267a315.csv",
+          "size_bytes": 762,
+          "block_id": "blk_f56ffcc9c6dd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:48.199207"
+        },
+        {
+          "filename": "part-9234d9f1.csv",
+          "size_bytes": 576,
+          "block_id": "blk_ffaa9bccf742",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:53.254567"
+        },
+        {
+          "filename": "part-e08c8cbb.csv",
+          "size_bytes": 623,
+          "block_id": "blk_137bdee9622d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:30:58.301976"
+        },
+        {
+          "filename": "part-ac82f010.csv",
+          "size_bytes": 733,
+          "block_id": "blk_5043874598f9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:03.350153"
+        },
+        {
+          "filename": "part-488179cd.csv",
+          "size_bytes": 639,
+          "block_id": "blk_adf39cb80309",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:08.398775"
+        },
+        {
+          "filename": "part-2de30cee.csv",
+          "size_bytes": 618,
+          "block_id": "blk_fd6917323e88",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:13.448147"
+        },
+        {
+          "filename": "part-c567fa77.csv",
+          "size_bytes": 763,
+          "block_id": "blk_8e185c05708e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:18.501161"
+        },
+        {
+          "filename": "part-1c14b060.csv",
+          "size_bytes": 600,
+          "block_id": "blk_6482eb03caa4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:23.538301"
+        },
+        {
+          "filename": "part-3eeada13.csv",
+          "size_bytes": 626,
+          "block_id": "blk_bc117abd3a1d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:28.593742"
+        },
+        {
+          "filename": "part-334c3732.csv",
+          "size_bytes": 767,
+          "block_id": "blk_18462c1a89aa",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:33.640018"
+        },
+        {
+          "filename": "part-4ffe4186.csv",
+          "size_bytes": 612,
+          "block_id": "blk_ccf7a926a8ac",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:38.696232"
+        },
+        {
+          "filename": "part-b214d2c5.csv",
+          "size_bytes": 747,
+          "block_id": "blk_c2a862020976",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:43.739426"
+        },
+        {
+          "filename": "part-69db0db1.csv",
+          "size_bytes": 625,
+          "block_id": "blk_8a2e851f0751",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:48.791748"
+        },
+        {
+          "filename": "part-35c982b6.csv",
+          "size_bytes": 602,
+          "block_id": "blk_9f4737b5877c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:53.843571"
+        },
+        {
+          "filename": "part-be24fa49.csv",
+          "size_bytes": 790,
+          "block_id": "blk_bee4349b907c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:31:58.886686"
+        },
+        {
+          "filename": "part-92a138b6.csv",
+          "size_bytes": 617,
+          "block_id": "blk_727fc0a53d3e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:03.932039"
+        },
+        {
+          "filename": "part-5343433e.csv",
+          "size_bytes": 593,
+          "block_id": "blk_6bb5301a4276",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:08.981702"
+        },
+        {
+          "filename": "part-c2a75995.csv",
+          "size_bytes": 785,
+          "block_id": "blk_3e0b04406755",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:14.029215"
+        },
+        {
+          "filename": "part-f9580321.csv",
+          "size_bytes": 609,
+          "block_id": "blk_c0a7a668e1c2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:19.085292"
+        },
+        {
+          "filename": "part-6bada0a0.csv",
+          "size_bytes": 615,
+          "block_id": "blk_f4aa8eda8dc6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:24.177427"
+        },
+        {
+          "filename": "part-11a83335.csv",
+          "size_bytes": 775,
+          "block_id": "blk_77d092c6cd72",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:29.241628"
+        },
+        {
+          "filename": "part-83d86d01.csv",
+          "size_bytes": 623,
+          "block_id": "blk_6a535fa1e795",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:34.292014"
+        },
+        {
+          "filename": "part-cb412274.csv",
+          "size_bytes": 780,
+          "block_id": "blk_77a45fac029e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:39.344486"
+        },
+        {
+          "filename": "part-2e2b4d59.csv",
+          "size_bytes": 599,
+          "block_id": "blk_7ffc01b09dd4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:44.389416"
+        },
+        {
+          "filename": "part-defe9967.csv",
+          "size_bytes": 589,
+          "block_id": "blk_d641e6cce7d5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:49.440121"
+        },
+        {
+          "filename": "part-5d75f38a.csv",
+          "size_bytes": 735,
+          "block_id": "blk_73597172f3c9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:54.491623"
+        },
+        {
+          "filename": "part-53945d22.csv",
+          "size_bytes": 633,
+          "block_id": "blk_a4bed9a38756",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:32:59.540015"
+        },
+        {
+          "filename": "part-6fe17a1c.csv",
+          "size_bytes": 633,
+          "block_id": "blk_e8a71f6018c0",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:04.585653"
+        },
+        {
+          "filename": "part-70406fcb.csv",
+          "size_bytes": 766,
+          "block_id": "blk_f3127c118d22",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:09.636544"
+        },
+        {
+          "filename": "part-a9d7a674.csv",
+          "size_bytes": 615,
+          "block_id": "blk_6ade1c9e56d4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:14.681311"
+        },
+        {
+          "filename": "part-bf7b8dca.csv",
+          "size_bytes": 641,
+          "block_id": "blk_352190f4e8e2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:19.728510"
+        },
+        {
+          "filename": "part-bf82b9a7.csv",
+          "size_bytes": 760,
+          "block_id": "blk_4e78ac85db6c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:24.786029"
+        },
+        {
+          "filename": "part-b6fc5044.csv",
+          "size_bytes": 606,
+          "block_id": "blk_28c002c26809",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:29.858355"
+        },
+        {
+          "filename": "part-0da1a7c1.csv",
+          "size_bytes": 742,
+          "block_id": "blk_061ae18536af",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:34.913096"
+        },
+        {
+          "filename": "part-2317e418.csv",
+          "size_bytes": 617,
+          "block_id": "blk_aea54094d008",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:39.960797"
+        },
+        {
+          "filename": "part-123aac52.csv",
+          "size_bytes": 623,
+          "block_id": "blk_9fcbb8d286ef",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:45.012383"
+        },
+        {
+          "filename": "part-71324b78.csv",
+          "size_bytes": 800,
+          "block_id": "blk_580906a82b01",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:50.067689"
+        },
+        {
+          "filename": "part-20ce53a1.csv",
+          "size_bytes": 601,
+          "block_id": "blk_010bddddf289",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:33:55.110520"
+        },
+        {
+          "filename": "part-3cd58006.csv",
+          "size_bytes": 633,
+          "block_id": "blk_8c09d734afe9",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:00.153732"
+        },
+        {
+          "filename": "part-1fca1203.csv",
+          "size_bytes": 784,
+          "block_id": "blk_55c132978128",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:05.191166"
+        },
+        {
+          "filename": "part-81b0e5f8.csv",
+          "size_bytes": 581,
+          "block_id": "blk_b9f43400c253",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:10.250163"
+        },
+        {
+          "filename": "part-2050b7c2.csv",
+          "size_bytes": 752,
+          "block_id": "blk_ae805e5e4b7a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:15.293627"
+        },
+        {
+          "filename": "part-7576d628.csv",
+          "size_bytes": 606,
+          "block_id": "blk_2c5ec384eff6",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:20.353020"
+        },
+        {
+          "filename": "part-e303c2c1.csv",
+          "size_bytes": 637,
+          "block_id": "blk_5e5948e577a1",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:25.432653"
+        },
+        {
+          "filename": "part-1bfdb63e.csv",
+          "size_bytes": 763,
+          "block_id": "blk_7cb42667fd24",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:30.507700"
+        },
+        {
+          "filename": "part-91b8d824.csv",
+          "size_bytes": 644,
+          "block_id": "blk_d5a7deec1d1b",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:35.548182"
+        },
+        {
+          "filename": "part-a8f8b6a0.csv",
+          "size_bytes": 580,
+          "block_id": "blk_39331b9d12f2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:40.612212"
+        },
+        {
+          "filename": "part-d01e3213.csv",
+          "size_bytes": 738,
+          "block_id": "blk_68c033270a53",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:45.659187"
+        },
+        {
+          "filename": "part-9a02045f.csv",
+          "size_bytes": 607,
+          "block_id": "blk_da4d45bd03c8",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:50.710588"
+        },
+        {
+          "filename": "part-266115de.csv",
+          "size_bytes": 617,
+          "block_id": "blk_46fea620766c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:34:55.756532"
+        },
+        {
+          "filename": "part-8b70dd5a.csv",
+          "size_bytes": 749,
+          "block_id": "blk_d241e4aa8b6e",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:00.805485"
+        },
+        {
+          "filename": "part-d1c5d350.csv",
+          "size_bytes": 591,
+          "block_id": "blk_117d91acf97f",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:05.858402"
+        },
+        {
+          "filename": "part-89f4d11b.csv",
+          "size_bytes": 789,
+          "block_id": "blk_c29558ba43ea",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:10.925482"
+        },
+        {
+          "filename": "part-7b3e494b.csv",
+          "size_bytes": 631,
+          "block_id": "blk_bbe617377770",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:15.976715"
+        },
+        {
+          "filename": "part-d7bd95b8.csv",
+          "size_bytes": 594,
+          "block_id": "blk_0f8a42d6a676",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:21.021865"
+        },
+        {
+          "filename": "part-c673c68e.csv",
+          "size_bytes": 806,
+          "block_id": "blk_b3fe55a47b20",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:26.072173"
+        },
+        {
+          "filename": "part-30d3b7d6.csv",
+          "size_bytes": 624,
+          "block_id": "blk_c9fdbe994d06",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:31.127350"
+        },
+        {
+          "filename": "part-542d5cc1.csv",
+          "size_bytes": 578,
+          "block_id": "blk_99f0d234a200",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:36.173830"
+        },
+        {
+          "filename": "part-c0080532.csv",
+          "size_bytes": 784,
+          "block_id": "blk_2773d6577774",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:41.218047"
+        },
+        {
+          "filename": "part-46898065.csv",
+          "size_bytes": 624,
+          "block_id": "blk_7f3c74195391",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:46.267372"
+        },
+        {
+          "filename": "part-f0b63ca7.csv",
+          "size_bytes": 630,
+          "block_id": "blk_39b50a00d957",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:51.309578"
+        },
+        {
+          "filename": "part-ac1bdb61.csv",
+          "size_bytes": 774,
+          "block_id": "blk_a9aaa8d12b67",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:35:56.361461"
+        },
+        {
+          "filename": "part-1522a16a.csv",
+          "size_bytes": 610,
+          "block_id": "blk_fe033fdb32c4",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:01.409765"
+        },
+        {
+          "filename": "part-84f0bf7d.csv",
+          "size_bytes": 739,
+          "block_id": "blk_455eb6ec0123",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:06.459622"
+        },
+        {
+          "filename": "part-90e2375a.csv",
+          "size_bytes": 623,
+          "block_id": "blk_16c2b7e44dc2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:11.515984"
+        },
+        {
+          "filename": "part-43aa911c.csv",
+          "size_bytes": 596,
+          "block_id": "blk_1f9e22e8ac7a",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:16.618924"
+        },
+        {
+          "filename": "part-b1712240.csv",
+          "size_bytes": 791,
+          "block_id": "blk_6f4683d7769c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:21.671701"
+        },
+        {
+          "filename": "part-f13fd5d2.csv",
+          "size_bytes": 626,
+          "block_id": "blk_31277b938abc",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:26.712206"
+        },
+        {
+          "filename": "part-7ad1280b.csv",
+          "size_bytes": 626,
+          "block_id": "blk_8905a5377f49",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:31.771587"
+        },
+        {
+          "filename": "part-2feafce6.csv",
+          "size_bytes": 786,
+          "block_id": "blk_2b796b11c6d2",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:36.816422"
+        },
+        {
+          "filename": "part-435a0c23.csv",
+          "size_bytes": 640,
+          "block_id": "blk_697d27fcfec3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:41.866411"
+        },
+        {
+          "filename": "part-061f1d23.csv",
+          "size_bytes": 766,
+          "block_id": "blk_c81117af7c5c",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:46.912073"
+        },
+        {
+          "filename": "part-3858dc05.csv",
+          "size_bytes": 600,
+          "block_id": "blk_19f5abaa5220",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:51.962200"
+        },
+        {
+          "filename": "part-23306850.csv",
+          "size_bytes": 627,
+          "block_id": "blk_0270d0a894df",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:36:57.011829"
+        },
+        {
+          "filename": "part-46cec32d.csv",
+          "size_bytes": 795,
+          "block_id": "blk_e8a64a4b879d",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:37:02.057041"
+        },
+        {
+          "filename": "part-e15616df.csv",
+          "size_bytes": 621,
+          "block_id": "blk_88e03b5356a3",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:37:07.110680"
+        },
+        {
+          "filename": "part-e06ba3ea.csv",
+          "size_bytes": 629,
+          "block_id": "blk_4c0dd6020fdd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:37:12.155808"
+        },
+        {
+          "filename": "part-d3ec41b3.csv",
+          "size_bytes": 811,
+          "block_id": "blk_854c39943186",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:37:17.206774"
+        },
+        {
+          "filename": "part-4745758a.csv",
+          "size_bytes": 608,
+          "block_id": "blk_09d659aae1cd",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:37:22.237382"
+        },
+        {
+          "filename": "part-3bc80874.csv",
+          "size_bytes": 565,
+          "block_id": "blk_713114cffb85",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:37:27.296353"
+        },
+        {
+          "filename": "part-6b935cdf.csv",
+          "size_bytes": 787,
+          "block_id": "blk_4e7bf20e99c5",
+          "replicas": [
+            "datanode-1.bank.internal",
+            "datanode-2.bank.internal",
+            "datanode-3.bank.internal"
+          ],
+          "timestamp": "2026-10-16T01:37:32.347012"
         }
       ]
     },
@@ -13126,5 +18824,5 @@
       ]
     }
   },
-  "last_updated": "2026-10-16T00:53:56.235372"
+  "last_updated": "2026-10-16T01:37:32.347012"
 }

@@ -1,4 +1,0 @@
-transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
-TXN_STREAM_502023,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,200,RuPay,2026-10-16 00:49:25,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
-TXN_STREAM_502024,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,400,MasterCard,2026-10-16 00:49:26,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
-TXN_STREAM_502025,ATM_004,Suburban Green Park,Residential Community,Low-Traffic,40,40,MasterCard,2026-10-16 00:49:28,29750,SUCCESS,

@@ -212,15 +212,81 @@ body {
 }
 
 .btn-action {
-  background: linear-gradient(135deg, var(--color-primary), #4f46e5);
+  background: linear-gradient(135deg, #059669, #10b981);
   color: #fff;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-action:hover:not(:disabled) {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-action:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-action-glow {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: #fff;
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.35);
+  animation: pulse-glow 2.5s infinite;
+}
+
+.btn-action-glow:hover {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  box-shadow: 0 0 18px rgba(16, 185, 129, 0.6);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 8px rgba(16, 185, 129, 0.3); }
+  50% { box-shadow: 0 0 16px rgba(16, 185, 129, 0.6); }
+  100% { box-shadow: 0 0 8px rgba(16, 185, 129, 0.3); }
+}
+
+.btn-sweep {
+  background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-sweep:hover:not(:disabled) {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  box-shadow: 0 0 14px rgba(139, 92, 246, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-optimal {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
   padding: 6px 12px;
   font-size: 12px;
   border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
 }
 
-.btn-action:hover {
-  box-shadow: 0 0 10px var(--color-primary-glow);
+.btn-optimal:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
 }
 
 /* Container */
@@ -607,6 +673,21 @@ body {
 .terminal-line.stockout {
   border-left-color: var(--color-danger);
   background: rgba(244, 63, 94, 0.08);
+}
+
+.terminal-line.replenish {
+  border-left-color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.terminal-line.sweep {
+  border-left-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.terminal-line.reset {
+  border-left-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
 }
 
 .terminal-line-left {

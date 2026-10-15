@@ -131,6 +131,9 @@
             <p class="panel-desc">Recommended cash delivery for each ATM based on tomorrow's forecasted demand</p>
           </div>
           <div class="header-action-group">
+            <button class="btn btn-sm btn-action-glow" id="btn-refill-all" onclick="dispatchFleetReplenish()" title="Dispatch cash vans to all at-risk ATMs at once">
+              🚚 Refill All At-Risk
+            </button>
             <button class="btn btn-sm btn-secondary" id="btn-reset-balances" onclick="resetAtmBalances()" title="Reset ATMs to initial stockout/excess test scenario">
               ⚡ Reset Balances
             </button>

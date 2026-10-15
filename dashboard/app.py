@@ -182,16 +182,103 @@ async def replenish_atm_cash(request: Request):
     amount = float(body.get("amount", 25000))
 
     updated_atm = atm_producer.replenish_atm(atm_id, amount)
+    
+    # Broadcast REPLENISHMENT event to Kafka & live UI
+    replenish_event = {
+        "transaction_id": f"REPLENISH_{int(time.time()*1000)}",
+        "event_type": "REPLENISHMENT",
+        "atm_id": atm_id,
+        "atm_name": updated_atm.get("name", atm_id),
+        "location": updated_atm.get("location", ""),
+        "traffic_type": updated_atm.get("traffic_type", ""),
+        "amount_replenished": amount,
+        "amount_withdrawn": 0,
+        "remaining_cash": updated_atm.get("current_cash", 0),
+        "transaction_status": "REPLENISHED",
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "alert": f"🚚 Cash Van delivered +${amount:,.0f} to {updated_atm.get('name', atm_id)}"
+    }
+    kafka_manager.send_message(KAFKA_TOPIC, replenish_event)
+
     return {
         "success": True,
-        "message": f"Successfully loaded ${amount:,.0f} into {atm_id}!",
+        "message": f"Successfully loaded ${amount:,.0f} into {atm_id} ({updated_atm.get('name', '')})!",
         "updated_state": updated_atm
+    }
+
+
+@app.post("/api/atm/sweep")
+async def sweep_atm_cash(request: Request):
+    """Simulates sweeping idle excess cash from low-traffic ATM back to bank vault."""
+    body = await request.json()
+    atm_id = body.get("atm_id")
+    amount = float(body.get("amount", 20000))
+
+    updated_atm = atm_producer.sweep_atm(atm_id, amount)
+    
+    sweep_event = {
+        "transaction_id": f"SWEEP_{int(time.time()*1000)}",
+        "event_type": "CASH_SWEEP",
+        "atm_id": atm_id,
+        "atm_name": updated_atm.get("name", atm_id),
+        "location": updated_atm.get("location", ""),
+        "traffic_type": updated_atm.get("traffic_type", ""),
+        "amount_swept": amount,
+        "amount_withdrawn": 0,
+        "remaining_cash": updated_atm.get("current_cash", 0),
+        "transaction_status": "SWEPT",
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "alert": f"💰 Idle Cash Swept -${amount:,.0f} from {updated_atm.get('name', atm_id)} to Central Vault"
+    }
+    kafka_manager.send_message(KAFKA_TOPIC, sweep_event)
+
+    return {
+        "success": True,
+        "message": f"Successfully swept ${amount:,.0f} idle cash from {atm_id} back to Central Vault!",
+        "updated_state": updated_atm
+    }
+
+
+@app.post("/api/atm/replenish-all")
+async def replenish_all_at_risk_atms():
+    """Dispatches cash vans to all at-risk ATMs with recommended amounts."""
+    recommendations = replenishment_optimizer.predict_next_day_demand()
+    at_risk = [r for r in recommendations if r["risk_status"] == "STOCKOUT_ALERT" and r["recommended_replenishment"] > 0]
+    
+    replenished = []
+    for r in at_risk:
+        atm_id = r["atm_id"]
+        amount = r["recommended_replenishment"]
+        updated = atm_producer.replenish_atm(atm_id, amount)
+        replenish_event = {
+            "transaction_id": f"FLEET_LOAD_{int(time.time()*1000)}_{atm_id}",
+            "event_type": "REPLENISHMENT",
+            "atm_id": atm_id,
+            "atm_name": updated.get("name", atm_id),
+            "location": updated.get("location", ""),
+            "traffic_type": updated.get("traffic_type", ""),
+            "amount_replenished": amount,
+            "amount_withdrawn": 0,
+            "remaining_cash": updated.get("current_cash", 0),
+            "transaction_status": "REPLENISHED",
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "alert": f"🚚 Fleet Load: +${amount:,.0f} delivered to {updated.get('name', atm_id)}"
+        }
+        kafka_manager.send_message(KAFKA_TOPIC, replenish_event)
+        replenished.append({"atm_id": atm_id, "amount": amount, "new_cash": updated.get("current_cash", 0)})
+
+    return {
+        "success": True,
+        "message": f"Successfully replenished {len(replenished)} at-risk ATMs!",
+        "replenished": replenished
     }
 
 
 @app.post("/api/model/retrain")
 async def retrain_model_api():
     """Trigger time-series model retraining on latest HDFS data."""
+    from forecasting.train_model import train_forecasting_model, invalidate_dataset_cache
+    invalidate_dataset_cache()
     metrics = train_forecasting_model()
     replenishment_optimizer._load_artifacts()
     return {"success": True, "metrics": metrics}
@@ -209,6 +296,20 @@ async def reset_atm_balances():
             _ATM_STATE[atm["atm_id"]]["total_dispensed_today"] = 0
             _ATM_STATE[atm["atm_id"]]["txns_today"] = 0
             _ATM_STATE[atm["atm_id"]]["last_replenished"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    reset_event = {
+        "transaction_id": f"RESET_{int(time.time()*1000)}",
+        "event_type": "SYSTEM_RESET",
+        "atm_id": "ALL",
+        "atm_name": "Fleet",
+        "location": "All Locations",
+        "traffic_type": "All",
+        "amount_withdrawn": 0,
+        "transaction_status": "RESET",
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "alert": "⚡ ATM balances reset to baseline scenario (ATM_001/002 low, ATM_004 excess)"
+    }
+    kafka_manager.send_message(KAFKA_TOPIC, reset_event)
 
     recommendations = replenishment_optimizer.predict_next_day_demand()
     return {
@@ -232,12 +333,12 @@ async def ingest_new_hdfs_partition():
     import random
     from datetime import timedelta
     from data.generate_dataset import ATM_PROFILES, DENOMINATIONS, CARD_TYPES, is_public_holiday
+    from forecasting.train_model import invalidate_dataset_cache
     
-    meta = hdfs_client._load_fsimage()
-    existing_partitions = list(meta.get("partitions", {}).keys())
+    invalidate_dataset_cache()
     
     # Calculate next partition date
-    next_date = datetime.now() + timedelta(days=len(existing_partitions) - 90 + 1)
+    next_date = datetime.now() + timedelta(days=1)
     day_txns = []
     txn_id_start = int(time.time() * 1000) % 1000000
 

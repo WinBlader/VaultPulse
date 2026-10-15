@@ -91,55 +91,106 @@ _shared_broker = InMemoryKafkaBroker()
 
 class KafkaPipelineManager:
     """
-    Unified Kafka Manager that detects whether real Kafka is alive,
-    or falls back cleanly to the in-memory broker.
+    Unified Kafka Manager that connects to real Apache Kafka Broker (kafka:29092 / localhost:9092)
+    with automatic retries, topic provisioning, and transparent fallback to high-fidelity in-memory engine.
     """
     def __init__(self, bootstrap_servers: str = DEFAULT_BOOTSTRAP_SERVERS):
         self.bootstrap_servers = bootstrap_servers
         self.topic = KAFKA_TOPIC
         self.is_real_kafka = False
         self.real_producer = None
-        self._check_connection()
+        self._connecting = False
+        self._lock = threading.Lock()
+        
+        # Immediate attempt
+        if not self._try_connect(timeout_ms=2500):
+            # Spawn background reconnection worker to catch Kafka once it completes startup
+            thread = threading.Thread(target=self._background_reconnector, daemon=True)
+            thread.start()
 
-    def _check_connection(self):
+    def _ensure_topic_exists(self):
+        """Ensures the ATM transactions topic exists on the Kafka cluster."""
+        try:
+            from kafka.admin import KafkaAdminClient, NewTopic
+            admin = KafkaAdminClient(
+                bootstrap_servers=self.bootstrap_servers,
+                request_timeout_ms=4000,
+                api_version=(2, 5, 0)
+            )
+            existing_topics = admin.list_topics()
+            if self.topic not in existing_topics:
+                topic = NewTopic(name=self.topic, num_partitions=1, replication_factor=1)
+                admin.create_topics([topic])
+                print(f"[Kafka Pipeline] Created topic '{self.topic}' on real Kafka cluster.")
+            admin.close()
+        except Exception as e:
+            # Topic might already exist or auto.create.topics.enable handled it
+            pass
+
+    def _try_connect(self, timeout_ms: int = 3000) -> bool:
         if not HAS_KAFKA_LIB:
             self.is_real_kafka = False
-            return
+            return False
 
         try:
-            # Short timeout to avoid blocking if real Kafka is not running
-            self.real_producer = RealKafkaProducer(
+            producer = RealKafkaProducer(
                 bootstrap_servers=self.bootstrap_servers,
                 value_serializer=lambda v: json.dumps(v).encode("utf-8"),
-                request_timeout_ms=1500,
-                max_block_ms=1500
+                request_timeout_ms=timeout_ms,
+                max_block_ms=timeout_ms,
+                acks=1,
+                retries=3,
+                linger_ms=10
             )
-            self.is_real_kafka = True
+            with self._lock:
+                self.real_producer = producer
+                self.is_real_kafka = True
+            
             print(f"[Kafka Pipeline] Connected successfully to REAL Kafka Broker at {self.bootstrap_servers}")
-        except Exception:
-            self.is_real_kafka = False
-            self.real_producer = None
-            print(f"[Kafka Pipeline] Real Kafka broker not detected on {self.bootstrap_servers}. Using High-Fidelity Kafka Engine.")
+            self._ensure_topic_exists()
+            return True
+        except Exception as e:
+            with self._lock:
+                self.is_real_kafka = False
+                self.real_producer = None
+            return False
+
+    def _background_reconnector(self):
+        """Periodically retries connection in background if real Kafka was booting up."""
+        if self._connecting:
+            return
+        self._connecting = True
+        
+        print(f"[Kafka Pipeline] Starting background retry connection to real Kafka at {self.bootstrap_servers}...")
+        for attempt in range(1, 15):
+            if self.is_real_kafka:
+                break
+            time.sleep(2.5)
+            if self._try_connect(timeout_ms=3000):
+                print(f"[Kafka Pipeline] Background connection to real Kafka SUCCEEDED on attempt {attempt}!")
+                break
+        
+        if not self.is_real_kafka:
+            print(f"[Kafka Pipeline] Real Kafka broker not detected after retries. Operating with High-Fidelity Kafka Engine.")
+        self._connecting = False
 
     def send_message(self, topic: str, message: Dict[str, Any]) -> Dict[str, Any]:
-        """Send message to Kafka topic."""
+        """Send message to Kafka topic asynchronously and notify local subscribers."""
+        # Always feed shared in-memory broker so local WebSocket & consumers receive it with zero lag
+        local_record = _shared_broker.produce(topic, message)
+
+        # Publish asynchronously to real Kafka broker
         if self.is_real_kafka and self.real_producer:
             try:
-                future = self.real_producer.send(topic, message)
-                meta = future.get(timeout=2)
-                # Also notify local listeners for live dashboard
-                _shared_broker.produce(topic, message)
-                return {
-                    "topic": meta.topic,
-                    "partition": meta.partition,
-                    "offset": meta.offset,
-                    "value": message
-                }
+                self.real_producer.send(topic, message)
             except Exception as e:
-                # Fallback to local
-                return _shared_broker.produce(topic, message)
-        else:
-            return _shared_broker.produce(topic, message)
+                print(f"[Kafka Producer Warning] Failed to publish message to real Kafka: {e}")
+                # Real Kafka might have restarted, trigger background reconnector
+                with self._lock:
+                    self.is_real_kafka = False
+                threading.Thread(target=self._background_reconnector, daemon=True).start()
+
+        return local_record
 
     def subscribe(self, topic: str, callback: Callable[[Dict[str, Any]], None]):
         """Register subscriber callback for real-time messages."""
@@ -154,9 +205,11 @@ class KafkaPipelineManager:
             "bootstrap_servers": self.bootstrap_servers if self.is_real_kafka else "Internal Managed Broker",
             "topic": self.topic,
             "status": "ONLINE",
+            "is_real_kafka": self.is_real_kafka,
             "total_messages_streamed": _shared_broker.offsets.get(self.topic, 0)
         }
 
 
 # Singleton manager
 kafka_manager = KafkaPipelineManager()
+

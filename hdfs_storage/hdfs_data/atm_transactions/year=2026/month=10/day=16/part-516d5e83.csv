@@ -1,5 +1,0 @@
-transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
-TXN_STREAM_501861,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,400,400,RuPay,2026-10-16 00:45:22,11030,SUCCESS,
-TXN_STREAM_501862,ATM_003,Financial Tower Plaza,Business District,Medium-Traffic,0,200,American Express,2026-10-16 00:45:23,100,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
-TXN_STREAM_501863,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,400,400,RuPay,2026-10-16 00:45:25,10630,SUCCESS,
-TXN_STREAM_501864,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,200,200,Visa,2026-10-16 00:45:26,10430,SUCCESS,

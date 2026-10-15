@@ -107,7 +107,20 @@ class ATMKafkaProducer:
                     _ATM_STATE[atm_id]["current_cash"] + amount
                 )
                 _ATM_STATE[atm_id]["last_replenished"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                return _ATM_STATE[atm_id]
+                return dict(_ATM_STATE[atm_id])
+        return {}
+
+    @staticmethod
+    def sweep_atm(atm_id: str, amount: float) -> Dict[str, Any]:
+        """Sweep excess idle cash from an ATM back to central bank vault."""
+        with _state_lock:
+            if atm_id in _ATM_STATE:
+                _ATM_STATE[atm_id]["current_cash"] = max(
+                    5000,
+                    _ATM_STATE[atm_id]["current_cash"] - amount
+                )
+                _ATM_STATE[atm_id]["last_replenished"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                return dict(_ATM_STATE[atm_id])
         return {}
 
     @staticmethod

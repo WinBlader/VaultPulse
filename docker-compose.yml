@@ -91,8 +91,11 @@ services:
       - "8000:8000"
     volumes:
       - ./data:/app/data
-      - ./hdfs_storage/hdfs_data:/app/hdfs_storage/hdfs_data
-      - ./forecasting/saved_models:/app/forecasting/saved_models
+      - ./hdfs_storage:/app/hdfs_storage
+      - ./forecasting:/app/forecasting
+      - ./kafka_pipeline:/app/kafka_pipeline
+      - ./dashboard:/app/dashboard
+      - ./run_project.py:/app/run_project.py
     networks:
       - bda-net
 

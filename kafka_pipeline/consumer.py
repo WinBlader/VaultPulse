@@ -31,18 +31,20 @@ class ATMKafkaConsumer:
         """Handler called when a message is received from Kafka."""
         txn_data = kafka_record.get("value", {})
         with self.lock:
-            self.buffer.append(txn_data)
             self.total_consumed += 1
 
-            # Notify UI live subscribers
+            # Notify UI live subscribers immediately (for all transactions & operational events)
             for sub in list(self.live_subscribers):
                 try:
                     sub(txn_data)
                 except Exception:
                     pass
 
-            if len(self.buffer) >= self.batch_size:
-                self._flush_to_hdfs()
+            # Only buffer actual ATM customer withdrawal transactions for HDFS historical demand data
+            if txn_data.get("event_type") not in ["REPLENISHMENT", "CASH_SWEEP", "SYSTEM_RESET"]:
+                self.buffer.append(txn_data)
+                if len(self.buffer) >= self.batch_size:
+                    self._flush_to_hdfs()
 
     def _flush_to_hdfs(self):
         """Flushes buffered transactions to HDFS partition."""

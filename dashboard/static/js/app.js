@@ -164,8 +164,13 @@ async function fetchSystemStatus() {
   }
 }
 
-// Load Recommendations & KPIs
+let isFetchingRecommendations = false;
+
+// Load Recommendations & KPIs with Smart In-Place DOM Updates (No flickering/lag)
 async function loadRecommendations(isUserClick = false) {
+  if (isFetchingRecommendations && !isUserClick) return;
+  isFetchingRecommendations = true;
+
   const refreshIcon = document.getElementById("refresh-icon");
   const refreshBtn = document.getElementById("btn-refresh-plan");
   
@@ -181,56 +186,93 @@ async function loadRecommendations(isUserClick = false) {
     const recs = data.recommendations;
 
     // Update KPIs
-    document.getElementById("kpi-stockout").innerText = kpis.stockout_alerts;
-    document.getElementById("kpi-excess").innerText = kpis.excess_cash_alerts;
-    document.getElementById("kpi-optimal").innerText = kpis.optimal_atms;
-    document.getElementById("kpi-total-needed").innerText = `$${Math.round(kpis.total_cash_needed).toLocaleString()}`;
-    document.getElementById("kpi-idle-saved").innerText = `$${Math.round(kpis.idle_cash_saved_vs_fixed).toLocaleString()}`;
+    const elStockout = document.getElementById("kpi-stockout");
+    if (elStockout) elStockout.innerText = kpis.stockout_alerts;
 
-    // Render Table
+    const elExcess = document.getElementById("kpi-excess");
+    if (elExcess) elExcess.innerText = kpis.excess_cash_alerts;
+
+    const elOptimal = document.getElementById("kpi-optimal");
+    if (elOptimal) elOptimal.innerText = kpis.optimal_atms;
+
+    const elNeeded = document.getElementById("kpi-total-needed");
+    if (elNeeded) elNeeded.innerText = `$${Math.round(kpis.total_cash_needed).toLocaleString()}`;
+
+    const elSaved = document.getElementById("kpi-idle-saved");
+    if (elSaved) elSaved.innerText = `$${Math.round(kpis.idle_cash_saved_vs_fixed).toLocaleString()}`;
+
+    // Render Table In-Place
     const tbody = document.getElementById("recommendations-tbody");
-    tbody.innerHTML = "";
+    if (tbody) {
+      recs.forEach(r => {
+        let tr = document.getElementById(`row-${r.atm_id}`);
+        const isNewRow = !tr;
+        if (isNewRow) {
+          tr = document.createElement("tr");
+          tr.id = `row-${r.atm_id}`;
+        }
 
-    recs.forEach(r => {
-      const tr = document.createElement("tr");
-      tr.id = `row-${r.atm_id}`;
+        let badgeClass = "badge-success";
+        let badgeLabel = "🟢 Optimal";
+        if (r.risk_status === "STOCKOUT_ALERT") {
+          badgeClass = "badge-danger";
+          badgeLabel = "🚨 Stockout Alert";
+        } else if (r.risk_status === "EXCESS_CASH_ALERT") {
+          badgeClass = "badge-warning";
+          badgeLabel = "⚠️ Excess Cash";
+        }
 
-      let badgeClass = "badge-success";
-      let badgeLabel = "🟢 Optimal";
-      if (r.risk_status === "STOCKOUT_ALERT") {
-        badgeClass = "badge-danger";
-        badgeLabel = "🚨 Stockout Alert";
-      } else if (r.risk_status === "EXCESS_CASH_ALERT") {
-        badgeClass = "badge-warning";
-        badgeLabel = "⚠️ Excess Cash";
-      }
+        const loadAmountFormatted = r.recommended_replenishment > 0
+          ? `<strong>+$${Math.round(r.recommended_replenishment).toLocaleString()}</strong>`
+          : `<span class="text-dim">$0 (No load)</span>`;
 
-      const loadAmountFormatted = r.recommended_replenishment > 0
-        ? `<strong>+$${Math.round(r.recommended_replenishment).toLocaleString()}</strong>`
-        : `<span class="text-dim">$0 (No load)</span>`;
+        // Context-aware action button
+        let actionBtnHtml = "";
+        if (r.risk_status === "STOCKOUT_ALERT") {
+          const loadAmt = r.recommended_replenishment > 0 ? r.recommended_replenishment : 25000;
+          actionBtnHtml = `
+            <button class="btn btn-action" id="btn-action-${r.atm_id}" onclick="dispatchCashVan('${r.atm_id}', ${loadAmt})">
+              🚚 Refill (+$${Math.round(loadAmt / 1000)}k)
+            </button>
+          `;
+        } else if (r.risk_status === "EXCESS_CASH_ALERT") {
+          actionBtnHtml = `
+            <button class="btn btn-sweep" id="btn-action-${r.atm_id}" onclick="dispatchCashSweep('${r.atm_id}', 20000)">
+              💰 Sweep ($20k)
+            </button>
+          `;
+        } else {
+          actionBtnHtml = `
+            <button class="btn btn-optimal" id="btn-action-${r.atm_id}" onclick="dispatchCashVan('${r.atm_id}', 10000)">
+              🚚 Top Up ($10k)
+            </button>
+          `;
+        }
 
-      tr.innerHTML = `
-        <td>
-          <div class="atm-cell-title">${r.atm_name}</div>
-          <div class="atm-cell-sub"><code>${r.atm_id}</code></div>
-        </td>
-        <td>
-          <div class="atm-cell-title">${r.location}</div>
-          <div class="atm-cell-sub">${r.traffic_type}</div>
-        </td>
-        <td><strong id="cash-${r.atm_id}">$${Math.round(r.current_cash).toLocaleString()}</strong></td>
-        <td><strong>$${Math.round(r.predicted_demand).toLocaleString()}</strong></td>
-        <td class="text-dim">+$${Math.round(r.safety_stock).toLocaleString()}</td>
-        <td>${loadAmountFormatted}</td>
-        <td><span class="badge ${badgeClass}" id="badge-${r.atm_id}">${badgeLabel}</span></td>
-        <td>
-          <button class="btn btn-action" onclick="dispatchCashVan('${r.atm_id}', ${r.recommended_replenishment > 0 ? r.recommended_replenishment : 20000})">
-            🚚 Refill
-          </button>
-        </td>
-      `;
-      tbody.appendChild(tr);
-    });
+        tr.innerHTML = `
+          <td>
+            <div class="atm-cell-title">${r.atm_name}</div>
+            <div class="atm-cell-sub"><code>${r.atm_id}</code></div>
+          </td>
+          <td>
+            <div class="atm-cell-title">${r.location}</div>
+            <div class="atm-cell-sub">${r.traffic_type}</div>
+          </td>
+          <td><strong id="cash-${r.atm_id}">$${Math.round(r.current_cash).toLocaleString()}</strong></td>
+          <td><strong>$${Math.round(r.predicted_demand).toLocaleString()}</strong></td>
+          <td class="text-dim">+$${Math.round(r.safety_stock).toLocaleString()}</td>
+          <td>${loadAmountFormatted}</td>
+          <td><span class="badge ${badgeClass}" id="badge-${r.atm_id}">${badgeLabel}</span></td>
+          <td id="cell-action-${r.atm_id}">
+            ${actionBtnHtml}
+          </td>
+        `;
+
+        if (isNewRow) {
+          tbody.appendChild(tr);
+        }
+      });
+    }
 
     if (isUserClick) {
       showToast("🔄 Replenishment plan updated with real-time ATM balances!");
@@ -243,11 +285,12 @@ async function loadRecommendations(isUserClick = false) {
       showToast("Error updating replenishment plan.");
     }
   } finally {
+    isFetchingRecommendations = false;
     if (isUserClick && refreshIcon) {
       setTimeout(() => {
         refreshIcon.classList.remove("spin-icon");
         if (refreshBtn) refreshBtn.disabled = false;
-      }, 500);
+      }, 400);
     }
   }
 }
@@ -325,38 +368,83 @@ function connectWebSocket() {
 
   socket.onopen = () => {
     console.log("[WebSocket] Connected to live Kafka transaction stream.");
-    const placeholder = consoleEl.querySelector(".terminal-placeholder");
+    const placeholder = consoleEl ? consoleEl.querySelector(".terminal-placeholder") : null;
     if (placeholder) placeholder.style.display = "none";
   };
 
   socket.onmessage = event => {
-    const txn = JSON.parse(event.data);
+    const msg = JSON.parse(event.data);
     streamTxnCount++;
     if (countBadge) countBadge.innerText = `${streamTxnCount} Streamed`;
 
+    if (!consoleEl) return;
+
+    const timeOnly = msg.timestamp ? (msg.timestamp.split(" ")[1] || msg.timestamp) : new Date().toLocaleTimeString();
+    const line = document.createElement("div");
+
     // Live update the ATM's cash cell in the table if available
-    const cashCell = document.getElementById(`cash-${txn.atm_id}`);
-    if (cashCell && txn.remaining_cash !== undefined) {
-      cashCell.innerText = `$${Math.round(txn.remaining_cash).toLocaleString()}`;
+    if (msg.atm_id && msg.remaining_cash !== undefined) {
+      const cashCell = document.getElementById(`cash-${msg.atm_id}`);
+      if (cashCell) {
+        cashCell.innerText = `$${Math.round(msg.remaining_cash).toLocaleString()}`;
+      }
     }
 
-    const line = document.createElement("div");
-    const isStockout = txn.transaction_status === "CASH_OUT_FAILED";
-    line.className = `terminal-line ${isStockout ? "stockout" : ""}`;
+    if (msg.event_type === "REPLENISHMENT") {
+      line.className = "terminal-line replenish";
+      line.innerHTML = `
+        <div class="terminal-line-left">
+          <span class="terminal-time">[${timeOnly}]</span>
+          <span class="terminal-id" style="color:#10b981;">🚚 REPLENISH</span>
+          <span class="terminal-atm">${msg.atm_name || msg.atm_id}</span>
+        </div>
+        <div>
+          <span class="terminal-amount" style="color:#34d399;">+$${(msg.amount_replenished || 0).toLocaleString()}</span>
+          <span class="terminal-bal">(Vault: $${(msg.remaining_cash || 0).toLocaleString()})</span>
+        </div>
+      `;
+    } else if (msg.event_type === "CASH_SWEEP") {
+      line.className = "terminal-line sweep";
+      line.innerHTML = `
+        <div class="terminal-line-left">
+          <span class="terminal-time">[${timeOnly}]</span>
+          <span class="terminal-id" style="color:#8b5cf6;">💰 CASH SWEEP</span>
+          <span class="terminal-atm">${msg.atm_name || msg.atm_id}</span>
+        </div>
+        <div>
+          <span class="terminal-amount" style="color:#c084fc;">-$${(msg.amount_swept || 0).toLocaleString()}</span>
+          <span class="terminal-bal">(Vault: $${(msg.remaining_cash || 0).toLocaleString()})</span>
+        </div>
+      `;
+    } else if (msg.event_type === "SYSTEM_RESET") {
+      line.className = "terminal-line reset";
+      line.innerHTML = `
+        <div class="terminal-line-left">
+          <span class="terminal-time">[${timeOnly}]</span>
+          <span class="terminal-id" style="color:#f59e0b;">⚡ RESET</span>
+          <span class="terminal-atm">${msg.alert || "Fleet Balances Reset"}</span>
+        </div>
+        <div>
+          <span class="terminal-amount" style="color:#fbbf24;">Baseline Active</span>
+        </div>
+      `;
+    } else {
+      // Standard transaction
+      const isStockout = msg.transaction_status === "CASH_OUT_FAILED";
+      line.className = `terminal-line ${isStockout ? "stockout" : ""}`;
 
-    const timeOnly = txn.timestamp.split(" ")[1] || txn.timestamp;
-
-    line.innerHTML = `
-      <div class="terminal-line-left">
-        <span class="terminal-time">[${timeOnly}]</span>
-        <span class="terminal-id">${txn.transaction_id}</span>
-        <span class="terminal-atm">${txn.atm_name} (${txn.atm_id})</span>
-      </div>
-      <div>
-        <span class="terminal-amount">${isStockout ? "🚨 FAILED (Cash Out)" : `-$${txn.amount_withdrawn}`}</span>
-        <span class="terminal-bal">(Bal: $${txn.remaining_cash?.toLocaleString() || 0})</span>
-      </div>
-    `;
+      line.innerHTML = `
+        <div class="terminal-line-left">
+          <span class="terminal-time">[${timeOnly}]</span>
+          <span class="terminal-id">${msg.transaction_id}</span>
+          <span class="terminal-atm">${msg.atm_name} (${msg.atm_id})</span>
+        </div>
+        <div>
+          <span class="terminal-amount">${isStockout ? "🚨 FAILED (Cash Out)" : `-$${msg.amount_withdrawn}`}</span>
+          <span class="terminal-bal">(Bal: $${msg.remaining_cash?.toLocaleString() || 0})</span>
+        </div>
+      `;
+    }
 
     consoleEl.prepend(line);
 
@@ -404,6 +492,13 @@ function updateStreamButtonUI() {
 
 // Dispatch Cash Van Action
 async function dispatchCashVan(atmId, amount) {
+  const btn = document.getElementById(`btn-action-${atmId}`);
+  const originalText = btn ? btn.innerHTML : "🚚 Refill";
+  if (btn) {
+    btn.innerHTML = "⏳ Refilling...";
+    btn.disabled = true;
+  }
+
   try {
     const res = await fetch("/api/atm/replenish", {
       method: "POST",
@@ -411,11 +506,81 @@ async function dispatchCashVan(atmId, amount) {
       body: JSON.stringify({ atm_id: atmId, amount: amount })
     });
     const data = await res.json();
+    
+    // Immediate visual feedback
+    const cashCell = document.getElementById(`cash-${atmId}`);
+    if (cashCell && data.updated_state?.current_cash) {
+      cashCell.innerText = `$${Math.round(data.updated_state.current_cash).toLocaleString()}`;
+    }
+
     showToast(data.message);
     await loadRecommendations(false);
     await updateChart();
   } catch (err) {
     showToast(`Failed to dispatch cash van to ${atmId}`);
+    if (btn) {
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+    }
+  }
+}
+
+// Dispatch Cash Sweep Action (Returns excess money to central bank vault)
+async function dispatchCashSweep(atmId, amount) {
+  const btn = document.getElementById(`btn-action-${atmId}`);
+  const originalText = btn ? btn.innerHTML : "💰 Sweep";
+  if (btn) {
+    btn.innerHTML = "⏳ Sweeping...";
+    btn.disabled = true;
+  }
+
+  try {
+    const res = await fetch("/api/atm/sweep", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ atm_id: atmId, amount: amount })
+    });
+    const data = await res.json();
+
+    const cashCell = document.getElementById(`cash-${atmId}`);
+    if (cashCell && data.updated_state?.current_cash) {
+      cashCell.innerText = `$${Math.round(data.updated_state.current_cash).toLocaleString()}`;
+    }
+
+    showToast(data.message);
+    await loadRecommendations(false);
+    await updateChart();
+  } catch (err) {
+    showToast(`Failed to sweep cash from ${atmId}`);
+    if (btn) {
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+    }
+  }
+}
+
+// Fleet Replenish: Dispatches cash vans to all at-risk machines in 1 click
+async function dispatchFleetReplenish() {
+  const btn = document.getElementById("btn-refill-all");
+  const originalText = btn ? btn.innerHTML : "🚚 Refill All At-Risk";
+  if (btn) {
+    btn.innerHTML = "⏳ Dispatching Fleet...";
+    btn.disabled = true;
+  }
+
+  try {
+    const res = await fetch("/api/atm/replenish-all", { method: "POST" });
+    const data = await res.json();
+    showToast(`🚚 ${data.message}`);
+    await loadRecommendations(false);
+    await updateChart();
+  } catch (err) {
+    showToast("Failed to dispatch fleet replenishment.");
+  } finally {
+    if (btn) {
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+    }
   }
 }
 
@@ -458,3 +623,4 @@ function showToast(msg) {
     toast.classList.remove("show");
   }, 3500);
 }
+

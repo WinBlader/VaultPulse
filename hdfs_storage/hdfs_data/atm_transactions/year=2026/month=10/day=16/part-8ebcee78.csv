@@ -1,5 +1,0 @@
-transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
-TXN_STREAM_501831,ATM_002,Grand City Mall,Shopping Center,High-Traffic,0,300,Visa,2026-10-16 00:44:37,0,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
-TXN_STREAM_501832,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,50,50,MasterCard,2026-10-16 00:44:38,13750,SUCCESS,
-TXN_STREAM_501833,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,400,400,RuPay,2026-10-16 00:44:40,13350,SUCCESS,
-TXN_STREAM_501834,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,100,100,MasterCard,2026-10-16 00:44:41,13250,SUCCESS,

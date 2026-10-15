@@ -1,5 +1,0 @@
-transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
-TXN_STREAM_502103,ATM_001,Metro Central Station,Downtown Transit Hub,High-Traffic,0,200,MasterCard,2026-10-16 00:51:25,10,CASH_OUT_FAILED,🚨 STOCKOUT OCCURRED!
-TXN_STREAM_502104,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,50,50,Visa,2026-10-16 00:51:26,1070,SUCCESS,
-TXN_STREAM_502105,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,100,100,Visa,2026-10-16 00:51:28,970,SUCCESS,
-TXN_STREAM_502106,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,300,300,American Express,2026-10-16 00:51:29,670,SUCCESS,

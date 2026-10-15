@@ -1,5 +1,0 @@
-transaction_id,atm_id,atm_name,location,traffic_type,amount_withdrawn,requested_amount,card_type,timestamp,remaining_cash,transaction_status,alert
-TXN_STREAM_500203,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,40,40,RuPay,2026-10-16 00:03:53,66300.0,SUCCESS,
-TXN_STREAM_500204,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,200,200,MasterCard,2026-10-16 00:03:54,66100.0,SUCCESS,
-TXN_STREAM_500205,ATM_002,Grand City Mall,Shopping Center,High-Traffic,40,40,Visa,2026-10-16 00:03:56,54680.0,SUCCESS,
-TXN_STREAM_500206,ATM_005,International Airport T2,Airport Arrivals Gate,High-Traffic,40,40,American Express,2026-10-16 00:03:57,66060.0,SUCCESS,
