@@ -22,8 +22,8 @@ class HDFSClient:
     Hadoop HDFS Client interface.
     Handles data partitioning, block allocation, replication metadata, and retrieval.
     """
-    def __init__(self, namenode_url: str = "hdfs://localhost:9000", local_fallback: bool = True):
-        self.namenode_url = namenode_url
+    def __init__(self, namenode_url: Optional[str] = None, local_fallback: bool = True):
+        self.namenode_url = namenode_url or os.getenv("HDFS_NAMENODE_URL", "hdfs://localhost:9000")
         self.local_root = HDFS_ROOT_DIR
         self.meta_file = FSIMAGE_META_FILE
         self.block_size = 128 * 1024 * 1024  # 128 MB standard Hadoop block size

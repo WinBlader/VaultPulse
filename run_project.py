@@ -56,9 +56,9 @@ def main():
         print("\n[Step 3/4] Time-Series forecasting model verified.")
 
     # Step 4: Launch Web Dashboard
-    host = "127.0.0.1"
-    port = 8000
-    url = f"http://{host}:{port}"
+    host = os.getenv("HOST", "0.0.0.0")
+    port = int(os.getenv("PORT", "8000"))
+    url = f"http://localhost:{port}"
     print("\n[Step 4/4] Starting Replenishment Dashboard & Kafka stream...")
     print(f"\n🚀 System is LIVE at: {url}")
     print("   Press CTRL+C anytime to stop.\n")

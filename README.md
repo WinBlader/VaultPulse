@@ -248,25 +248,40 @@ python -m uvicorn dashboard.app:app --host 127.0.0.1 --port 8000
 
 ---
 
-### Option C: Running with Docker (Optional / If Evaluator Requires Containers)
-If your instructor or project evaluator specifically asks to see native Hadoop and Kafka running inside Docker containers:
+### Option C: Running the Entire Project in Docker (Complete Multi-Container Cluster)
+If running inside Docker is a mandated project requirement for evaluation:
 
-1. **Start the Kafka & Hadoop HDFS Containers:**
-   ```bash
-   docker compose up -d
-   ```
-   *Spins up Apache Zookeeper (`2181`), Apache Kafka Broker (`9092`), Hadoop NameNode (`9000`, `9870`), and Hadoop DataNode (`9864`).*
+The project includes a complete multi-container Docker cluster ([docker-compose.yml](file:///c:/Users/walee/OneDrive/Documents/Code/BDA%20Project/docker-compose.yml)):
+* **`vaultpulse-zookeeper`**: Apache Zookeeper cluster coordinator on port `2181`.
+* **`vaultpulse-kafka`**: Apache Kafka message broker on port `9092` & `29092`.
+* **`vaultpulse-namenode`**: Apache Hadoop HDFS NameNode on port `9000` (Web UI on `9870`).
+* **`vaultpulse-datanode`**: Apache Hadoop HDFS DataNode storage engine on port `9864`.
+* **`vaultpulse-app`**: VaultPulse AI Web Dashboard & ML Streaming Application on port `8000`.
 
-2. **Launch the VaultPulse Application:**
-   ```bash
-   python run_project.py
-   ```
-   *The system automatically detects the live Kafka broker on `localhost:9092` and HDFS on `localhost:9000` and routes live traffic through them.*
+#### 1. Single-Click Launch (Windows):
+Double-click `docker_start.bat` or run:
+```bash
+docker compose up --build -d
+```
 
-3. **Stop the Containers When Finished:**
-   ```bash
-   docker compose down
-   ```
+#### 2. Access Live Services in Browser:
+| Service | Browser URL | Role in Evaluation |
+| :--- | :--- | :--- |
+| **VaultPulse AI Dashboard** | [http://localhost:8000](http://localhost:8000) | Live replenishment UI, live charts, Kafka stream |
+| **Hadoop NameNode UI** | [http://localhost:9870](http://localhost:9870) | Live official Hadoop DFS cluster management console |
+| **Hadoop DataNode UI** | [http://localhost:9864](http://localhost:9864) | Live block storage, filesystem health |
+| **Apache Kafka Broker** | `localhost:9092` | Real-time withdrawal transactions |
+
+#### 3. View Live Streaming Logs:
+```bash
+docker compose logs -f app
+```
+
+#### 4. Stop All Containers:
+Double-click `docker_stop.bat` or run:
+```bash
+docker compose down
+```
 
 ---
 

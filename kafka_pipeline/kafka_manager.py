@@ -26,7 +26,7 @@ except ImportError:
 
 
 KAFKA_TOPIC = "atm-withdrawal-transactions"
-DEFAULT_BOOTSTRAP_SERVERS = "localhost:9092"
+DEFAULT_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092")
 
 
 class InMemoryKafkaBroker:
