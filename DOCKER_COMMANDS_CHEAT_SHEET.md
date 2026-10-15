@@ -23,8 +23,17 @@ docker compose up --build -d
 
 ---
 
-## 🔍 Phase 3: Verify Running Services
-Show the examiner all 5 containers running healthy:
+## 🔍 Phase 3: Show Running Containers & Images to the Examiner
+
+### 1. Show All Running Containers:
+```bash
+docker ps
+```
+Or for a clean, nicely aligned table:
+```bash
+docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+```
+Or using Docker Compose:
 ```bash
 docker compose ps
 ```
@@ -34,6 +43,32 @@ docker compose ps
 * `vaultpulse-namenode` (Up, ports `9000`, `9870`)
 * `vaultpulse-datanode` (Up, port `9864`)
 * `vaultpulse-app` (Up, port `8000`)
+
+### 2. Show All Downloaded & Built Docker Images:
+```bash
+docker images
+```
+Or for a clean summary table:
+```bash
+docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.ID}}"
+```
+**Expected Images:**
+* `bde2020/hadoop-namenode` (Hadoop NameNode Image)
+* `bde2020/hadoop-datanode` (Hadoop DataNode Image)
+* `confluentinc/cp-kafka` (Apache Kafka Broker Image)
+* `confluentinc/cp-zookeeper` (Apache Zookeeper Image)
+* `bdaproject-app` or `vaultpulse-app` (Your custom Python Big Data app image)
+
+### 3. Show Live CPU & Memory Utilization of All Containers:
+```bash
+docker stats --no-stream
+```
+*Shows RAM usage in MB/GB, CPU %, and network I/O per container.*
+
+### 4. Show in Docker Desktop GUI (Visual Demonstration):
+1. Open the **Docker Desktop** application on your Windows PC.
+2. Click **"Containers"** on the left menu: You will see the `bdaproject` group with 5 green running dots.
+3. Click **"Images"** on the left menu: You will see all 5 downloaded Hadoop, Kafka, and App images listed with their exact disk sizes.
 
 ---
 
