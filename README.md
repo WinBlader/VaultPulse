@@ -1,406 +1,511 @@
-**# 🏧 VaultPulse AI: Smart ATM Cash Demand Forecasting & Dynamic Replenishment Platform**
 
-**\*\*Big Data Analytics (BDA) Capstone Project • Project Statement 47\*\***  
+Excellent! Your VaultPulse AI project is successfully storing ATM transaction data in Hadoop HDFS, organized by year, month, and day. You can demonstrate this directly during your presentation.
 
-*\*Streaming Ingestion (Apache Kafka) • Distributed Data Lake (Hadoop HDFS) • Machine Learning (Time-Series Forecasting) • Docker Multi-Container Architecture • Real-Time Replenishment Dashboard\**
+Your output shows two CSV files containing ATM transaction data.
 
-**---**
+1. Display the ATM transaction data
+You are already inside the Hadoop NameNode container.
 
-**## 📌 1. Project Overview & Problem Statement**
+To display the first 10 lines of the October 16 dataset, run:
 
-**### ❌ The Industry Problem: Fixed-Schedule Refills**
+hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=16/part-00000.csv | head -n 10
+This should display the CSV header and the first few transaction records.
 
-Commercial bank cash operations teams traditionally replenish ATMs on a **\*\*blind, fixed schedule\*\*** (e.g., loading a flat $35,000 into every ATM every Monday morning). This rigid schedule completely ignores localized demand patterns and causes two severe operational failures:
+To display the October 15 dataset, run:
 
-1\. **\*\*Cash-Outs / Stockouts at High-Traffic Machines:\*\*** ATMs located at transit hubs, shopping malls, and airports experience surges in customer cash withdrawals. Under a flat schedule, these machines run completely dry within hours, causing customer dissatisfaction, lost interchange fee revenue, and severe bank SLA penalty fines.
+hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=15/part-00000.csv | head -n 10
+2. Understand your HDFS directory structure
+Your data is organized using date-based partitioning.
 
-2\. **\*\*Idle Excess Cash at Low-Traffic Machines:\*\*** ATMs in quiet residential neighborhoods receive the same $35,000 refill despite dispensing only $8,000 to $10,000 per week. Tens of thousands of dollars sit idle inside vault cassettes earning **\*\*0% interest\*\***, incurring high vault insurance premiums, and locking up liquid bank reserves that could otherwise earn yield.
+/hdfs/atm_transactions/
+└── year=2026/
+    └── month=10/
+        ├── day=15/
+        │   └── part-00000.csv
+        └── day=16/
+            └── part-00000.csv
+Why is this useful?
 
-**### 💡 The Solution: VaultPulse AI**
+Year: Organizes transactions by year.
 
-**\*\*VaultPulse AI\*\*** replaces dumb fixed schedules with an automated, **\*\*closed-loop Big Data Analytics & Machine Learning pipeline\*\***:
+Month: Separates transactions by month.
 
-\* **\*\*Real-Time Streaming:\*\*** Captures customer cash withdrawals in real time via **\*\*Apache Kafka\*\*** (\`atm-withdrawal-transactions\`).
+Day: Separates transactions by date.
 
-\* **\*\*Big Data Storage:\*\*** Persists and partitions transaction streams inside **\*\*Hadoop HDFS\*\*** (\`/atm_transactions/year=YYYY/month=MM/day=DD/\`).
+CSV files: Store the actual transaction records.
 
-\* **\*\*Time-Series ML Forecasting:\*\*** Automatically trains a **\*\*Random Forest Regressor\*\*** over historical HDFS partitions using 14 lag and calendar features to predict tomorrow's exact cash demand per ATM.
+This structure makes it easier to locate and process data for a particular date.
 
-\* **\*\*Smart Replenishment Optimizer:\*\*** Adds a dynamic 15% safety stock buffer, classifies machine risk (\`STOCKOUT_ALERT\`, \`EXCESS_CASH_ALERT\`, \`OPTIMAL\`), and recommends the exact replenishment cash to load into armored delivery vans.
+3. Check the total storage size
+Run:
 
-\* **\*\*Docker Multi-Container Cluster:\*\*** Fully orchestrated in **\*\*Docker Compose\*\*** running 5 independent services (Zookeeper, Kafka, Hadoop NameNode, Hadoop DataNode, VaultPulse App).
+hdfs dfs -du -h /hdfs/atm_transactions
+To count the data records in the October 16 CSV file, excluding the header, run:
 
-\* **\*\*Interactive Operations Dashboard:\*\*** An asynchronous, glassmorphism web console with live Chart.js demand curves, real-time WebSocket transaction tickers, one-click Cash Van dispatch, dynamic HDFS partition ingestion, and model retraining.
+hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=16/part-00000.csv | tail -n +2 | wc -l
+This counts the records without displaying the entire file.
 
-**---**
+4. View the data through a web browser
+You can also inspect HDFS visually.
 
-**## 📖 2. Terminology Demystified (Simple & Intuitive)**
+Open:
 
-\| Term | Simple Definition |
 
-\| :--- | :--- |
+Then navigate to Utilities → Browse the file system → /hdfs.
 
-\| **\*\*Stockout / Cash-Out\*\*** | The ATM vault is completely empty ($0). Customers cannot withdraw money and leave frustrated. |
+Open the atm_transactions directory and navigate through the year, month, and day folders.
 
-\| **\*\*Idle Excess Cash\*\*** | Surplus money sitting trapped inside a quiet ATM doing nothing. The bank loses interest and incurs vault insurance costs. |
+5. What to explain during your presentation
+You can use this explanation:
 
-\| **\*\*Safety Stock Buffer\*\*** | A 15% protective cash cushion calculated on top of the forecasted demand to safely absorb unexpected withdrawal surges. |
+"Our project uses Hadoop Distributed File System (HDFS) to store ATM transaction data. We organize the data using year, month, and day partitions, which makes historical records easier to locate and process. For example, transactions from October 16, 2026, are stored in a separate CSV file. This demonstrates how our system organizes transaction data for historical analysis and ATM cash-demand forecasting."
 
-\| **\*\*Target Cash Level\*\*** | The optimal cash volume needed in an ATM for tomorrow: \`Forecasted Demand + 15% Safety Stock\`. |
+Important observation
+Your output shows:
 
-\| **\*\*Recommended Replenishment\*\*** | The exact dollar amount the bank's armored cash delivery van should physically load into the machine tomorrow. |
+Date	CSV file size
+October 15, 2026	Approximately 179 KB
+October 16, 2026	Approximately 872 KB
+These are the file sizes reported by HDFS. They do not directly tell us the number of transactions or whether the files contain real or simulated data.
 
-\| **\*\*Apache Kafka\*\*** | A distributed, high-speed streaming message highway that captures and buffers withdrawal events instantaneously as they occur. |
+Next step: Run the first command to display the October 16 CSV header and sample records. That will let us identify the actual columns in your dataset and explain them for your viva.
 
-\| **\*\*Hadoop HDFS\*\*** | A fault-tolerant Big Data filesystem that partitions millions of transactions into organized date folders (\`year=YYYY/month=MM/day=DD/\`). |
 
-\| **\*\*Docker Compose\*\*** | A tool for defining and running multi-container Docker applications with isolated networking and storage. |
 
-\| **\*\*Time-Series Lag Features\*\*** | Feeding the ML model historical withdrawal numbers from yesterday (\`Lag-1\`), two days ago (\`Lag-2\`), and last week (\`Lag-7\`) to capture repeating cycles. |
+Pasted markdown(1).md
+File
+this is the readme also add these hdfs commnds to see datset and dat stored for our project in the redame
 
-\| **\*\*Cash Delivery Van Dispatch\*\*** | An operational action triggering an armored security vehicle to replenish an ATM with the recommended cash amount. |
+I've updated your VaultPulse AI README by adding a dedicated section for viewing ATM transaction data stored in Hadoop HDFS. I preserved the existing project documentation and expanded the HDFS instructions.
 
-**---**
+📄 Download the Updated README
 
-**## 🛠️ 3. Technology Stack & Tools**
+What I added
+The updated README includes these commands:
 
+Command	Purpose
+docker exec -it vaultpulse-namenode hdfs dfsadmin -report	Check HDFS cluster health
+docker exec -it vaultpulse-namenode hdfs dfs -ls /	List the HDFS root directory
+docker exec -it vaultpulse-namenode hdfs dfs -ls -R /hdfs	Find all stored files and directories
+docker exec -it vaultpulse-namenode hdfs dfs -ls -R /hdfs/atm_transactions	Locate ATM transaction partitions
+docker exec -it vaultpulse-namenode hdfs dfs -du -h /hdfs/atm_transactions	Check dataset storage usage
+I also added commands to:
+
+Display the first 10 rows of a transaction CSV file.
+
+Count transaction records.
+
+Understand the year/month/day partition structure.
+
+Browse stored data through the Hadoop web interface at http://localhost:9870.
+
+How to update your GitHub repository
+After downloading the updated file:
+
+Open your VaultPulse project in VS Code.
+
+Replace the contents of your existing README.md with the downloaded file's contents.
+
+Save the file as README.md.
+
+Commit and push the changes:
+
+git add README.md
+git commit -m "Add HDFS dataset access commands to README"
+git push
+Run these Git commands from your project directory and the branch where you want the changes to appear.
+
+Note: The new commands use the HDFS paths and Docker container names you confirmed in your setup. The date-specific CSV commands may need updating if your stored partitions change. 
+
+
+
+
+Pasted text(20261016-091432).txt
+Document
+fix the font and decoration and format it contains line etc
+
+I've cleaned up the README formatting, including the headings, Markdown decorations, spacing, and code sections.
+
+Download your formatted README here:
+
+📄 
+
+What I fixed
+Headings: Corrected inconsistent heading symbols and formatting.
+
+Bold and italic text: Cleaned up excessive Markdown decoration.
+
+Spacing: Removed unnecessary blank lines and improved readability.
+
+Lists: Standardized bullet points and numbering.
+
+Code blocks: Preserved code formatting for commands and architecture diagrams.
+
+HDFS commands: Kept the commands for listing, displaying, and checking the size of your stored transaction data.
+
+How to use it
+Download the file.
+
+Open it in VS Code.
+
+Rename it to README.md.
+
+Replace your existing README with this file.
+
+Preview it using Ctrl + Shift + V in VS Code.
+
+Note: This is a Markdown formatting cleanup. Please preview the file in VS Code before pushing it to GitHub to ensure the tables and architecture diagrams render as expected. 
+
+
+
+Library
+/
+README_VaultPulse_Formatted.md
+
+
+
+🏧 VaultPulse AI: Smart ATM Cash Demand Forecasting & Dynamic Replenishment Platform
+Big Data Analytics (BDA) Capstone Project • Project Statement 47
+
+Streaming Ingestion (Apache Kafka) • Distributed Data Lake (Hadoop HDFS) • Machine Learning (Time-Series Forecasting) • Docker Multi-Container Architecture • Real-Time Replenishment Dashboard
+
+📌 1. Project Overview & Problem Statement
+❌ The Industry Problem: Fixed-Schedule Refills
+Commercial bank cash operations teams traditionally replenish ATMs on a blind, fixed schedule (e.g., loading a flat $35,000 into every ATM every Monday morning). This rigid schedule completely ignores localized demand patterns and causes two severe operational failures:
+
+1. Cash-Outs / Stockouts at High-Traffic Machines: ATMs located at transit hubs, shopping malls, and airports experience surges in customer cash withdrawals. Under a flat schedule, these machines run completely dry within hours, causing customer dissatisfaction, lost interchange fee revenue, and severe bank SLA penalty fines.
+
+2. Idle Excess Cash at Low-Traffic Machines: ATMs in quiet residential neighborhoods receive the same $35,000 refill despite dispensing only $8,000 to $10,000 per week. Tens of thousands of dollars sit idle inside vault cassettes earning 0% interest, incurring high vault insurance premiums, and locking up liquid bank reserves that could otherwise earn yield.
+
+💡 The Solution: VaultPulse AI
+VaultPulse AI replaces dumb fixed schedules with an automated, closed-loop Big Data Analytics & Machine Learning pipeline:
+
+Real-Time Streaming: Captures customer cash withdrawals in real time via Apache Kafka (atm-withdrawal-transactions).
+
+Big Data Storage: Persists and partitions transaction streams inside Hadoop HDFS (/atm_transactions/year=YYYY/month=MM/day=DD/).
+
+Time-Series ML Forecasting: Automatically trains a Random Forest Regressor over historical HDFS partitions using 14 lag and calendar features to predict tomorrow's exact cash demand per ATM.
+
+Smart Replenishment Optimizer: Adds a dynamic 15% safety stock buffer, classifies machine risk (STOCKOUT_ALERT, EXCESS_CASH_ALERT, OPTIMAL), and recommends the exact replenishment cash to load into armored delivery vans.
+
+Docker Multi-Container Cluster: Fully orchestrated in Docker Compose running 5 independent services (Zookeeper, Kafka, Hadoop NameNode, Hadoop DataNode, VaultPulse App).
+
+Interactive Operations Dashboard: An asynchronous, glassmorphism web console with live Chart.js demand curves, real-time WebSocket transaction tickers, one-click Cash Van dispatch, dynamic HDFS partition ingestion, and model retraining.
+
+📖 2. Terminology Demystified (Simple & Intuitive)
+| Term | Simple Definition |
+
+| :--- | :--- |
+
+| Stockout / Cash-Out | The ATM vault is completely empty ($0). Customers cannot withdraw money and leave frustrated. |
+
+| Idle Excess Cash | Surplus money sitting trapped inside a quiet ATM doing nothing. The bank loses interest and incurs vault insurance costs. |
+
+| Safety Stock Buffer | A 15% protective cash cushion calculated on top of the forecasted demand to safely absorb unexpected withdrawal surges. |
+
+| Target Cash Level | The optimal cash volume needed in an ATM for tomorrow: Forecasted Demand + 15% Safety Stock. |
+
+| Recommended Replenishment | The exact dollar amount the bank's armored cash delivery van should physically load into the machine tomorrow. |
+
+| Apache Kafka | A distributed, high-speed streaming message highway that captures and buffers withdrawal events instantaneously as they occur. |
+
+| Hadoop HDFS | A fault-tolerant Big Data filesystem that partitions millions of transactions into organized date folders (year=YYYY/month=MM/day=DD/). |
+
+| Docker Compose | A tool for defining and running multi-container Docker applications with isolated networking and storage. |
+
+| Time-Series Lag Features | Feeding the ML model historical withdrawal numbers from yesterday (Lag-1), two days ago (Lag-2), and last week (Lag-7) to capture repeating cycles. |
+
+| Cash Delivery Van Dispatch | An operational action triggering an armored security vehicle to replenish an ATM with the recommended cash amount. |
+
+🛠️ 3. Technology Stack & Tools
 VaultPulse AI strictly utilizes the mandated Big Data Analytics technology stack:
-
-\`\`\`
 
 ┌────────────────────────────────────────────────────────────────────────┐
 
-│                        VAULTPULSE AI TECH STACK                        │
+│                        VAULTPULSE AI TECH STACK                        │
 
 ├───────────────────┬────────────────────────────────────────────────────┤
 
-│ Component         │ Technologies Used                                  │
+│ Component         │ Technologies Used                                  │
 
 ├───────────────────┼────────────────────────────────────────────────────┤
 
-│ Containerization  │ Docker, Docker Compose (5 Isolated Microservices)  │
+│ Containerization  │ Docker, Docker Compose (5 Isolated Microservices)  │
 
-│ Data Streaming    │ Apache Kafka (Producer, Consumer, WebSockets)      │
+│ Data Streaming    │ Apache Kafka (Producer, Consumer, WebSockets)      │
 
-│ Cluster Manager   │ Apache Zookeeper                                   │
+│ Cluster Manager   │ Apache Zookeeper                                   │
 
-│ Big Data Storage  │ Apache Hadoop HDFS (NameNode & DataNode Data Lake) │
+│ Big Data Storage  │ Apache Hadoop HDFS (NameNode & DataNode Data Lake) │
 
-│ Machine Learning  │ Scikit-Learn (Random Forest Time-Series Regressor) │
+│ Machine Learning  │ Scikit-Learn (Random Forest Time-Series Regressor) │
 
-│ Backend Server    │ Python 3.10+, FastAPI, Uvicorn (ASGI)              │
+│ Backend Server    │ Python 3.10+, FastAPI, Uvicorn (ASGI)              │
 
-│ Frontend UI       │ HTML5, Modern Vanilla CSS3 (Glassmorphism), JS     │
+│ Frontend UI       │ HTML5, Modern Vanilla CSS3 (Glassmorphism), JS     │
 
-│ Visualizations    │ Chart.js (Historical vs. Next-Day ML Forecast)     │
+│ Visualizations    │ Chart.js (Historical vs. Next-Day ML Forecast)     │
 
-│ Protocols & APIs  │ RESTful HTTP APIs + Full-Duplex WebSockets         │
+│ Protocols & APIs  │ RESTful HTTP APIs + Full-Duplex WebSockets         │
 
 └───────────────────┴────────────────────────────────────────────────────┘
 
-\`\`\`
+Detailed Tech Stack Breakdown
+1. Container Orchestration (docker-compose.yml, Dockerfile):
 
-**### Detailed Tech Stack Breakdown**
+vaultpulse-zookeeper: Apache Zookeeper cluster coordinator on port 2181.
 
-1\. **\*\*Container Orchestration (\`docker-compose.yml\`, \`Dockerfile\`):\*\***
+vaultpulse-kafka: Apache Kafka broker on ports 9092 (host) and 29092 (Docker internal network).
 
-   - **\*\*\`vaultpulse-zookeeper\`\*\***: Apache Zookeeper cluster coordinator on port \`2181\`.
+vaultpulse-namenode: Apache Hadoop HDFS NameNode on port 9000 (RPC) and port 9870 (Web UI).
 
-   - **\*\*\`vaultpulse-kafka\`\*\***: Apache Kafka broker on ports \`9092\` (host) and \`29092\` (Docker internal network).
+vaultpulse-datanode: Apache Hadoop HDFS DataNode storage engine on port 9864.
 
-   - **\*\*\`vaultpulse-namenode\`\*\***: Apache Hadoop HDFS NameNode on port \`9000\` (RPC) and port \`9870\` (Web UI).
+vaultpulse-app: VaultPulse AI Python Application running FastAPI and the ML pipeline on port 8000.
 
-   - **\*\*\`vaultpulse-datanode\`\*\***: Apache Hadoop HDFS DataNode storage engine on port \`9864\`.
+Connected via an internal bridge network (bda-net) with persistent volume mounts.
 
-   - **\*\*\`vaultpulse-app\`\*\***: VaultPulse AI Python Application running FastAPI and the ML pipeline on port \`8000\`.
+2. Apache Kafka (kafka_pipeline/):
 
-   - Connected via an internal bridge network (\`bda-net\`) with persistent volume mounts.
+Topic: atm-withdrawal-transactions.
 
-2\. **\*\*Apache Kafka (\`kafka_pipeline/\`):\*\***
+Producer: Simulates stochastic Poisson customer withdrawals across all active ATMs with realistic transaction amounts, card types, and balance decrements.
 
-   - **\*\*Topic:\*\*** \`atm-withdrawal-transactions\`.
+Consumer: Pulls records from Kafka, accumulates micro-batches, writes them to HDFS partitions, and broadcasts real-time events to connected UI WebSocket clients.
 
-   - **\*\*Producer:\*\*** Simulates stochastic Poisson customer withdrawals across all active ATMs with realistic transaction amounts, card types, and balance decrements.
+Dual-Mode Engine: Connects to native Kafka brokers on localhost:9092 / kafka:29092; automatically falls back to an in-memory stream buffer with zero external setup required.
 
-   - **\*\*Consumer:\*\*** Pulls records from Kafka, accumulates micro-batches, writes them to HDFS partitions, and broadcasts real-time events to connected UI WebSocket clients.
+3. Apache Hadoop HDFS (hdfs_storage/):
 
-   - **\*\*Dual-Mode Engine:\*\*** Connects to native Kafka brokers on \`localhost:9092\` / \`kafka:29092\`; automatically falls back to an in-memory stream buffer with zero external setup required.
+Data Lake Directory Layout: /atm_transactions/year=YYYY/month=MM/day=DD/part-XXXX.csv.
 
-3\. **\*\*Apache Hadoop HDFS (\`hdfs_storage/\`):\*\***
+Distributed Metadata: Implements NameNode hdfs_namenode_fsimage.json metadata tracking block allocations, replication factor of 3, 128 MB standard Hadoop block size, and active DataNodes.
 
-   - **\*\*Data Lake Directory Layout:\*\*** \`/atm_transactions/year=YYYY/month=MM/day=DD/part-XXXX.csv\`.
+Supports on-demand partition creation (/api/hdfs/ingest-partition) to simulate multi-day ingestion.
 
-   - **\*\*Distributed Metadata:\*\*** Implements NameNode \`hdfs_namenode_fsimage.json\` metadata tracking block allocations, replication factor of 3, 128 MB standard Hadoop block size, and active DataNodes.
+4. Time-Series Machine Learning Engine (forecasting/):
 
-   - Supports on-demand partition creation (\`/api/hdfs/ingest-partition\`) to simulate multi-day ingestion.
+Algorithm: Random Forest Regressor (n_estimators=100, dynamic bootstrapping).
 
-4\. **\*\*Time-Series Machine Learning Engine (\`forecasting/\`):\*\***
+Metrics Evaluated: $R^2$ Score (Accuracy %: ~83.6%), Mean Absolute Error (MAE: ~$5,183), Mean Absolute Percentage Error (MAPE: ~16.4%).
 
-   - **\*\*Algorithm:\*\*** Random Forest Regressor (\`n_estimators=100\`, dynamic bootstrapping).
+14 Engineered Features:
 
-   - **\*\*Metrics Evaluated:\*\*** $R^2$ Score (Accuracy %: \~83.6%), Mean Absolute Error (MAE: \~$5,183), Mean Absolute Percentage Error (MAPE: \~16.4%).
+lag_1: Yesterday's total cash demand.
 
-   - **\*\*14 Engineered Features:\*\***
+lag_2: Demand 2 days ago.
 
-     - \`lag_1\`: Yesterday's total cash demand.
+lag_7: Same-day demand last week (captures 7-day weekly seasonality).
 
-     - \`lag_2\`: Demand 2 days ago.
+rolling_mean_7: 7-day moving average.
 
-     - \`lag_7\`: Same-day demand last week (captures 7-day weekly seasonality).
+rolling_std_7: 7-day demand volatility.
 
-     - \`rolling_mean_7\`: 7-day moving average.
+day_of_week_num: Integer day representation (0 = Monday, 6 = Sunday).
 
-     - \`rolling_std_7\`: 7-day demand volatility.
+is_weekend: Binary flag (1 for Saturday/Sunday, 0 for weekdays).
 
-     - \`day_of_week_num\`: Integer day representation (0 = Monday, 6 = Sunday).
+is_holiday: Spikes for salary days (1st/2nd/month-end) and public holidays.
 
-     - \`is_weekend\`: Binary flag (1 for Saturday/Sunday, 0 for weekdays).
+day_of_month: Day index (1 to 31).
 
-     - \`is_holiday\`: Spikes for salary days (1st/2nd/month-end) and public holidays.
+atm_ATM_001 through atm_ATM_005: One-hot encoded ATM identifiers to learn unique baseline traffic for each machine.
 
-     - \`day_of_month\`: Day index (1 to 31).
+5. Backend Web Services (dashboard/app.py):
 
-     - \`atm_ATM_001\` through \`atm_ATM_005\`: One-hot encoded ATM identifiers to learn unique baseline traffic for each machine.
+Built on FastAPI for asynchronous high-throughput request handling.
 
-5\. **\*\*Backend Web Services (\`dashboard/app.py\`):\*\***
+Implements REST endpoints for telemetry, recommendations, chart feeds, manual triggers, and cash replenishment.
 
-   - Built on **\*\*FastAPI\*\*** for asynchronous high-throughput request handling.
+WebSocket endpoint (/ws/transactions) providing sub-second streaming ticker updates.
 
-   - Implements REST endpoints for telemetry, recommendations, chart feeds, manual triggers, and cash replenishment.
+6. Interactive UI (dashboard/templates/index.html):
 
-   - WebSocket endpoint (\`/ws/transactions\`) providing sub-second streaming ticker updates.
+Premium dark-slate theme (#020617, #0f172a) with glassmorphic cards and glowing status indicators.
 
-6\. **\*\*Interactive UI (\`dashboard/templates/index.html\`):\*\***
+Responsive design with Chart.js time-series graphs, KPI metric counters, smart replenishment decision table, and a live Kafka event terminal.
 
-   - Premium dark-slate theme (\`#020617\`, \`#0f172a\`) with glassmorphic cards and glowing status indicators.
+📊 4. About the Dataset Used
+Origin & Simulation Design
+The project uses a Synthetic ATM Transaction Dataset designed in alignment with real-world Kaggle ATM withdrawal datasets and public retail-banking transaction logs:
 
-   - Responsive design with Chart.js time-series graphs, KPI metric counters, smart replenishment decision table, and a live Kafka event terminal.
+Scale: Over 104,364 individual withdrawal transactions aggregated into 450+ daily summary records across 90+ operating days.
 
-**---**
+Realistic Behavioral Modeling: Captures payday spikes (salary disbursements on the 1st, 2nd, 30th, and 31st of each month), weekend retail surges, corporate weekday peaks, and holiday transaction multipliers.
 
-**## 📊 4. About the Dataset Used**
-
-**### Origin & Simulation Design**
-
-The project uses a **\*\*Synthetic ATM Transaction Dataset\*\*** designed in alignment with real-world Kaggle ATM withdrawal datasets and public retail-banking transaction logs:
-
-\* **\*\*Scale:\*\*** Over **\*\*104,364 individual withdrawal transactions\*\*** aggregated into **\*\*450+ daily summary records\*\*** across 90+ operating days.
-
-\* **\*\*Realistic Behavioral Modeling:\*\*** Captures payday spikes (salary disbursements on the 1st, 2nd, 30th, and 31st of each month), weekend retail surges, corporate weekday peaks, and holiday transaction multipliers.
-
-**### 5 Diverse ATM Profiles & Locations**
-
+5 Diverse ATM Profiles & Locations
 The dataset models 5 distinct banking environments to stress-test the replenishment engine:
 
-\| ATM ID | ATM Name | Location Profile | Traffic Type | Base Demand | Peak Factors | Vulnerability Under Fixed Schedule |
+| ATM ID | ATM Name | Location Profile | Traffic Type | Base Demand | Peak Factors | Vulnerability Under Fixed Schedule |
 
-\| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-\| **\*\*\`ATM_001\`\*\*** | Metro Central Station | Downtown Transit Hub | High-Traffic | $55,000 / day | Rush hours (8-10 AM, 5-7 PM) | **\*\*Runs Dry (Stockout):\*\*** $35k fixed load is depleted by 2:00 PM. |
+| ATM_001 | Metro Central Station | Downtown Transit Hub | High-Traffic | $55,000 / day | Rush hours (8-10 AM, 5-7 PM) | Runs Dry (Stockout): $35k fixed load is depleted by 2:00 PM. |
 
-\| **\*\*\`ATM_002\`\*\*** | Grand City Mall | Retail Shopping Center | High-Traffic | $48,000 / day | 1.60x weekend surge | **\*\*Runs Dry (Stockout):\*\*** Severe weekend cash-outs during shopping hours. |
+| ATM_002 | Grand City Mall | Retail Shopping Center | High-Traffic | $48,000 / day | 1.60x weekend surge | Runs Dry (Stockout): Severe weekend cash-outs during shopping hours. |
 
-\| **\*\*\`ATM_003\`\*\*** | Financial Tower Plaza | Corporate Business District | Medium-Traffic | $32,000 / day | Heavy Mon–Fri, 0.45x weekend | **\*\*Optimal on weekdays\*\***, drops sharply on weekends. |
+| ATM_003 | Financial Tower Plaza | Corporate Business District | Medium-Traffic | $32,000 / day | Heavy Mon–Fri, 0.45x weekend | Optimal on weekdays, drops sharply on weekends. |
 
-\| **\*\*\`ATM_004\`\*\*** | Suburban Green Park | Residential Neighborhood | Low-Traffic | $8,500 / day | Consistent low volume | **\*\*Excess Cash Waste:\*\*** Accumulates $40k+ in idle cash earning 0% interest. |
+| ATM_004 | Suburban Green Park | Residential Neighborhood | Low-Traffic | $8,500 / day | Consistent low volume | Excess Cash Waste: Accumulates $40k+ in idle cash earning 0% interest. |
 
-\| **\*\*\`ATM_005\`\*\*** | International Airport T2 | Airport Arrivals Gate | High-Traffic | $62,000 / day | 24/7 steady, higher txn size | **\*\*Runs Dry (Stockout):\*\*** High demand requires substantial daily replenishment. |
+| ATM_005 | International Airport T2 | Airport Arrivals Gate | High-Traffic | $62,000 / day | 24/7 steady, higher txn size | Runs Dry (Stockout): High demand requires substantial daily replenishment. |
 
-**### Dataset Fields & Schema**
-
+Dataset Fields & Schema
 Each transaction record includes the following schema attributes:
 
-\* \`transaction_id\`: Unique transaction code (e.g., \`TXN_PART_104364\`).
+transaction_id: Unique transaction code (e.g., TXN_PART_104364).
 
-\* \`atm_id\`: Machine identifier (\`ATM_001\` to \`ATM_005\`).
+atm_id: Machine identifier (ATM_001 to ATM_005).
 
-\* \`atm_name\`: Human-readable location name.
+atm_name: Human-readable location name.
 
-\* \`location\`: Operating environment (Transit Hub, Shopping Mall, Business District, etc.).
+location: Operating environment (Transit Hub, Shopping Mall, Business District, etc.).
 
-\* \`timestamp\`: High-precision timestamp (\`YYYY-MM-DD HH\:MM\:SS\`).
+timestamp: High-precision timestamp (YYYY-MM-DD HH:MM:SS).
 
-\* \`amount_withdrawn\`: Dispensed cash amount ($20, $40, $50, $100, $200, $300, $400, $500).
+amount_withdrawn: Dispensed cash amount ($20, $40, $50, $100, $200, $300, $400, $500).
 
-\* \`card_type\`: Card network (\`Visa\`, \`MasterCard\`, \`RuPay\`, \`American Express\`).
+card_type: Card network (Visa, MasterCard, RuPay, American Express).
 
-\* \`day_of_week\`: Day name (Monday through Sunday).
+day_of_week: Day name (Monday through Sunday).
 
-\* \`is_weekend\`: Binary flag (1 = Weekend, 0 = Weekday).
+is_weekend: Binary flag (1 = Weekend, 0 = Weekday).
 
-\* \`is_holiday\`: Binary flag (1 = Public/Salary Holiday, 0 = Normal Day).
+is_holiday: Binary flag (1 = Public/Salary Holiday, 0 = Normal Day).
 
-\* \`remaining_cash\`: Live remaining cash vault balance after withdrawal.
+remaining_cash: Live remaining cash vault balance after withdrawal.
 
-\* \`transaction_status\`: Transaction result (\`Success\` / \`Failed\`).
+transaction_status: Transaction result (Success / Failed).
 
-**---**
+🏗️ 5. Implementation Architecture & Data Flow
+                                  VAULTPULSE AI ARCHITECTURE
 
-**## 🏗️ 5. Implementation Architecture & Data Flow**
+   [ Customer ATM Withdrawals ]
 
-\`\`\`
+                 │
 
-                                  VAULTPULSE AI ARCHITECTURE
+                 ▼
 
-   [ Customer ATM Withdrawals ]
+   ┌───────────────────────────┐
 
-                 │
+   │    1. APACHE KAFKA        │ ──► Topic: 'atm-withdrawal-transactions'
 
-                 ▼
+   │    Streaming Producer     │     Real-time event buffering & balance decrements
 
-   ┌───────────────────────────┐
+   └─────────────┬─────────────┘
 
-   │    1. APACHE KAFKA        │ ──► Topic: 'atm-withdrawal-transactions'
+                 │
 
-   │    Streaming Producer     │     Real-time event buffering & balance decrements
+                 ▼
 
-   └─────────────┬─────────────┘
+   ┌───────────────────────────┐
 
-                 │
+   │    2. HADOOP HDFS         │ ──► Partitioned Big Data Lake
 
-                 ▼
+   │    Storage Ingestion      │     /atm_transactions/year=YYYY/month=MM/day=DD/part-XXXX.csv
 
-   ┌───────────────────────────┐
+   │    & NameNode FSImage     │     NameNode FSImage: 3 DataNodes, 3x Replication, 128MB Blocks
 
-   │    2. HADOOP HDFS         │ ──► Partitioned Big Data Lake
+   └─────────────┬─────────────┘
 
-   │    Storage Ingestion      │     /atm_transactions/year=YYYY/month=MM/day=DD/part-XXXX.csv
+                 │
 
-   │    & NameNode FSImage     │     NameNode FSImage: 3 DataNodes, 3x Replication, 128MB Blocks
+                 ▼
 
-   └─────────────┬─────────────┘
+   ┌───────────────────────────┐
 
-                 │
+   │    3. TIME-SERIES ML      │ ──► Feature Engineering:
 
-                 ▼
+   │    Random Forest Model    │     • Lags (1, 2, 7) • 7-day Moving Avg & Std
 
-   ┌───────────────────────────┐
+   │    Demand Forecaster      │     • Calendar & Weekend Flags • One-Hot ATM ID
 
-   │    3. TIME-SERIES ML      │ ──► Feature Engineering:
+   └─────────────┬─────────────┘     Accuracy: \~84% | MAE: \~$5,100 | MAPE: \~16%
 
-   │    Random Forest Model    │     • Lags (1, 2, 7) • 7-day Moving Avg & Std
+                 │
 
-   │    Demand Forecaster      │     • Calendar & Weekend Flags • One-Hot ATM ID
+                 ▼
 
-   └─────────────┬─────────────┘     Accuracy: \~84% | MAE: \~$5,100 | MAPE: \~16%
+   ┌───────────────────────────┐
 
-                 │
+   │    4. SMART REPLENISHMENT │ ──► Dynamic 15% Safety Stock Buffer
 
-                 ▼
+   │    Decision Engine        │     Target Level = Forecast + Safety Stock
 
-   ┌───────────────────────────┐
+   │                           │     Recommended Cash = Target Level - Current Cash
 
-   │    4. SMART REPLENISHMENT │ ──► Dynamic 15% Safety Stock Buffer
+   └─────────────┬─────────────┘     Alerts: 🚨 Stockout | ⚠️ Excess Cash | 🟢 Optimal
 
-   │    Decision Engine        │     Target Level = Forecast + Safety Stock
+                 │
 
-   │                           │     Recommended Cash = Target Level - Current Cash
+                 ▼
 
-   └─────────────┬─────────────┘     Alerts: 🚨 Stockout | ⚠️ Excess Cash | 🟢 Optimal
+   ┌───────────────────────────┐
 
-                 │
+   │    5. FASTAPI & WEBSOCKET │ ──► REST APIs: /api/status, /api/recommendations, /api/chart-data
 
-                 ▼
+   │    Web Operations Console │     WebSocket Feed: /ws/transactions
 
-   ┌───────────────────────────┐
+   │                           │     Interactive Actions: Retrain, Ingest HDFS, Dispatch Cash Van
 
-   │    5. FASTAPI & WEBSOCKET │ ──► REST APIs: /api/status, /api/recommendations, /api/chart-data
+   └───────────────────────────┘
 
-   │    Web Operations Console │     WebSocket Feed: /ws/transactions
+End-to-End Operational Pipeline
+1. Live Transaction Ingestion (Kafka):
 
-   │                           │     Interactive Actions: Retrain, Ingest HDFS, Dispatch Cash Van
+Customer withdrawals are pushed to Kafka topic atm-withdrawal-transactions. The producer decrements the physical vault balance of the machine in real time.
 
-   └───────────────────────────┘
+2. Distributed Lake Storage (HDFS):
 
-\`\`\`
+The consumer batches incoming transaction streams into date partitions (year=YYYY/month=MM/day=DD/part-XXXX.csv) and updates the NameNode hdfs_namenode_fsimage.json metadata catalog.
 
-**### End-to-End Operational Pipeline**
+3. Feature Engineering & ML Training:
 
-1\. **\*\*Live Transaction Ingestion (Kafka):\*\***
+Historical records from HDFS are loaded and enriched with 14 time-series lag and seasonal features. The Random Forest model trains over completed days, learning weekday patterns, weekend shopping spikes, and holiday effects.
 
-   Customer withdrawals are pushed to Kafka topic \`atm-withdrawal-transactions\`. The producer decrements the physical vault balance of the machine in real time.
+4. Replenishment Optimization Math:
 
-2\. **\*\*Distributed Lake Storage (HDFS):\*\***
+For tomorrow's date:
 
-   The consumer batches incoming transaction streams into date partitions (\`year=YYYY/month=MM/day=DD/part-XXXX.csv\`) and updates the NameNode \`hdfs_namenode_fsimage.json\` metadata catalog.
+$$\text{Target Cash Level} = \text{Predicted Demand} \times 1.15 \quad (\text{Includes } 15\% \text{ Safety Buffer})$$
 
-3\. **\*\*Feature Engineering & ML Training:\*\***
+$$\text{Recommended Cash} = \max\Big(0, \, \min(\text{Max Capacity} - \text{Current Cash}, \, \text{Target Level} - \text{Current Cash})\Big)$$
 
-   Historical records from HDFS are loaded and enriched with 14 time-series lag and seasonal features. The Random Forest model trains over completed days, learning weekday patterns, weekend shopping spikes, and holiday effects.
+If $\text{Current Cash} < \text{Predicted Demand} \implies$ STOCKOUT_ALERT (Red).
 
-4\. **\*\*Replenishment Optimization Math:\*\***
+If $\text{Current Cash} > 2.2 \times \text{Target Level} \implies$ EXCESS_CASH_ALERT (Yellow).
 
-   For tomorrow's date:
+Otherwise $\implies$ OPTIMAL (Green).
 
-   $$\text{Target Cash Level} = \text{Predicted Demand} \times 1.15 \quad (\text{Includes } 15\\% \text{ Safety Buffer})$$
+5. Interactive UI & Real-Time Visualization:
 
-   $$\text{Recommended Cash} = \max\Big(0, \\, \min(\text{Max Capacity} - \text{Current Cash}, \\, \text{Target Level} - \text{Current Cash})\Big)$$
+The browser establishes a persistent WebSocket connection to /ws/transactions. Incoming transactions update the live terminal, decrement the live cash column in the table, and trigger visual warning pulses.
 
-   \* If $\text{Current Cash} < \text{Predicted Demand} \implies$ **\*\*\`STOCKOUT_ALERT\` (Red)\*\***.
-
-   \* If $\text{Current Cash} > 2.2 \times \text{Target Level} \implies$ **\*\*\`EXCESS_CASH_ALERT\` (Yellow)\*\***.
-
-   \* Otherwise $\implies$ **\*\*\`OPTIMAL\` (Green)\*\***.
-
-5\. **\*\*Interactive UI & Real-Time Visualization:\*\***
-
-   The browser establishes a persistent WebSocket connection to \`/ws/transactions\`. Incoming transactions update the live terminal, decrement the live cash column in the table, and trigger visual warning pulses.
-
-**---**
-
-**## 💻 6. How to Run the Project**
-
-**### Option A: Running in Docker via CLI (Required for Evaluation & Viva)**
-
+💻 6. How to Run the Project
+Option A: Running in Docker via CLI (Required for Evaluation & Viva)
 This runs the complete 5-container Big Data cluster inside Docker using terminal commands only.
 
-**#### Step 1: Start the Entire Multi-Container Cluster**
-
-\`\`\`bash
-
+Step 1: Start the Entire Multi-Container Cluster
 docker compose up --build -d
 
-\`\`\`
+(Or double-click docker_start.bat)
 
-*\*(Or double-click \`docker_start.bat\`)\**
-
-**#### Step 2: Show Running Containers to the Evaluator**
-
-\`\`\`bash
-
+Step 2: Show Running Containers to the Evaluator
 docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
-
-\`\`\`
 
 Or:
 
-\`\`\`bash
-
 docker compose ps
 
-\`\`\`
-
-**#### Step 3: Show Downloaded & Built Docker Images**
-
-\`\`\`bash
-
+Step 3: Show Downloaded & Built Docker Images
 docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.ID}}"
 
-\`\`\`
-
-**#### Step 4: Show Live Container CPU & RAM Stats**
-
-\`\`\`bash
-
+Step 4: Show Live Container CPU & RAM Stats
 docker stats --no-stream
 
-\`\`\`
+Step 5: Demonstrate Hadoop HDFS via Commands
+Run these commands from PowerShell on your host machine. They use the running vaultpulse-namenode container, so you do not need to enter the container first.
 
-**#### Step 5: Demonstrate Hadoop HDFS via Commands**
-
-Run these commands from **PowerShell on your host machine**. They use the running `vaultpulse-namenode` container, so you do not need to enter the container first.
-
-```powershell
 # Check HDFS cluster health and DataNodes report
 docker exec -it vaultpulse-namenode hdfs dfsadmin -report
 
@@ -415,13 +520,10 @@ docker exec -it vaultpulse-namenode hdfs dfs -ls -R /hdfs/atm_transactions
 
 # Check storage usage for the transaction dataset
 docker exec -it vaultpulse-namenode hdfs dfs -du -h /hdfs/atm_transactions
-```
-
-**Display transaction records stored in HDFS:**
+Display transaction records stored in HDFS:
 
 The following sample paths match the partitions observed in this setup. If the date folders differ on your machine, run the recursive listing command above and substitute a path that exists.
 
-```powershell
 # Display the first 10 lines of the October 16, 2026 CSV file
 docker exec vaultpulse-namenode hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=16/part-00000.csv | Select-Object -First 10
 
@@ -430,278 +532,235 @@ docker exec vaultpulse-namenode hdfs dfs -cat /hdfs/atm_transactions/year=2026/m
 
 # Count records in the October 16 CSV, excluding the header
 docker exec vaultpulse-namenode bash -lc "hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=16/part-00000.csv | tail -n +2 | wc -l"
-```
+What to point out during the viva:
 
-**What to point out during the viva:**
-- `/hdfs/atm_transactions/` is the dataset's HDFS directory.
-- `year=YYYY/month=MM/day=DD/` is the date-based partition structure.
-- `part-00000.csv` contains transaction records for that partition.
-- `hdfs dfs -cat` displays stored records; `hdfs dfs -du -h` shows storage usage.
+/hdfs/atm_transactions/ is the dataset's HDFS directory.
 
-**HDFS Web UI:** Open `http://localhost:9870`, then select **Utilities → Browse the file system** and navigate to `/hdfs/atm_transactions`.
+year=YYYY/month=MM/day=DD/ is the date-based partition structure.
 
-**#### Step 6: Demonstrate Apache Kafka via Commands**
+part-00000.csv contains transaction records for that partition.
 
-\`\`\`bash
+hdfs dfs -cat displays stored records; hdfs dfs -du -h shows storage usage.
 
-\# List all Kafka topics
+HDFS Web UI: Open http://localhost:9870, then select Utilities → Browse the file system and navigate to /hdfs/atm_transactions.
+
+Step 6: Demonstrate Apache Kafka via Commands
+# List all Kafka topics
 
 docker exec -it vaultpulse-kafka kafka-topics --list --bootstrap-server localhost:9092
 
-\# Describe the ATM transactions topic
+# Describe the ATM transactions topic
 
 docker exec -it vaultpulse-kafka kafka-topics --describe --topic atm-withdrawal-transactions --bootstrap-server localhost:9092
 
-\# Stream live transactions directly into the terminal
+# Stream live transactions directly into the terminal
 
 docker exec -it vaultpulse-kafka kafka-console-consumer --bootstrap-server localhost:9092 --topic atm-withdrawal-transactions --from-beginning --max-messages 5
 
-\`\`\`
-
-**#### Step 7: View Live Application Logs**
-
-\`\`\`bash
-
+Step 7: View Live Application Logs
 docker compose logs -f app
 
-\`\`\`
+Step 8: Open Web Interfaces in Browser
+VaultPulse AI Dashboard: http://localhost:8000
 
-**#### Step 8: Open Web Interfaces in Browser**
+Hadoop HDFS NameNode Web Console: http://localhost:9870
 
-\* **\*\*VaultPulse AI Dashboard:\*\*** [http\://localhost:8000]\(http\://localhost:8000)
+Hadoop HDFS DataNode Web Console: http://localhost:9864
 
-\* **\*\*Hadoop HDFS NameNode Web Console:\*\*** [http\://localhost:9870]\(http\://localhost:9870)
-
-\* **\*\*Hadoop HDFS DataNode Web Console:\*\*** [http\://localhost:9864]\(http\://localhost:9864)
-
-**#### Step 9: Stop All Containers**
-
-\`\`\`bash
-
+Step 9: Stop All Containers
 docker compose down
 
-\`\`\`
+(Or double-click docker_stop.bat)
 
-*\*(Or double-click \`docker_stop.bat\`)\**
-
-**---**
-
-**### Option B: Standalone Native Python Execution (No Docker)**
-
+Option B: Standalone Native Python Execution (No Docker)
 If you wish to run the project natively without Docker:
-
-\`\`\`bash
 
 pip install -r requirements.txt
 
 python run_project.py
 
-\`\`\`
+Automatically generates the dataset, sets up local HDFS partitions, trains the model, and launches the web app at http://127.0.0.1:8000.
 
-*\*Automatically generates the dataset, sets up local HDFS partitions, trains the model, and launches the web app at \`http\://127.0.0.1:8000\`.\**
-
-**---**
-
-**### Option C: Step-by-Step Viva Execution (Layer-by-Layer)**
-
+Option C: Step-by-Step Viva Execution (Layer-by-Layer)
 Demonstrate each architectural layer sequentially:
 
-1\. **\*\*Generate Dataset:\*\*** \`python data/generate_dataset.py\`
+1. Generate Dataset: python data/generate_dataset.py
 
-2\. **\*\*Ingest to HDFS:\*\*** \`python -m hdfs_storage.ingest_historical\`
+2. Ingest to HDFS: python -m hdfs_storage.ingest_historical
 
-3\. **\*\*Train Forecasting Model:\*\*** \`python forecasting/train_model.py\`
+3. Train Forecasting Model: python forecasting/train_model.py
 
-4\. **\*\*Test Prediction Engine:\*\*** \`python forecasting/predict.py\`
+4. Test Prediction Engine: python forecasting/predict.py
 
-5\. **\*\*Launch Dashboard:\*\*** \`python -m uvicorn dashboard.app\:app --host 127.0.0.1 --port 8000\`
+5. Launch Dashboard: python -m uvicorn dashboard.app:app --host 127.0.0.1 --port 8000
 
-**---**
-
-**## 🎮 7. Dashboard Interactive Features & Button Controls**
-
+🎮 7. Dashboard Interactive Features & Button Controls
 The VaultPulse AI console provides interactive controls for real-time demonstration:
-
-\`\`\`
 
 ┌────────────────────────────────────────────────────────────────────────────────────────────┐
 
-│                        VAULTPULSE AI DASHBOARD NAVBAR & ACTIONS                            │
+│                        VAULTPULSE AI DASHBOARD NAVBAR & ACTIONS                            │
 
 ├────────────────────┬───────────────────────────────────────────────────────────────────────┤
 
-│ Button / Control   │ What It Does (Real-Time Dynamic Action)                               │
+│ Button / Control   │ What It Does (Real-Time Dynamic Action)                               │
 
 ├────────────────────┼───────────────────────────────────────────────────────────────────────┤
 
-│ 📦 Ingest HDFS     │ Advances calendar date, creates a new daily partition in HDFS on the │
+│ 📦 Ingest HDFS     │ Advances calendar date, creates a new daily partition in HDFS on the │
 
-│                    │ fly, and increments the active HDFS partition count (e.g. 90 ➔ 95+).  │
-
-├────────────────────┼───────────────────────────────────────────────────────────────────────┤
-
-│ 🔄 Retrain Model   │ Re-runs ML feature extraction over all HDFS partitions, recalculates  │
-
-│                    │ accuracy (\~84%) and MAE (\~$5,100), and live-updates the metrics badge.│
+│                    │ fly, and increments the active HDFS partition count (e.g. 90 ➔ 95+).  │
 
 ├────────────────────┼───────────────────────────────────────────────────────────────────────┤
 
-│ ⚡ Reset Balances   │ Resets all 5 ATMs back to the problem demonstration state:            │
+│ 🔄 Retrain Model   │ Re-runs ML feature extraction over all HDFS partitions, recalculates  │
 
-│                    │ • ATM_001 & ATM_002: Low on cash (Immediate Stockout Risk).           │
-
-│                    │ • ATM_004: Bloated with $45,000 (Idle Excess Cash Waste).             │
+│                    │ accuracy (\~84%) and MAE (\~$5,100), and live-updates the metrics badge.│
 
 ├────────────────────┼───────────────────────────────────────────────────────────────────────┤
 
-│ ⚡ Emit Txn Now    │ Injects a single high-priority withdrawal event into Kafka on demand; │
+│ ⚡ Reset Balances   │ Resets all 5 ATMs back to the problem demonstration state:            │
 
-│                    │ flashes in the live terminal and decrements ATM balance on screen.    │
+│                    │ • ATM_001 & ATM_002: Low on cash (Immediate Stockout Risk).           │
 
-├────────────────────┼───────────────────────────────────────────────────────────────────────┤
-
-│ ⏸️ Pause / Resume  │ Toggles the background Kafka withdrawal transaction stream on and off.│
+│                    │ • ATM_004: Bloated with $45,000 (Idle Excess Cash Waste).             │
 
 ├────────────────────┼───────────────────────────────────────────────────────────────────────┤
 
-│ 🚚 Dispatch Van    │ Simulates sending an armored delivery van with the exact recommended  │
+│ ⚡ Emit Txn Now    │ Injects a single high-priority withdrawal event into Kafka on demand; │
 
-│ (Action Table)     │ replenishment cash, converting an ATM from STOCKOUT_ALERT to OPTIMAL. │
+│                    │ flashes in the live terminal and decrements ATM balance on screen.    │
 
 ├────────────────────┼───────────────────────────────────────────────────────────────────────┤
 
-│ ATM Dropdown       │ Dynamically re-renders the Chart.js graph with 14-day history and     │
+│ ⏸️ Pause / Resume  │ Toggles the background Kafka withdrawal transaction stream on and off.│
 
-│ (Chart Selector)   │ tomorrow's ML forecast curve for the selected ATM machine.            │
+├────────────────────┼───────────────────────────────────────────────────────────────────────┤
+
+│ 🚚 Dispatch Van    │ Simulates sending an armored delivery van with the exact recommended  │
+
+│ (Action Table)     │ replenishment cash, converting an ATM from STOCKOUT_ALERT to OPTIMAL. │
+
+├────────────────────┼───────────────────────────────────────────────────────────────────────┤
+
+│ ATM Dropdown       │ Dynamically re-renders the Chart.js graph with 14-day history and     │
+
+│ (Chart Selector)   │ tomorrow's ML forecast curve for the selected ATM machine.            │
 
 └────────────────────┴───────────────────────────────────────────────────────────────────────┘
 
-\`\`\`
-
-**---**
-
-**## 📂 8. Project Directory Structure**
-
-\`\`\`text
-
+📂 8. Project Directory Structure
 BDA Project/
 
-├── Dockerfile                              # Multi-stage Docker container build definition
+├── Dockerfile                              # Multi-stage Docker container build definition
 
-├── docker-compose.yml                      # 5-service cluster: Zookeeper, Kafka, NameNode, DataNode, App
+├── docker-compose.yml                      # 5-service cluster: Zookeeper, Kafka, NameNode, DataNode, App
 
-├── docker_start.bat                        # Windows one-click script to build & start Docker cluster
+├── docker_start.bat                        # Windows one-click script to build & start Docker cluster
 
-├── docker_stop.bat                         # Windows one-click script to stop all Docker containers
+├── docker_stop.bat                         # Windows one-click script to stop all Docker containers
 
-├── DOCKER_COMMANDS_CHEAT_SHEET.md          # Comprehensive CLI commands cheat sheet for viva presentation
+├── DOCKER_COMMANDS_CHEAT_SHEET.md          # Comprehensive CLI commands cheat sheet for viva presentation
 
-├── run_project.py                          # Unified launcher for standalone execution
+├── run_project.py                          # Unified launcher for standalone execution
 
-├── requirements.txt                        # Python package dependencies
+├── requirements.txt                        # Python package dependencies
 
-├── README.md                               # Complete project documentation
+├── README.md                               # Complete project documentation
 
 ├── data/
 
-│   ├── generate_dataset.py                 # Generates Kaggle-style synthetic withdrawal logs
+│   ├── generate_dataset.py                 # Generates Kaggle-style synthetic withdrawal logs
 
-│   ├── raw_synthetic_atm_transactions.csv  # 104,364 individual transaction records
+│   ├── raw_synthetic_atm_transactions.csv  # 104,364 individual transaction records
 
-│   └── daily_atm_summary.csv               # Aggregated historical daily demand records
+│   └── daily_atm_summary.csv               # Aggregated historical daily demand records
 
 ├── kafka_pipeline/
 
-│   ├── kafka_manager.py                    # Dual-mode broker (Native Kafka + In-memory fallback)
+│   ├── kafka_manager.py                    # Dual-mode broker (Native Kafka + In-memory fallback)
 
-│   ├── producer.py                         # Streams real-time withdrawals & tracks live balances
+│   ├── producer.py                         # Streams real-time withdrawals & tracks live balances
 
-│   └── consumer.py                         # Batches Kafka messages to HDFS & WebSocket subscribers
+│   └── consumer.py                         # Batches Kafka messages to HDFS & WebSocket subscribers
 
 ├── hdfs_storage/
 
-│   ├── hdfs_client.py                      # Hadoop HDFS partition manager & NameNode client
+│   ├── hdfs_client.py                      # Hadoop HDFS partition manager & NameNode client
 
-│   ├── ingest_historical.py                # Batch ingestion script for historical transactions
+│   ├── ingest_historical.py                # Batch ingestion script for historical transactions
 
-│   ├── hdfs_namenode_fsimage.json          # NameNode FSImage, block mapping & replication info
+│   ├── hdfs_namenode_fsimage.json          # NameNode FSImage, block mapping & replication info
 
-│   └── hdfs_data/                          # HDFS partitions (/year=YYYY/month=MM/day=DD/part-XXXX.csv)
+│   └── hdfs_data/                          # HDFS partitions (/year=YYYY/month=MM/day=DD/part-XXXX.csv)
 
 ├── forecasting/
 
-│   ├── train_model.py                      # Time-series feature engineering & Random Forest training
+│   ├── train_model.py                      # Time-series feature engineering & Random Forest training
 
-│   ├── predict.py                          # Predictor, 15% safety stock & replenishment engine
+│   ├── predict.py                          # Predictor, 15% safety stock & replenishment engine
 
-│   └── saved_models/
+│   └── saved_models/
 
-│       ├── atm_forecast_model.pkl          # Trained machine learning model artifact
+│       ├── atm_forecast_model.pkl          # Trained machine learning model artifact
 
-│       └── model_metrics.json              # Accuracy, MAE, MAPE, and R2 performance scores
+│       └── model_metrics.json              # Accuracy, MAE, MAPE, and R2 performance scores
 
 └── dashboard/
 
-    ├── app.py                              # FastAPI backend, REST endpoints & WebSocket server
+    ├── app.py                              # FastAPI backend, REST endpoints & WebSocket server
 
-    ├── templates/
+    ├── templates/
 
-    │   └── index.html                      # Glassmorphism dark-slate responsive dashboard UI
+    │   └── index.html                      # Glassmorphism dark-slate responsive dashboard UI
 
-    └── static/
+    └── static/
 
-        ├── css/
+        ├── css/
 
-        │   └── style.css                   # Custom styles, glow indicators & contrast rules
+        │   └── style.css                   # Custom styles, glow indicators & contrast rules
 
-        └── js/
+        └── js/
 
-            └── app.js                      # Chart.js graphs, WebSocket handlers & button actions
+            └── app.js                      # Chart.js graphs, WebSocket handlers & button actions
 
-\`\`\`
+🎓 9. Viva Voce & Presentation Cheat Sheet
+Q1: Why is fixed-schedule replenishment bad for commercial banks?
 
-**---**
+Answer: A fixed schedule treats every machine identically. A busy downtown transit station ATM runs dry before afternoon rush hour (causing customer churn and lost interchange fees), while a quiet suburban machine sits with $40,000 in idle cash earning zero interest and racking up insurance costs.
 
-**## 🎓 9. Viva Voce & Presentation Cheat Sheet**
+Q2: What is the exact role of Apache Kafka in this architecture?
 
-**\*\*Q1: Why is fixed-schedule replenishment bad for commercial banks?\*\***  
+Answer: Kafka serves as the real-time event streaming backbone. Instead of relying on slow overnight batch dumps, customer withdrawal events are pushed immediately to the atm-withdrawal-transactions topic. This gives operations teams second-by-second visibility into remaining cash levels across the entire fleet.
 
-*\*Answer:\** A fixed schedule treats every machine identically. A busy downtown transit station ATM runs dry before afternoon rush hour (causing customer churn and lost interchange fees), while a quiet suburban machine sits with $40,000 in idle cash earning zero interest and racking up insurance costs.
+Q3: How does Hadoop HDFS organize the transaction data?
 
-**\*\*Q2: What is the exact role of Apache Kafka in this architecture?\*\***  
+Answer: HDFS organizes transactions into date-partitioned paths: /atm_transactions/year=YYYY/month=MM/day=DD/part-XXXX.csv. The NameNode tracks block allocation with a 3x replication factor. Date partitioning enables ML feature extractors to scan only the necessary time windows without performing expensive full-table scans.
 
-*\*Answer:\** Kafka serves as the real-time event streaming backbone. Instead of relying on slow overnight batch dumps, customer withdrawal events are pushed immediately to the \`atm-withdrawal-transactions\` topic. This gives operations teams second-by-second visibility into remaining cash levels across the entire fleet.
+Q4: Why use a Time-Series ML Model instead of a simple moving average?
 
-**\*\*Q3: How does Hadoop HDFS organize the transaction data?\*\***  
+Answer: A simple moving average cannot capture multi-scale seasonality, weekend retail multipliers, holiday spikes, and non-linear interactions. Our Random Forest model leverages 14 features (Lags 1, 2, 7, 7-day rolling mean and standard deviation, day-of-week, weekend flags, holiday flags, and ATM one-hot embeddings) to achieve ~84% accuracy.
 
-*\*Answer:\** HDFS organizes transactions into date-partitioned paths: \`/atm_transactions/year=YYYY/month=MM/day=DD/part-XXXX.csv\`. The NameNode tracks block allocation with a 3x replication factor. Date partitioning enables ML feature extractors to scan only the necessary time windows without performing expensive full-table scans.
+Q5: How is the replenishment amount calculated?
 
-**\*\*Q4: Why use a Time-Series ML Model instead of a simple moving average?\*\***  
+Answer: The engine predicts tomorrow's demand and adds a 15% safety stock buffer to handle unexpected surges:
 
-*\*Answer:\** A simple moving average cannot capture multi-scale seasonality, weekend retail multipliers, holiday spikes, and non-linear interactions. Our Random Forest model leverages 14 features (Lags 1, 2, 7, 7-day rolling mean and standard deviation, day-of-week, weekend flags, holiday flags, and ATM one-hot embeddings) to achieve \~84% accuracy.
+$$\text{Target Cash Level} = \text{Forecasted Demand} + 15\% \text{ Safety Stock}$$
 
-**\*\*Q5: How is the replenishment amount calculated?\*\***  
+$$\text{Recommended Cash} = \max(0, \, \text{Target Cash Level} - \text{Current Cash Balance})$$
 
-*\*Answer:\** The engine predicts tomorrow's demand and adds a **\*\*15% safety stock buffer\*\*** to handle unexpected surges:
+Q6: Why run this project using Docker?
 
-$$\text{Target Cash Level} = \text{Forecasted Demand} + 15\\% \text{ Safety Stock}$$
+Answer: Big Data architectures like Hadoop and Kafka normally require heavy distributed infrastructure and complex environment configuration. Docker Compose encapsulates all 5 components (Zookeeper, Kafka, NameNode, DataNode, and the App) into isolated, reproducible microservices with zero host pollution and consistent networking.
 
-$$\text{Recommended Cash} = \max(0, \\, \text{Target Cash Level} - \text{Current Cash Balance})$$
+Q7: How do the Docker containers communicate with each other?
 
-**\*\*Q6: Why run this project using Docker?\*\***  
+Answer: They communicate over an internal bridge network (bda-net). The application accesses Kafka at kafka:29092 and the Hadoop NameNode at hdfs://namenode:9000. External clients and web browsers access the web dashboard via http://localhost:8000 and the NameNode console via http://localhost:9870.
 
-*\*Answer:\** Big Data architectures like Hadoop and Kafka normally require heavy distributed infrastructure and complex environment configuration. Docker Compose encapsulates all 5 components (Zookeeper, Kafka, NameNode, DataNode, and the App) into isolated, reproducible microservices with zero host pollution and consistent networking.
+👥 Contributors & Academic Context
+Course: Big Data Analytics (BDA) Laboratory Capstone
 
-**\*\*Q7: How do the Docker containers communicate with each other?\*\***  
+Project Statement 47: ATM Cash Demand Forecasting & Replenishment System
 
-*\*Answer:\** They communicate over an internal bridge network (\`bda-net\`). The application accesses Kafka at \`kafka:29092\` and the Hadoop NameNode at \`hdfs\://namenode:9000\`. External clients and web browsers access the web dashboard via \`http\://localhost:8000\` and the NameNode console via \`http\://localhost:9870\`.
+Implementation: 100% Dynamic, Fully Operational, Real-Time Big Data Analytics Pipeline running in Docker.
 
-**---**
-
-**## 👥 Contributors & Academic Context**
-
-\* **\*\*Course:\*\*** Big Data Analytics (BDA) Laboratory Capstone
-
-\* **\*\*Project Statement 47:\*\*** ATM Cash Demand Forecasting & Replenishment System
-
-\* **\*\*Implementation:\*\*** 100% Dynamic, Fully Operational, Real-Time Big Data Analytics Pipeline running in Docker.
