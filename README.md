@@ -1,176 +1,13 @@
-
-Excellent! Your VaultPulse AI project is successfully storing ATM transaction data in Hadoop HDFS, organized by year, month, and day. You can demonstrate this directly during your presentation.
-
-Your output shows two CSV files containing ATM transaction data.
-
-1. Display the ATM transaction data
-You are already inside the Hadoop NameNode container.
-
-To display the first 10 lines of the October 16 dataset, run:
-
-hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=16/part-00000.csv | head -n 10
-This should display the CSV header and the first few transaction records.
-
-To display the October 15 dataset, run:
-
-hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=15/part-00000.csv | head -n 10
-2. Understand your HDFS directory structure
-Your data is organized using date-based partitioning.
-
-/hdfs/atm_transactions/
-└── year=2026/
-    └── month=10/
-        ├── day=15/
-        │   └── part-00000.csv
-        └── day=16/
-            └── part-00000.csv
-Why is this useful?
-
-Year: Organizes transactions by year.
-
-Month: Separates transactions by month.
-
-Day: Separates transactions by date.
-
-CSV files: Store the actual transaction records.
-
-This structure makes it easier to locate and process data for a particular date.
-
-3. Check the total storage size
-Run:
-
-hdfs dfs -du -h /hdfs/atm_transactions
-To count the data records in the October 16 CSV file, excluding the header, run:
-
-hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=16/part-00000.csv | tail -n +2 | wc -l
-This counts the records without displaying the entire file.
-
-4. View the data through a web browser
-You can also inspect HDFS visually.
-
-Open:
-
-
-Then navigate to Utilities → Browse the file system → /hdfs.
-
-Open the atm_transactions directory and navigate through the year, month, and day folders.
-
-5. What to explain during your presentation
-You can use this explanation:
-
-"Our project uses Hadoop Distributed File System (HDFS) to store ATM transaction data. We organize the data using year, month, and day partitions, which makes historical records easier to locate and process. For example, transactions from October 16, 2026, are stored in a separate CSV file. This demonstrates how our system organizes transaction data for historical analysis and ATM cash-demand forecasting."
-
-Important observation
-Your output shows:
-
-Date	CSV file size
-October 15, 2026	Approximately 179 KB
-October 16, 2026	Approximately 872 KB
-These are the file sizes reported by HDFS. They do not directly tell us the number of transactions or whether the files contain real or simulated data.
-
-Next step: Run the first command to display the October 16 CSV header and sample records. That will let us identify the actual columns in your dataset and explain them for your viva.
-
-
-
-Pasted markdown(1).md
-File
-this is the readme also add these hdfs commnds to see datset and dat stored for our project in the redame
-
-I've updated your VaultPulse AI README by adding a dedicated section for viewing ATM transaction data stored in Hadoop HDFS. I preserved the existing project documentation and expanded the HDFS instructions.
-
-📄 Download the Updated README
-
-What I added
-The updated README includes these commands:
-
-Command	Purpose
-docker exec -it vaultpulse-namenode hdfs dfsadmin -report	Check HDFS cluster health
-docker exec -it vaultpulse-namenode hdfs dfs -ls /	List the HDFS root directory
-docker exec -it vaultpulse-namenode hdfs dfs -ls -R /hdfs	Find all stored files and directories
-docker exec -it vaultpulse-namenode hdfs dfs -ls -R /hdfs/atm_transactions	Locate ATM transaction partitions
-docker exec -it vaultpulse-namenode hdfs dfs -du -h /hdfs/atm_transactions	Check dataset storage usage
-I also added commands to:
-
-Display the first 10 rows of a transaction CSV file.
-
-Count transaction records.
-
-Understand the year/month/day partition structure.
-
-Browse stored data through the Hadoop web interface at http://localhost:9870.
-
-How to update your GitHub repository
-After downloading the updated file:
-
-Open your VaultPulse project in VS Code.
-
-Replace the contents of your existing README.md with the downloaded file's contents.
-
-Save the file as README.md.
-
-Commit and push the changes:
-
-git add README.md
-git commit -m "Add HDFS dataset access commands to README"
-git push
-Run these Git commands from your project directory and the branch where you want the changes to appear.
-
-Note: The new commands use the HDFS paths and Docker container names you confirmed in your setup. The date-specific CSV commands may need updating if your stored partitions change. 
-
-
-
-
-Pasted text(20261016-091432).txt
-Document
-fix the font and decoration and format it contains line etc
-
-I've cleaned up the README formatting, including the headings, Markdown decorations, spacing, and code sections.
-
-Download your formatted README here:
-
-📄 
-
-What I fixed
-Headings: Corrected inconsistent heading symbols and formatting.
-
-Bold and italic text: Cleaned up excessive Markdown decoration.
-
-Spacing: Removed unnecessary blank lines and improved readability.
-
-Lists: Standardized bullet points and numbering.
-
-Code blocks: Preserved code formatting for commands and architecture diagrams.
-
-HDFS commands: Kept the commands for listing, displaying, and checking the size of your stored transaction data.
-
-How to use it
-Download the file.
-
-Open it in VS Code.
-
-Rename it to README.md.
-
-Replace your existing README with this file.
-
-Preview it using Ctrl + Shift + V in VS Code.
-
-Note: This is a Markdown formatting cleanup. Please preview the file in VS Code before pushing it to GitHub to ensure the tables and architecture diagrams render as expected. 
-
-
-
-Library
-/
-README_VaultPulse_Formatted.md
-
-
-
 🏧 VaultPulse AI: Smart ATM Cash Demand Forecasting & Dynamic Replenishment Platform
+
 Big Data Analytics (BDA) Capstone Project • Project Statement 47
 
 Streaming Ingestion (Apache Kafka) • Distributed Data Lake (Hadoop HDFS) • Machine Learning (Time-Series Forecasting) • Docker Multi-Container Architecture • Real-Time Replenishment Dashboard
 
 📌 1. Project Overview & Problem Statement
+
 ❌ The Industry Problem: Fixed-Schedule Refills
+
 Commercial bank cash operations teams traditionally replenish ATMs on a blind, fixed schedule (e.g., loading a flat $35,000 into every ATM every Monday morning). This rigid schedule completely ignores localized demand patterns and causes two severe operational failures:
 
 1. Cash-Outs / Stockouts at High-Traffic Machines: ATMs located at transit hubs, shopping malls, and airports experience surges in customer cash withdrawals. Under a flat schedule, these machines run completely dry within hours, causing customer dissatisfaction, lost interchange fee revenue, and severe bank SLA penalty fines.
@@ -178,6 +15,7 @@ Commercial bank cash operations teams traditionally replenish ATMs on a blind, f
 2. Idle Excess Cash at Low-Traffic Machines: ATMs in quiet residential neighborhoods receive the same $35,000 refill despite dispensing only $8,000 to $10,000 per week. Tens of thousands of dollars sit idle inside vault cassettes earning 0% interest, incurring high vault insurance premiums, and locking up liquid bank reserves that could otherwise earn yield.
 
 💡 The Solution: VaultPulse AI
+
 VaultPulse AI replaces dumb fixed schedules with an automated, closed-loop Big Data Analytics & Machine Learning pipeline:
 
 Real-Time Streaming: Captures customer cash withdrawals in real time via Apache Kafka (atm-withdrawal-transactions).
@@ -193,6 +31,7 @@ Docker Multi-Container Cluster: Fully orchestrated in Docker Compose running 5 i
 Interactive Operations Dashboard: An asynchronous, glassmorphism web console with live Chart.js demand curves, real-time WebSocket transaction tickers, one-click Cash Van dispatch, dynamic HDFS partition ingestion, and model retraining.
 
 📖 2. Terminology Demystified (Simple & Intuitive)
+
 | Term | Simple Definition |
 
 | :--- | :--- |
@@ -218,6 +57,7 @@ Interactive Operations Dashboard: An asynchronous, glassmorphism web console wit
 | Cash Delivery Van Dispatch | An operational action triggering an armored security vehicle to replenish an ATM with the recommended cash amount. |
 
 🛠️ 3. Technology Stack & Tools
+
 VaultPulse AI strictly utilizes the mandated Big Data Analytics technology stack:
 
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -250,7 +90,9 @@ VaultPulse AI strictly utilizes the mandated Big Data Analytics technology stack
 
 └───────────────────┴────────────────────────────────────────────────────┘
 
+
 Detailed Tech Stack Breakdown
+
 1. Container Orchestration (docker-compose.yml, Dockerfile):
 
 vaultpulse-zookeeper: Apache Zookeeper cluster coordinator on port 2181.
@@ -326,7 +168,9 @@ Premium dark-slate theme (#020617, #0f172a) with glassmorphic cards and glowing 
 Responsive design with Chart.js time-series graphs, KPI metric counters, smart replenishment decision table, and a live Kafka event terminal.
 
 📊 4. About the Dataset Used
+
 Origin & Simulation Design
+
 The project uses a Synthetic ATM Transaction Dataset designed in alignment with real-world Kaggle ATM withdrawal datasets and public retail-banking transaction logs:
 
 Scale: Over 104,364 individual withdrawal transactions aggregated into 450+ daily summary records across 90+ operating days.
@@ -334,6 +178,7 @@ Scale: Over 104,364 individual withdrawal transactions aggregated into 450+ dail
 Realistic Behavioral Modeling: Captures payday spikes (salary disbursements on the 1st, 2nd, 30th, and 31st of each month), weekend retail surges, corporate weekday peaks, and holiday transaction multipliers.
 
 5 Diverse ATM Profiles & Locations
+
 The dataset models 5 distinct banking environments to stress-test the replenishment engine:
 
 | ATM ID | ATM Name | Location Profile | Traffic Type | Base Demand | Peak Factors | Vulnerability Under Fixed Schedule |
@@ -351,6 +196,7 @@ The dataset models 5 distinct banking environments to stress-test the replenishm
 | ATM_005 | International Airport T2 | Airport Arrivals Gate | High-Traffic | $62,000 / day | 24/7 steady, higher txn size | Runs Dry (Stockout): High demand requires substantial daily replenishment. |
 
 Dataset Fields & Schema
+
 Each transaction record includes the following schema attributes:
 
 transaction_id: Unique transaction code (e.g., TXN_PART_104364).
@@ -378,6 +224,7 @@ remaining_cash: Live remaining cash vault balance after withdrawal.
 transaction_status: Transaction result (Success / Failed).
 
 🏗️ 5. Implementation Architecture & Data Flow
+
                                   VAULTPULSE AI ARCHITECTURE
 
    [ Customer ATM Withdrawals ]
@@ -450,7 +297,9 @@ transaction_status: Transaction result (Success / Failed).
 
    └───────────────────────────┘
 
+
 End-to-End Operational Pipeline
+
 1. Live Transaction Ingestion (Kafka):
 
 Customer withdrawals are pushed to Kafka topic atm-withdrawal-transactions. The producer decrements the physical vault balance of the machine in real time.
@@ -482,28 +331,40 @@ Otherwise $\implies$ OPTIMAL (Green).
 The browser establishes a persistent WebSocket connection to /ws/transactions. Incoming transactions update the live terminal, decrement the live cash column in the table, and trigger visual warning pulses.
 
 💻 6. How to Run the Project
+
 Option A: Running in Docker via CLI (Required for Evaluation & Viva)
+
 This runs the complete 5-container Big Data cluster inside Docker using terminal commands only.
 
 Step 1: Start the Entire Multi-Container Cluster
+
 docker compose up --build -d
+
 
 (Or double-click docker_start.bat)
 
 Step 2: Show Running Containers to the Evaluator
+
 docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+
 
 Or:
 
 docker compose ps
 
+
 Step 3: Show Downloaded & Built Docker Images
+
 docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.ID}}"
 
+
 Step 4: Show Live Container CPU & RAM Stats
+
 docker stats --no-stream
 
+
 Step 5: Demonstrate Hadoop HDFS via Commands
+
 Run these commands from PowerShell on your host machine. They use the running vaultpulse-namenode container, so you do not need to enter the container first.
 
 # Check HDFS cluster health and DataNodes report
@@ -520,6 +381,7 @@ docker exec -it vaultpulse-namenode hdfs dfs -ls -R /hdfs/atm_transactions
 
 # Check storage usage for the transaction dataset
 docker exec -it vaultpulse-namenode hdfs dfs -du -h /hdfs/atm_transactions
+
 Display transaction records stored in HDFS:
 
 The following sample paths match the partitions observed in this setup. If the date folders differ on your machine, run the recursive listing command above and substitute a path that exists.
@@ -532,6 +394,7 @@ docker exec vaultpulse-namenode hdfs dfs -cat /hdfs/atm_transactions/year=2026/m
 
 # Count records in the October 16 CSV, excluding the header
 docker exec vaultpulse-namenode bash -lc "hdfs dfs -cat /hdfs/atm_transactions/year=2026/month=10/day=16/part-00000.csv | tail -n +2 | wc -l"
+
 What to point out during the viva:
 
 /hdfs/atm_transactions/ is the dataset's HDFS directory.
@@ -545,6 +408,7 @@ hdfs dfs -cat displays stored records; hdfs dfs -du -h shows storage usage.
 HDFS Web UI: Open http://localhost:9870, then select Utilities → Browse the file system and navigate to /hdfs/atm_transactions.
 
 Step 6: Demonstrate Apache Kafka via Commands
+
 # List all Kafka topics
 
 docker exec -it vaultpulse-kafka kafka-topics --list --bootstrap-server localhost:9092
@@ -557,10 +421,14 @@ docker exec -it vaultpulse-kafka kafka-topics --describe --topic atm-withdrawal-
 
 docker exec -it vaultpulse-kafka kafka-console-consumer --bootstrap-server localhost:9092 --topic atm-withdrawal-transactions --from-beginning --max-messages 5
 
+
 Step 7: View Live Application Logs
+
 docker compose logs -f app
 
+
 Step 8: Open Web Interfaces in Browser
+
 VaultPulse AI Dashboard: http://localhost:8000
 
 Hadoop HDFS NameNode Web Console: http://localhost:9870
@@ -568,20 +436,25 @@ Hadoop HDFS NameNode Web Console: http://localhost:9870
 Hadoop HDFS DataNode Web Console: http://localhost:9864
 
 Step 9: Stop All Containers
+
 docker compose down
+
 
 (Or double-click docker_stop.bat)
 
 Option B: Standalone Native Python Execution (No Docker)
+
 If you wish to run the project natively without Docker:
 
 pip install -r requirements.txt
 
 python run_project.py
 
+
 Automatically generates the dataset, sets up local HDFS partitions, trains the model, and launches the web app at http://127.0.0.1:8000.
 
 Option C: Step-by-Step Viva Execution (Layer-by-Layer)
+
 Demonstrate each architectural layer sequentially:
 
 1. Generate Dataset: python data/generate_dataset.py
@@ -595,6 +468,7 @@ Demonstrate each architectural layer sequentially:
 5. Launch Dashboard: python -m uvicorn dashboard.app:app --host 127.0.0.1 --port 8000
 
 🎮 7. Dashboard Interactive Features & Button Controls
+
 The VaultPulse AI console provides interactive controls for real-time demonstration:
 
 ┌────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -649,7 +523,9 @@ The VaultPulse AI console provides interactive controls for real-time demonstrat
 
 └────────────────────┴───────────────────────────────────────────────────────────────────────┘
 
+
 📂 8. Project Directory Structure
+
 BDA Project/
 
 ├── Dockerfile                              # Multi-stage Docker container build definition
@@ -724,7 +600,9 @@ BDA Project/
 
             └── app.js                      # Chart.js graphs, WebSocket handlers & button actions
 
+
 🎓 9. Viva Voce & Presentation Cheat Sheet
+
 Q1: Why is fixed-schedule replenishment bad for commercial banks?
 
 Answer: A fixed schedule treats every machine identically. A busy downtown transit station ATM runs dry before afternoon rush hour (causing customer churn and lost interchange fees), while a quiet suburban machine sits with $40,000 in idle cash earning zero interest and racking up insurance costs.
@@ -758,9 +636,9 @@ Q7: How do the Docker containers communicate with each other?
 Answer: They communicate over an internal bridge network (bda-net). The application accesses Kafka at kafka:29092 and the Hadoop NameNode at hdfs://namenode:9000. External clients and web browsers access the web dashboard via http://localhost:8000 and the NameNode console via http://localhost:9870.
 
 👥 Contributors & Academic Context
+
 Course: Big Data Analytics (BDA) Laboratory Capstone
 
 Project Statement 47: ATM Cash Demand Forecasting & Replenishment System
 
 Implementation: 100% Dynamic, Fully Operational, Real-Time Big Data Analytics Pipeline running in Docker.
-
